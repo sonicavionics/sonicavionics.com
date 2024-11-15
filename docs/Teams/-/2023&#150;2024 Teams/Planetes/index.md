@@ -1,2 +1,0 @@
-# Planetes
-![team](team.jpg)

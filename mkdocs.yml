@@ -1,12 +1,12 @@
-site_name: MARS
+site_name: zeuldocs
 
-site_url: https://marstmu.com/
-site_description: MARS Website.
+site_url: https://zeuldocs.com/
+site_description: Zeul's documentation
 site_author: MARS
-repo_url: https://github.com/marstmu/marswebsite
+repo_url: https://github.com/zeulewan/zeuldocs
 edit_uri: edit/main/docs/
 
-copyright: mars.group@torontomu.ca
+#copyright: mars.group@torontomu.ca
 
 theme:
   name: material
@@ -36,7 +36,7 @@ theme:
         name: Switch to system preference
   icon:
     repo: fontawesome/brands/github
-  logo: img/logo-no-text.png
+  logo: img/logo.png
   favicon: img/favicon.ico
   features:
     - navigation.sections
@@ -53,10 +53,9 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       timezone: America/Toronto
-  - git-committers:
-      repository: marstmu/marswebsite
-      branch: main
-      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
+  #- git-committers:
+  #    repository: marstmu/marswebsite
+  #   token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - blog:
       authors: true
   - search
@@ -86,15 +85,14 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/marstmu/marswebsite
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/mars.tmu/
+      link: https://github.com/zeulewan
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/marstmu/?originalSubdomain=ca
-    - icon: fontawesome/brands/discord
-      link: https://discord.com/invite/BaQZkd2TKj
+      link: https://www.linkedin.com/in/zeulewan
+    - icon: fontawesome/solid/shuttle-space
+      link: https://zeul.ca
 
 
 extra_css:
   - css/extra.css
+
 
