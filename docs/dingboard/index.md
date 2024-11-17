@@ -1,6 +1,7 @@
 # Dingboard notes
 
 This will be the first board. Gonna be copying the MARS amongus board a bit. All parts are available for PCBA with JLCPCB.
+[Here's the link](https://github.com/zeulewan/dingboard) to the Altium project repo
 
  - MCU: RP 2040, [Hardware design](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf), [datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
  - IMU: [ICM-42670](https://datasheet.octopart.com/ICM-42670-P-InvenSense-datasheet-155317655.pdf?src-supplier=Component+Distributors+Inc.)
