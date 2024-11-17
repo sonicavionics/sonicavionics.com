@@ -12,3 +12,11 @@ This will be the first board. Gonna be copying the MARS amongus board a bit. All
  - Regulator: [RT9080-33GJ5](https://www.lcsc.com/datasheet/lcsc_datasheet_2009192305_Richtek-Tech-RT9080-33GJ5_C841192.pdf) for both battery 3.7v to 3.3 and USB 5v to 3.3
  - FET: [DMG3415UFY4Q](https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2208051800_Diodes-Incorporated-DMG3415UFY4Q-7_C5124975.pdf) current lead time 21 days
  - LED: Power status indicator
+
+
+### Checklist:
+
+- [ ] Altium with Solidworks
+- [ ] Complete board schematic
+- [ ] Complete board layout
+- [ ] JLCPCB PCBA
