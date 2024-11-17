@@ -1,3 +1,9 @@
+<div align="center">
+  
+## This is the website for Zeul's documentaion.
+
+</div>
+
 <p align="center">
   <a href="https://github.com/zeulewan/zeuldocs/actions/workflows/ci.yml"><img
     src="https://github.com/zeulewan/zeuldocs/actions/workflows/ci.yml/badge.svg"
@@ -9,6 +15,8 @@
   /></a>
 </p>
 
-This is the website for Zeul's documentaion.
+<div align="center">
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+
+</div>
