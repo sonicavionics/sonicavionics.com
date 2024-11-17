@@ -16,6 +16,8 @@ This will be the first board. Gonna be copying the MARS amongus board a bit. All
 
 ### Checklist:
 
+- [x] Altium with GitHub
+- [x] Begin PCB V1
 - [ ] Altium with Solidworks
 - [ ] Complete board schematic
 - [ ] Complete board layout
