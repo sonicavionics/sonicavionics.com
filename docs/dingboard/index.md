@@ -43,3 +43,12 @@ This will be the first board. Gonna be copying the MARS amongus board a bit. All
     - The way to do it simply would be by taking advantage of the "Zero Gate Voltage Drain Current", but there's a load connected to the source so the voltage probably wont rise
     - In-rush current, you need a resistor to the gate
     - Going to need more robust circuitry than this
+    - Could flip the P channel enhancement mosfet to have the current go from source to drain in order to get the negative voltage, but too janky
+    - Going with a BQ2407x that handles power switching and battery charging. It's basically designed for this exact thing.
+
+### Video references
+Good videos:
+
+- [Altium Designer Quick-Start Tutorial with Phil Salmony from Phil's Lab](https://www.youtube.com/watch?v=YTGzncKU5RY)
+
+- [Raspberry Pi RP2040 Hardware Design | Altium Designer | JLCPCB - Phil's Lab #28](https://www.youtube.com/watch?v=X00Cm5LMNQk)
