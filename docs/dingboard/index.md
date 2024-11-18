@@ -1,6 +1,25 @@
-# Dingboard notes
+# dingboard
+<p style="font-size: 20px;">Simple flight computer that uses all the best practices. A good place to start.</p>
+******
 
-This will be the first board. Gonna be copying the MARS amongus board a bit. All parts are available for PCBA with JLCPCB.
+### Initial Requirements and Design Goals
+The primary goal of dingboard is to enable my personal learning.
+This will be the first board of many. The successor to dingboard will be a CAN enabled system in a 4-inch diameter form factor which will hopefully be launched this summer.
+
+Primary Functional Requirements for dingboard:
+
+- Easy to operate and understand
+- Fully open source
+- Assemblable by JLCPCB PCBA
+- On board charging and automatic power switching
+- Charging status indicators
+- MCU status indicator, sleep, data collection etc.
+- Altium and solidworks integration
+- Utilize all known best practices to enable scalability
+- Components:
+    - Barometer
+    - Accelerometer
+
 [Here's the link](https://github.com/zeulewan/dingboard) to the Altium project repo
 
 ### Components (not final)
