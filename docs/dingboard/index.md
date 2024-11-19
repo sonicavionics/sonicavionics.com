@@ -1,5 +1,7 @@
 # dingboard
 <p style="font-size: 20px;">Simple flight computer that uses all the best practices. A good place to start.</p>
+This board is everything you would want in a passive data collection flight computer. Made for beginner model rockets. Basically a better version of [this](https://zeul.ca/projects/archive/template.php?day=6&month=6&year=2022&title=Calculating_the_Drag_Coefficient).
+
 ******
 
 ### Initial Requirements and Design Goals
@@ -11,7 +13,7 @@ Primary Functional Requirements for dingboard:
 - Easy to operate and understand
 - Fully open source
 - Assemblable by JLCPCB PCBA
-- On board charging and automatic power switching
+- On board charging and automatic power switching using simple chip
 - Charging status indicators
 - MCU status indicator, sleep, data collection etc.
 - Altium and solidworks integration
@@ -19,6 +21,8 @@ Primary Functional Requirements for dingboard:
 - Components:
     - Barometer
     - Accelerometer
+    - Thermistor for battery protection
+- Use entire safe range of battery (use a buck boost)
 
 [Here's the link](https://github.com/zeulewan/dingboard) to the Altium project repo
 
@@ -34,11 +38,11 @@ Primary Functional Requirements for dingboard:
 
  - Power: 
 
-    - [18650](https://old.reddit.com/r/18650masterrace/comments/qp21o8/buying_18650_batteries_start_here/) [charger](https://www.reddit.com/r/18650masterrace/comments/1gqk8iy/recommendations_for_a_battery_charger/)
+    - [18650](https://old.reddit.com/r/18650masterrace/comments/qp21o8/buying_18650_batteries_start_here/) [charger](https://www.reddit.com/r/18650masterrace/comments/1gqk8iy/recommendations_for_a_battery_charger/) [datasheet](https://cdn.shopify.com/s/files/1/0481/9678/0183/files/samsung_25r_data_sheet.pdf?v=1605015771)
 
     - Charing and switching IC: [BQ2407](https://www.ti.com/lit/ds/symlink/bq24074.pdf)
 
-    - [(i2c power indicator](https://cdn.sparkfun.com/datasheets/Prototyping/bq27441-g1.pdf) for use in next board). [Sparkfun board for reference](https://www.sparkfun.com/products/13777)
+    - Thermistor: ?
 
     - Regulator: [RT9080-33GJ5](https://www.lcsc.com/datasheet/lcsc_datasheet_2009192305_Richtek-Tech-RT9080-33GJ5_C841192.pdf) for both battery 3.7v to 3.3 and USB 5v to 3.3
 
@@ -64,6 +68,7 @@ Primary Functional Requirements for dingboard:
     - Going to need more robust circuitry than this
     - Could flip the P channel enhancement mosfet to have the current go from source to drain in order to get the negative voltage, but too janky
     - Going with a BQ2407x that handles power switching and battery charging. It's basically designed for this exact thing.
+- Not using RT9080. Need a buck boost. I should be able to use the entire range of battery
 
 ### Video references
 Good videos:
@@ -71,3 +76,9 @@ Good videos:
 - [Altium Designer Quick-Start Tutorial with Phil Salmony from Phil's Lab](https://www.youtube.com/watch?v=YTGzncKU5RY)
 
 - [Raspberry Pi RP2040 Hardware Design | Altium Designer | JLCPCB - Phil's Lab #28](https://www.youtube.com/watch?v=X00Cm5LMNQk)
+
+### Next board chip ideas
+
+- Charging IC
+    - [Analog Devices LTC4162-L](https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf)
+    - [(i2c power indicator](https://cdn.sparkfun.com/datasheets/Prototyping/bq27441-g1.pdf), [Sparkfun board for reference](https://www.sparkfun.com/products/13777)
