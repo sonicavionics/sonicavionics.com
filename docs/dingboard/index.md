@@ -1,7 +1,6 @@
 # dingboard
 <p style="font-size: 20px;">Simple flight computer that uses all the best practices. A good place to start.</p>
 This board is everything you would want in a passive data collection flight computer. Made for beginner model rockets. Basically a better version of [this](https://zeul.ca/projects/archive/template.php?day=6&month=6&year=2022&title=Calculating_the_Drag_Coefficient).
-
 ******
 
 ### Initial Requirements and Design Goals
@@ -78,10 +77,3 @@ Good videos:
 - [Altium Designer Quick-Start Tutorial with Phil Salmony from Phil's Lab](https://www.youtube.com/watch?v=YTGzncKU5RY)
 
 - [Raspberry Pi RP2040 Hardware Design | Altium Designer | JLCPCB - Phil's Lab #28](https://www.youtube.com/watch?v=X00Cm5LMNQk)
-
-### Next board chip ideas
-
-- Charging IC
-    - [Analog Devices LTC4162-L](https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf)
-
-    - [(i2c power indicator](https://cdn.sparkfun.com/datasheets/Prototyping/bq27441-g1.pdf), [Sparkfun board for reference](https://www.sparkfun.com/products/13777)
