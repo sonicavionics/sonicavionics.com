@@ -42,9 +42,11 @@ Primary Functional Requirements for dingboard:
 
     - Charing and switching IC: [BQ2407](https://www.ti.com/lit/ds/symlink/bq24074.pdf)
 
+    - [Extra current protection circuit](https://www.ti.com/lit/ds/symlink/bq2970.pdf?ts=1731982692134&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ2970%252Fpart-details%252FBQ29700DSER)
+
     - Thermistor: ?
 
-    - Regulator: [RT9080-33GJ5](https://www.lcsc.com/datasheet/lcsc_datasheet_2009192305_Richtek-Tech-RT9080-33GJ5_C841192.pdf) for both battery 3.7v to 3.3 and USB 5v to 3.3
+    - Buck-boost: [TPS63070 ](https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1731929729399&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS63070%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dapp-null-null-gpn_en-cpc-pf-google-eu%2526utm_content%253Dtps63070%2526ds_k%253DTPS63070%2526dcm%253Dyes%2526gad_source%253D1%2526gclid%253DCj0KCQiA6Ou5BhCrARIsAPoTxrCaR9ul4GKeeqk04exPs55nL8KK7Iabunx0if0zZDwEN4diN9oB0GIaAmwyEALw_wcB%2526gclsrc%253Daw.ds)
 
 
  - LED: Power status indicator
@@ -81,4 +83,5 @@ Good videos:
 
 - Charging IC
     - [Analog Devices LTC4162-L](https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4162-L.pdf)
+
     - [(i2c power indicator](https://cdn.sparkfun.com/datasheets/Prototyping/bq27441-g1.pdf), [Sparkfun board for reference](https://www.sparkfun.com/products/13777)
