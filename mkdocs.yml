@@ -65,6 +65,9 @@ plugins:
         as_creation: date
 
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -91,6 +94,10 @@ extra:
     - icon: fontawesome/solid/shuttle-space
       link: https://zeul.ca
 
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
   - css/extra.css
