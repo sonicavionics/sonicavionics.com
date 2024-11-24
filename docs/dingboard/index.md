@@ -63,7 +63,7 @@ Primary Functional Requirements for dingboard:
 - [ ] Altium with Solidworks
 - [ ] JLCPCB PCBA
 
-### Thoughts
+### Misc Thoughts
 
 - Using a single MOSFET for switching between USB and battery voltage is just too janky.
     - Shoot through voltage.
@@ -73,6 +73,12 @@ Primary Functional Requirements for dingboard:
     - Could flip the P channel enhancement mosfet to have the current go from source to drain in order to get the negative voltage, but too janky
     - Going with a BQ2407x that handles power switching and battery charging. It's basically designed for this exact thing.
 - Not using RT9080. Need a buck boost. I should be able to use the entire range of battery
+
+- Typical via sizes
+    - Large: 0.7 mm pad, 0.3 mm drill
+    - Medium: 0.6 mm pad, 0.25 mm drill
+    - Small: 0.5 mm pad, 0.2 mm
+
 
 ### Video references
 Good videos:
