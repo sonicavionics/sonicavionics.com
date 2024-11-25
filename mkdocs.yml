@@ -85,7 +85,7 @@ markdown_extensions:
   
   
 extra:
-  generator: false
+  generator: true
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/zeulewan
