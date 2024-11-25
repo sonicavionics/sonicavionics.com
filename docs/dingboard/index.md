@@ -6,7 +6,7 @@ This board is everything you would want in a passive data collection flight comp
 
 <figure markdown="span">
 
-  ![alt text](1.png){ width="200" }
+  ![alt text](1.png){ width="600" }
   <figcaption>Current progress</figcaption>
 
 </figure>
@@ -31,6 +31,7 @@ Primary Functional Requirements for dingboard:
     - Accelerometer
     - Thermistor for battery protection
 - Use entire safe range of battery (use a buck boost)
+- Why not go with an ESP?
 
 [Here's the link](https://github.com/zeulewan/dingboard) to the Altium project repo
 
