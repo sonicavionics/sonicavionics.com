@@ -3,6 +3,15 @@
 This board is everything you would want in a passive data collection flight computer. Made for beginner model rockets. Basically a better version of [this](https://zeul.ca/projects/archive/template.php?day=6&month=6&year=2022&title=Calculating_the_Drag_Coefficient).
 ******
 
+
+<figure markdown="span">
+
+  ![alt text](1.png){ width="200" }
+  <figcaption>Current progress</figcaption>
+
+</figure>
+
+
 ### Initial Requirements and Design Goals
 The primary goal of dingboard is to enable my personal learning.
 This will be the first board of many. The successor to dingboard will be a CAN enabled system in a 4-inch diameter form factor which will hopefully be launched this summer.
