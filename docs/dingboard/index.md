@@ -89,6 +89,10 @@ Primary Functional Requirements for dingboard:
     - Medium: 0.6 mm pad, 0.25 mm drill
     - Small: 0.5 mm pad, 0.2 mm
 
+### Library
+I started using the [Celestial Altium Library](https://altiumlibrary.com/)
+
+[Install vid](https://www.youtube.com/watch?v=lBvwvbw83iY)
 
 ### Video references
 Good videos:
