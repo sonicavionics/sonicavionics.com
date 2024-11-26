@@ -6,7 +6,7 @@ authors:
   - zeul
 categories:
   - dingboard
-  - complaints
+  - Complaints
 ---
 
 .lia files are fully broken in Altium. You literally just can't import them anymore.

@@ -6,7 +6,7 @@ authors:
   - zeul
 categories:
   - dingboard
-  - complaints
+  - Complaints
 ---
 
 Here's some ideas for how Solidworks and Altium or any MCAD and ECAD would ideally work together. 
