@@ -10,7 +10,7 @@ This is Zeul's other website for his other documentation and other blog
 
 <figure markdown="span">
 
-  ![alt text](img/IMG_0629.jpg){ width="200" }
+  ![alt text](img/IMG_0629.jpg){ width="300" }
   <figcaption>Zeul</figcaption>
 
 </figure>
