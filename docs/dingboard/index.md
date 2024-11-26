@@ -6,8 +6,8 @@ This board is everything you would want in a passive data collection flight comp
 
 <figure markdown="span">
 
-  ![alt text](1.png){ width="600" }
-  <figcaption>Current progress</figcaption>
+  ![alt text](nov26.png){ width="600" }
+  <figcaption>November 26</figcaption>
 
 </figure>
 
@@ -93,6 +93,9 @@ Primary Functional Requirements for dingboard:
 I started using the [Celestial Altium Library](https://altiumlibrary.com/)
 
 [Install vid](https://www.youtube.com/watch?v=lBvwvbw83iY)
+
+
+finally found a [PCIe x1 footprint](https://www.snapeda.com/parts/PCIE-036-02-S-D-EMS3/Samtec%20Inc./view-part/) 
 
 ### Video references
 Good videos:
