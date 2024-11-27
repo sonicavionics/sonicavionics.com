@@ -18,3 +18,10 @@ There used to be a [template libary?](https://techdocs.altium.com/display/ALIVE/
 
 The license manager has to be one of the most annoying things known to man. Every now and then you start up Altium and you have to click "release" then roam on three licenses because it thinks you're signed in somewhere else.
 
+Altium, Solidworks and Onshape have different methods of rotation. 
+
+Onshape is clearly the best, pan zoom and rotate are all done without a modifier. It's just constrained rotate which uses shift. I don't think solidworks even has that though.
+
+Altium is the worst is uses track ball rotation which inherently requires more clicks.
+
+[Matt Keeter // 3D Rotation Design](https://www.mattkeeter.com/projects/rotation/)
