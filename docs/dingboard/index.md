@@ -36,24 +36,28 @@ Primary Functional Requirements for dingboard:
 [Here's the link](https://github.com/zeulewan/dingboard) to the Altium project repo
 
 
-## Checklist (Not really relevant anymore)
+## Checklist
 
 - [x] Altium with GitHub
 - [x] Begin PCB V1
-- [ ] Complete board schematic
-- [ ] Complete board layout
-- [ ] Altium with Solidworks
-- [ ] JLCPCB PCBA
+- [x] Complete board schematic
+- [x] solid works and altium
+    - [ ] ~~set board dimensions~~ Gonna set the board dimensions after I get the first iteration of the power board ordered
+- [x] get proper PCIe dimensions
+- [ ] ~~add power switch for battery~~ Forget it i'll just unplug it for this version
+- [ ] finish routing
+    - [ ] buck boost
+    - [ ] fuel gauge 
+- [ ] add test points
+- [ ] add all LCSC designators
 
 
 
 ## Library
-I started using the [Celestial Altium Library](https://altiumlibrary.com/)
+I started using the [Celestial Altium Library](https://altiumlibrary.com/).
+[Install video](https://www.youtube.com/watch?v=lBvwvbw83iY)
 
-[Install vid](https://www.youtube.com/watch?v=lBvwvbw83iY)
-
-
-finally found a [PCIe x1 footprint](https://www.snapeda.com/parts/PCIE-036-02-S-D-EMS3/Samtec%20Inc./view-part/) 
+I finally found a [PCIe x1 footprint](https://www.snapeda.com/parts/PCIE-036-02-S-D-EMS3/Samtec%20Inc./view-part/). edit: should have just made it from scratch. That footprint was garbage, had to redo it.
 
 ## Video references
 Good videos:
@@ -65,3 +69,7 @@ Good videos:
 - [How To Keep Components Connected When Moving | Altium Designer](https://www.youtube.com/watch?v=wfML_NWr2sI)
 
 - [Microcontroller-Based Hardware Design With Altium Designer - #3 USB C ](https://www.youtube.com/watch?v=t67KcQHhIC4&list=PL3aaAq2OJU5EsYtNwTPHNO3RHNJN34FbO&index=16)
+
+- [ECAD-MCAD CoDesign with Altium 365 & SOLIDWORKS](https://www.youtube.com/watch?v=ciPQ3UqYVuc)
+
+- [Types of PCB Grounding Explained | PCB Layout](https://www.youtube.com/watch?v=19WnYPhNOH0)
