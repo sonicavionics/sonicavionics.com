@@ -39,16 +39,19 @@ theme:
   logo: img/logo.png
   favicon: img/favicon.ico
   features:
-    - navigation.sections
-    - navigation.top
+    - content.action.edit
+    - content.code.copy
+    - navigation.indexes # makes index page the home page
     - navigation.tabs
     - navigation.tabs.sticky
     - search.suggest
-    - navigation.instant
-    - content.action.edit
-    - content.code.copy
-    - navigation.indexes
+    - search.highlight
+    - search.share
+    - navigation.top
     - toc.follow
+    - navigation.sections
+
+
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
