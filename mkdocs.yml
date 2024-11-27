@@ -65,6 +65,12 @@ plugins:
         as_creation: date
 
 markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+
+
   - pymdownx.arithmatex:
       generic: true
 
