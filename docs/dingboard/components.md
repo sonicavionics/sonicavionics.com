@@ -15,7 +15,7 @@
 
 - ["Fuel guage"](https://www.ti.com/lit/ds/symlink/bq27441-g1.pdf?ts=1731917229522&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ27441-G1%253FkeyMatch%253DBQ27441-G1A%2526tisearch%253Duniversal_search)
 
-- [Buck-Boost](https://www.sparkfun.com/datasheets/Prototyping/tps61200.pdf)
+- [Buck-Boost](https://www.ti.com/lit/ds/symlink/tps61200.pdf?ts=1732855904078&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS61200)
 
 - [PCIe Specs PDF](PCIe_specs.pdf) (page 92 and 136)
 
