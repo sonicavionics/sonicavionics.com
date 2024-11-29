@@ -45,9 +45,9 @@ Primary Functional Requirements for dingboard:
     - [ ] ~~set board dimensions~~ Gonna set the board dimensions after I get the first iteration of the power board ordered
 - [x] get proper PCIe dimensions
 - [ ] ~~add power switch for battery~~ Forget it i'll just unplug it for this version
-- [ ] finish routing
-    - [ ] buck boost
-    - [ ] fuel gauge 
+- [x] finish routing
+    - [x] buck boost
+    - [x] fuel gauge 
 - [ ] add test points
 - [ ] add all LCSC designators
 
