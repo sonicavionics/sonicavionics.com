@@ -3,11 +3,10 @@
 This board is everything you would want in a passive data collection flight computer. Made for beginner model rockets. Basically a better version of [this](https://zeul.ca/projects/archive/template.php?day=6&month=6&year=2022&title=Calculating_the_Drag_Coefficient).
 ******
 
-
 <figure markdown="span">
 
   ![alt text](nov28.png){ width="600" }
-  <figcaption>November 26</figcaption>
+  <figcaption>November 28</figcaption>
 
 </figure>
 
