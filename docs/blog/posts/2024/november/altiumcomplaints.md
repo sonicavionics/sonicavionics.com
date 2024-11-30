@@ -25,3 +25,6 @@ Onshape is clearly the best, pan zoom and rotate are all done without a modifier
 Altium is the worst is uses track ball rotation which inherently requires more clicks.
 
 [Matt Keeter // 3D Rotation Design](https://www.mattkeeter.com/projects/rotation/)
+
+
+Everying time I paste a JLCPCB part number into the BOM the entire software freezes for a good 20 seconds. 
