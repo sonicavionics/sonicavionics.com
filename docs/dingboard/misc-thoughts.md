@@ -20,3 +20,5 @@
 - OshPark doesn't do assembly
 
 - I really am gonna have to choose between using github or the ECAD/MCAD plug in. I think the answer is obvious. Altium 365 is not the way. KiCAD is worth considering switching to. More accessible, free, apparently less professional though. What would a start up use though? Probably KiCAD. I don't know how well it handles multi board projects. I don't even know how Altium handles it though. Should I switch to KiCAD for Dongboard? Queens, and waterloo uses it. It probably has much better git integration although I'd have to look into that. ALtium 365 actually does provide some benefits. You can view stuff in the browser. There's also flux.ai which may or may not be scamming. Solidworks is such a drag but I don't think OnShape is ready. I've had it slow down on me too many times... meh not that many times though. No good FOSS CAD software. 
+
+- Always go on texas instruments' website to check if there is a newer version of the chip
