@@ -13,3 +13,10 @@
     - Large: 0.7 mm pad, 0.3 mm drill
     - Medium: 0.6 mm pad, 0.25 mm drill
     - Small: 0.5 mm pad, 0.2 mm
+- Make it hole: 0.3 and diameter: 0.4 for no extra charge
+
+- Vias under pads cost more and cause issues with assembly sometimes. Not worth it.
+
+- OshPark doesn't do assembly
+
+- I really am gonna have to choose between using github or the ECAD/MCAD plug in. I think the answer is obvious. Altium 365 is not the way. KiCAD is worth considering switching to. More accessible, free, apparently less professional though. What would a start up use though? Probably KiCAD. I don't know how well it handles multi board projects. I don't even know how Altium handles it though. Should I switch to KiCAD for Dongboard? Queens, and waterloo uses it. It probably has much better git integration although I'd have to look into that. ALtium 365 actually does provide some benefits. You can view stuff in the browser. There's also flux.ai which may or may not be scamming. Solidworks is such a drag but I don't think OnShape is ready. I've had it slow down on me too many times... meh not that many times though. No good FOSS CAD software. 
