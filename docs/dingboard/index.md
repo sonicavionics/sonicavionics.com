@@ -49,6 +49,9 @@ Primary Functional Requirements for dingboard:
     - [x] fuel gauge 
 - [ ] add test points
 - [ ] add all LCSC designators
+- [ ] double check all connections
+- [ ] order upp
+    - [ ] jlcpcb or oshpark?
 
 
 
