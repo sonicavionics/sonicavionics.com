@@ -5,8 +5,8 @@ This board is everything you would want in a passive data collection flight comp
 
 <figure markdown="span">
 
-  ![alt text](nov28.png){ width="600" }
-  <figcaption>November 28</figcaption>
+  ![alt text](powerdec1.png){ width="600" }
+  <figcaption>December 1st</figcaption>
 
 </figure>
 
@@ -47,12 +47,10 @@ Primary Functional Requirements for dingboard:
 - [x] finish routing
     - [x] buck boost
     - [x] fuel gauge 
-- [ ] add test points
-- [ ] add all LCSC designators
+- [ ] ~~add test points~~ there are enough exposed connections i can poke at
+- [X] add all LCSC designators
 - [ ] double check all connections
-- [ ] order upp
-    - [ ] jlcpcb or oshpark?
-
+- [ ] order from JLC
 
 
 ## Library
