@@ -12,11 +12,12 @@
 			"extensions": [
 				"ms-python.python",
 				"streetsidesoftware.code-spell-checker",
-				"github.vscode-github-actions"
+				"github.vscode-github-actions",
+				"mechatroner.rainbow-csv"
 			]
 		}
 	},
-	"postCreateCommand": "pip install mkdocs-material mkdocs-git-committers-plugin-2 mkdocs-git-revision-date-localized-plugin mkdocs-rss-plugin"
+	"postCreateCommand": "pip install mkdocs-material mkdocs-git-committers-plugin-2 mkdocs-git-revision-date-localized-plugin mkdocs-rss-plugin mkdocs-table-reader-plugin"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
