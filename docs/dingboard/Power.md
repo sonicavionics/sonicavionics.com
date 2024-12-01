@@ -1,9 +1,10 @@
-# Components
+# Power Module
 
+This is the power module. The files will be made public when the board is finished. I'm not maintaining a git repo for this because Altium 365 
+
+![alt text](powerdec1.png)
 
 ## Components
-
-### Power
 
 - [18650](https://old.reddit.com/r/18650masterrace/comments/qp21o8/buying_18650_batteries_start_here/) [charger](https://www.reddit.com/r/18650masterrace/comments/1gqk8iy/recommendations_for_a_battery_charger/) [datasheet](https://cdn.shopify.com/s/files/1/0481/9678/0183/files/samsung_25r_data_sheet.pdf?v=1605015771)
 
@@ -19,14 +20,4 @@
 
 - [PCIe Specs PDF](PCIe_specs.pdf) (page 92 and 136)
 
-### Compute
-
-- MCU: RP 2040, [Hardware design guide](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf), [datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
-
-- IMU: [ICM-42670](https://datasheet.octopart.com/ICM-42670-P-InvenSense-datasheet-155317655.pdf?src-supplier=Component+Distributors+Inc.)
-
-- Barometer: [LPS22HH](https://datasheet.ciiva.com/pdfs/VipMasterIC/IC/SGST/SGST-S-A0007383744/SGST-S-A0007383744-1.pdf?src-supplier=IHS+Markit)
-
-- Flash: [W25Q128JV](https://datasheet.ciiva.com/pdfs/VipMasterIC/IC/WBND/WBND-S-A0008390754/WBND-S-A0008390754-1.pdf?src-supplier=IHS+Markit)
-
-- LED: Power status indicator
+- [USBC](https://www.digikey.ca/en/models/9859662)
