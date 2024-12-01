@@ -5,7 +5,7 @@ This board is everything you would want in a passive data collection flight comp
 
 <figure markdown="span">
 
-  ![alt text](powerdec1.png){ width="600" }
+  ![alt text](power/0.0.1/powerdec1.png){ width="600" }
   <figcaption>December 1st</figcaption>
 
 </figure>
