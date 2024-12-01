@@ -24,3 +24,9 @@
 - Always go on texas instruments' website to check if there is a newer version of the chip
 
 - Better to use "point of load" regulation 
+
+
+- Will have a multiplexer and on each compute board.
+- 3.3v rail, 5v rail, and unregulated 12v rail
+- dingboard just has one regulated 3.3v rail
+- dongboard will have barrel jack on the power board for fast charging with a charging IC, it will also have a rp2040 and a voltage monitoring chip. The UCB-C port won't even have its power terminals connected. It will be just for programming. the barrel or QD will be for charging/power supply while the rocket is on the pad. The CAN bus will also have a QD on it.
