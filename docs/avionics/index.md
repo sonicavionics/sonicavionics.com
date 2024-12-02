@@ -5,8 +5,8 @@ Maybe I should rename this before it's too late. Actually it's already too late.
 
 <figure markdown="span">
 
-  ![alt text](modules/power/0.0.1/powerdec1.png){ width="600" }
-  <figcaption>December 1st: Power Board 0.0.1</figcaption>
+  ![alt text](modules/power/0.0.2/powerdec2.png){ width="600" }
+  <figcaption>December 1st: Power Board 0.0.2</figcaption>
 
 </figure>
 
