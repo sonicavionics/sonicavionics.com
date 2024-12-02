@@ -31,12 +31,12 @@ table, table * {
   user-select: none;
 }
 </style>
-
+docs/dingboard/index.md
 <table style="margin: 0 auto;">
   <tr>
     <td align="center">
       <img src="dingboard/power/0.0.1/powerdec1.png" width="300" /><br>
-      <a href="dingboard/index.md">dingboard</a>
+      <a href="dingboard/">dingboard</a>
     </td>
     <td align="center">
       <img src="img/comp.jpg" width="300" /><br>
