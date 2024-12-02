@@ -31,7 +31,6 @@ table, table * {
   user-select: none;
 }
 </style>
-docs/dingboard/index.md
 <table style="margin: 0 auto;">
   <tr>
     <td align="center">
