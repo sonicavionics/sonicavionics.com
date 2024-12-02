@@ -1,12 +1,12 @@
 # Dingboard
-<p style="font-size: 20px;">Simple flight computer that uses all the best practices. A good place to start.</p>
-This board is everything you would want in a passive data collection flight computer. Made for beginner model rockets. Basically a better version of [this](https://zeul.ca/projects/archive/template.php?day=6&month=6&year=2022&title=Calculating_the_Drag_Coefficient).
+<p style="font-size: 20px;">Avionics for the rocket</p>
+Maybe I should rename this before it's too late. Actually it's already too late.
 ******
 
 <figure markdown="span">
 
   ![alt text](power/0.0.1/powerdec1.png){ width="600" }
-  <figcaption>December 1st</figcaption>
+  <figcaption>December 1st: Power Board 0.0.1</figcaption>
 
 </figure>
 
@@ -92,13 +92,13 @@ The modular system I first noticed at LC 2023. Etes showed me their system. I no
 
 <figure markdown="span">
 
-  ![alt text](etes.bmp)
+  ![alt text](img/etes.bmp)
   <figcaption>ÉTS Anirniq</figcaption>
 
-  ![alt text](qret.jpg)
+  ![alt text](img/qret.jpg)
   <figcaption>QRET</figcaption>
 
-  ![alt text](oronos.bmp)
+  ![alt text](img/oronos.bmp)
   <figcaption>ORONOS</figcaption>
 
 </figure>
