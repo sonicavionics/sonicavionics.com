@@ -49,8 +49,8 @@ Primary Functional Requirements for dingboard:
     - [x] fuel gauge 
 - [ ] ~~add test points~~ there are enough exposed connections i can poke at
 - [X] add all LCSC designators
-- [ ] double check all connections
-- [ ] order from JLC
+- [x] double check all connections
+- [x] order from JLC
 
 
 ## Library
@@ -73,3 +73,34 @@ Good videos:
 - [ECAD-MCAD CoDesign with Altium 365 & SOLIDWORKS](https://www.youtube.com/watch?v=ciPQ3UqYVuc)
 
 - [Types of PCB Grounding Explained | PCB Layout](https://www.youtube.com/watch?v=19WnYPhNOH0)
+
+## Open source
+
+The student rocketry community is quite open to sharing ideas. This makes it easier for new student teams such as my own to build themselves up. The goal is to have a thriving space industry. The bottom line is that the more people we have that are knowledgeable in rocketry the better chance humanity has. This is largely the philosophy the rocketry teams I've spoken to have. This is one reason why MARS strives to open source everything we do. We stand on the shoulders of giants. It is unfeasible to donate to every single open source project you gain knowledge from, so the least we can do is to contribute back the the community by open sourcing everything we do. We have everything to gain from the success of others. Open source doesn't mean copying others stuff, and being a free loader. We strive to learn from and contribute to each step of the process.
+
+### Inspiration
+
+I've been inspired by rocketry teams such as [Waterloo](https://www.waterloorocketry.com/), [Queens](https://qret.ca/), [Etes](https://rockets.etsmtl.ca/), and [Oronos](https://oronospolytechnique.com/en.html). Waterloo is extremely helpful due to all of their documentation being public on their website. I've visited Queens a few times and they are always okay with sharing info. Without these two teams, MARS' success would be a lot harder. 
+
+#### CAN bus
+
+Every team settles on CAN bus. I have no experience with it, but I will be implementing it on dingboard. 
+
+#### Modularity with PCIe connectors
+
+The modular system I first noticed at LC 2023. Etes showed me their system. I noticed Queens also did it, then I noticed Oronos did it. It seems like an obvious place to start, I mean it makes things really easy and elegant. The downside is that its not as structurally robust as Waterloos RocketCAN system.
+
+<figure markdown="span">
+
+  ![alt text](etes.bmp)
+  <figcaption>ÉTS Anirniq</figcaption>
+
+  ![alt text](qret.jpg)
+  <figcaption>QRET</figcaption>
+
+  ![alt text](oronos.bmp)
+  <figcaption>ORONOS</figcaption>
+
+</figure>
+
+
