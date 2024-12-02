@@ -20,7 +20,7 @@ Comment,Designator,Footprint,LCSC Part Number,JLCPCB Basic?
 Battery Monitor,U4,SON-12-EP(2.5x4),C473397,no
 Battery Protection IC,U1,WSON (6),C183096,no
 Buck-Boost,U5,SOT-583,C5219190,no
-Charger/Switcher,U2,VQFN (16) ,C6514,no
+Charger/Switcher,U2,VQFN (16) ,C140288,no
 FET,"Q1, Q2",VSON-8(3.3x3.3),C2861720,no
 JST Connector,P1,"SMD,P=2mm",C295747,no
 [PCIe Gold Fingers](docs/dingboard/power/PCIe_specs.pdf),J2,n/a,n/a,n/a
