@@ -18,6 +18,7 @@ This will be the first board of many. The successor to dingboard will be a CAN e
 Primary Functional Requirements for dingboard:
 
 - Easy to operate and understand
+- Don't be janky
 - Fully open source
 - Assemblable by JLCPCB PCBA
 - On board charging and automatic power switching using simple chip
