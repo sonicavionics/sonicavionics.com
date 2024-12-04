@@ -4,3 +4,6 @@ This board will be in charge of checking continuity, and arming the ejection cha
 
 There will be remove before flight tags in the form of banana connectors with a tag on it 
 ![alt text](mapmoxje.bmp)
+
+The above will disable a relay by shorting the enable pin.
+
