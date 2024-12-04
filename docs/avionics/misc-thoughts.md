@@ -32,3 +32,8 @@
 - dongboard will have barrel jack on the power board for fast charging with a charging IC, it will also have a rp2040 and a voltage monitoring chip. The UCB-C port won't even have its power terminals connected. It will be just for programming. the barrel or QD will be for charging/power supply while the rocket is on the pad. The CAN bus will also have a QD on it.
 
 - When I start the MCU I'm gonna say eff Altium 365 and just download everything and re initialize my repo. I'm actually going to make a release for the 0.0.1 power board it will have schematics pictures and the BOM. It's important to keep things open source. It's so easy for things to turn into slop otherwise.
+
+- Outboard physical connections
+    - remove before flight banana pins
+    - power/charging 
+    - for solid: ignition 
