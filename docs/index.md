@@ -34,7 +34,7 @@ table, table * {
 <table style="margin: 0 auto;">
   <tr>
     <td align="center">
-      <img src="avionics/modules/power/0.0.1/powerdec1.png" width="300" /><br>
+      <img src="avionics/modules/power/0.0.2/powerdec1.png" width="300" /><br>
       <a href="avionics/">dingboard</a>
     </td>
     <td align="center">
