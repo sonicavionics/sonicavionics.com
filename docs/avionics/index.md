@@ -1,4 +1,5 @@
 # Dingboard
+
 <p style="font-size: 20px;">Avionics for the rocket</p>
 Maybe I should rename this before it's too late. Actually it's already too late.
 ******
@@ -10,8 +11,8 @@ Maybe I should rename this before it's too late. Actually it's already too late.
 
 </figure>
 
-
 ## Initial Requirements and Design Goals
+
 The primary goal of dingboard is to enable my personal learning.
 This will be the first board of many. The successor to dingboard will be a CAN enabled system in a 4-inch diameter form factor which will hopefully be launched this summer.
 
@@ -27,40 +28,40 @@ Primary Functional Requirements for dingboard:
 - Altium and solidworks integration
 - Utilize all known best practices to enable scalability
 - Components:
-    - Barometer
-    - Accelerometer
-    - Thermistor for battery protection
+  - Barometer
+  - Accelerometer
+  - Thermistor for battery protection
 - Use entire safe range of battery (use a buck boost)
 - Why not go with an ESP?
 
 [Here's the link](https://github.com/zeulewan/dingboard) to the Altium project repo
 
-
-## Checklist
+## C hecklist
 
 - [x] Altium with GitHub
 - [x] Begin PCB V1
 - [x] Complete board schematic
 - [x] solid works and altium
-    - [ ] ~~set board dimensions~~ Gonna set the board dimensions after I get the first iteration of the power board ordered
+  - [ ] ~~set board dimensions~~ Gonna set the board dimensions after I get the first iteration of the power board ordered
 - [x] get proper PCIe dimensions
 - [ ] ~~add power switch for battery~~ Forget it i'll just unplug it for this version
 - [x] finish routing
-    - [x] buck boost
-    - [x] fuel gauge 
+  - [x] buck boost
+  - [x] fuel gauge
 - [ ] ~~add test points~~ there are enough exposed connections i can poke at
 - [X] add all LCSC designators
 - [x] double check all connections
 - [x] order from JLC
 
-
 ## Library
+
 I started using the [Celestial Altium Library](https://altiumlibrary.com/).
 [Install video](https://www.youtube.com/watch?v=lBvwvbw83iY)
 
 I finally found a [PCIe x1 footprint](https://www.snapeda.com/parts/PCIE-036-02-S-D-EMS3/Samtec%20Inc./view-part/). edit: should have just made it from scratch. That footprint was garbage, had to redo it.
 
 ## Video references
+
 Good videos:
 
 - [Altium Designer Quick-Start Tutorial with Phil Salmony from Phil's Lab](https://www.youtube.com/watch?v=YTGzncKU5RY)
@@ -69,7 +70,7 @@ Good videos:
 
 - [How To Keep Components Connected When Moving | Altium Designer](https://www.youtube.com/watch?v=wfML_NWr2sI)
 
-- [Microcontroller-Based Hardware Design With Altium Designer - #3 USB C ](https://www.youtube.com/watch?v=t67KcQHhIC4&list=PL3aaAq2OJU5EsYtNwTPHNO3RHNJN34FbO&index=16)
+- [Microcontroller-Based Hardware Design With Altium Designer - #3 USB C](https://www.youtube.com/watch?v=t67KcQHhIC4&list=PL3aaAq2OJU5EsYtNwTPHNO3RHNJN34FbO&index=16)
 
 - [ECAD-MCAD CoDesign with Altium 365 & SOLIDWORKS](https://www.youtube.com/watch?v=ciPQ3UqYVuc)
 
@@ -81,11 +82,11 @@ The student rocketry community is quite open to sharing ideas. This makes it eas
 
 ### Inspiration
 
-I've been inspired by rocketry teams such as [Waterloo](https://www.waterloorocketry.com/), [Queens](https://qret.ca/), [Etes](https://rockets.etsmtl.ca/), and [Oronos](https://oronospolytechnique.com/en.html). Waterloo is extremely helpful due to all of their documentation being public on their website. I've visited Queens a few times and they are always okay with sharing info. Without these two teams, MARS' success would be a lot harder. 
+I've been inspired by rocketry teams such as [Waterloo](https://www.waterloorocketry.com/), [Queens](https://qret.ca/), [Etes](https://rockets.etsmtl.ca/), and [Oronos](https://oronospolytechnique.com/en.html). Waterloo is extremely helpful due to all of their documentation being public on their website. I've visited Queens a few times and they are always okay with sharing info. Without these two teams, MARS' success would be a lot harder.
 
 #### CAN bus
 
-Every team settles on CAN bus. I have no experience with it, but I will be implementing it on dingboard. 
+Every team settles on CAN bus. I have no experience with it, but I will be implementing it on dingboard.
 
 #### Modularity with PCIe connectors
 
@@ -104,4 +105,6 @@ The modular system I first noticed at LC 2023. Etes showed me their system. I no
 
 </figure>
 
+## Battery
 
+For the SRAD board we will be using a SRAD battery back and the opposite is true for the COTS stuff. For the first launch it will be a 2s 2p pack inspired by [this video.](https://www.youtube.com/watch?v=3dD5KmM8ciU)
