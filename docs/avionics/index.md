@@ -11,7 +11,7 @@ Maybe I should rename this before it's too late. Actually it's already too late.
 
 
   ![alt text](cad/1.png){ width="600" }
-  <figcaption>Avionics bay initial concept</figcaption>
+  <figcaption>December 4th: Avionics bay initial concept</figcaption>
 
 
 </figure>
