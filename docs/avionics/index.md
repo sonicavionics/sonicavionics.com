@@ -27,21 +27,11 @@ Primary Functional Requirements for dingboard:
 - Don't be janky
 - Fully open source
 - Assemblable by JLCPCB PCBA
-- On board charging and automatic power switching using simple chip
-- Charging status indicators
-- MCU status indicator, sleep, data collection etc.
-- Altium and solidworks integration
 - Utilize all known best practices to enable scalability
-- Components:
-  - Barometer
-  - Accelerometer
-  - Thermistor for battery protection
-- Use entire safe range of battery (use a buck boost)
-- Why not go with an ESP?
 
-[Here's the link](https://github.com/zeulewan/dingboard) to the Altium project repo
+[Here's the link](https://github.com/zeulewan/dingboard) to the project repo with the Solidworks and Altium files.
 
-## C hecklist
+## Checklist (for power 0.0.2)
 
 - [x] Altium with GitHub
 - [x] Begin PCB V1
