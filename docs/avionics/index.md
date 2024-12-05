@@ -9,6 +9,11 @@ Maybe I should rename this before it's too late. Actually it's already too late.
   ![alt text](modules/power/0.0.2/powerdec2.png){ width="600" }
   <figcaption>December 1st: Power Board 0.0.2</figcaption>
 
+
+  ![alt text](cad/1.png){ width="600" }
+  <figcaption>Avionics bay initial concept</figcaption>
+
+
 </figure>
 
 ## Initial Requirements and Design Goals
