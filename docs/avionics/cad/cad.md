@@ -6,7 +6,8 @@ Version 1:
 ![alt text](1.png)
 
 Version 2:
-![alt text](2.png)
+
+![alt text](2_2.png)
 
 There's just barely enough space to fit the RFD900 on a module. so why not?
 
