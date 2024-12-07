@@ -18,3 +18,7 @@ The lower and upper bulk head should be the exact same. The inner diameter betwe
 [Tube for solid](https://www.allrockets.ca/Build/Airframes/Phenolic/40) O.D.: 4.024. I.D.: 3.9, Thickness: 0.062 
 
 Liquid
+
+## rack
+
+The rack will use [these threaded inserts](https://www.amazon.ca/gp/product/B0CNRSJ1B2?psc=1)
