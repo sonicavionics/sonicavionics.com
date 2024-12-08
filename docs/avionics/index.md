@@ -10,8 +10,8 @@ Maybe I should rename this before it's too late. Actually it's already too late.
   <figcaption>December 1st: Power Board 0.0.2</figcaption>
 
 
-  ![alt text](cad/2_2.png){ width="600" }
-  <figcaption>December 6th: Avionics bay</figcaption>
+  ![alt text](cad/2_3_front.png){ width="600" }
+  <figcaption>December 7th: Avionics bay</figcaption>
 
 
 </figure>
