@@ -20,16 +20,22 @@ Gotta pick which software to use. Most teams use KiCAD and Solidworks.
 - There seems to be a much better built in library. Well it has PCIe footprints.
 - I don't have to sign in and click roam on the licenses all the time. 
 - There's a plentiful plugs ins repo. 
-- It's faster.
+- It's way way faster
 - Dark mode for schematic editor.
 - FOSS
 - Altium's manufacturer part search is really not that fast, and for whatever reason the BOM is the slowest thing in the world. There's few companies that would use the build in supply chain shit, it just slow things down and I didn't see a way to disable it without disabling the manufacturer part search.
+- Many different repos for all the manufactures design rules. 
+- Exporting is way faster with the JLCPCB plug in
+- The measurement tool is slightly better
 
 ### Cons
 
 - The UI is somewhat less professional looking. (who cares)
 - KiCAD doesn't have dark mode on windows. Altium's UI is dark by default, but I don't think you can add themes for the actual schematic editor. So that's 
 - Altium actually has better git integration surprisingly.
+- You can only have one project open per instance. ```open -n /Applications/KiCad/kicad.app```
+- I've experienced more crashes than Altium. Running tally of crashes: 7
+- Sometimes the footprints don't show up in the previewer windows when selecting a chip
 
 ## Solidworks vs OnShape
 
