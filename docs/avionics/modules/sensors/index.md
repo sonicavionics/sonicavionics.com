@@ -11,3 +11,7 @@
 - LED: Power status indicator
 
 - GPS [blox m10q](https://content.u-blox.com/sites/default/files/documents/SAM-M10Q_DataSheet_UBX-22013293.pdf)
+
+Current KiCad bom
+
+{{ read_csv('0.0.2/bom.csv') }}
