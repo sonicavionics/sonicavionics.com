@@ -14,4 +14,4 @@
 
 Current KiCad bom
 
-{{ read_csv('0.0.2/bom.csv') }}
+{{ read_csv('bom.csv') }}
