@@ -8,20 +8,19 @@ Maybe I should rename this before it's too late. Actually it's already too late.
 
   ![alt text](modules/power/0.0.2/powerdec2.png){ width="600" }
   <figcaption>December 1st: Power Board 0.0.2</figcaption>
+</figure>
 
-
+<figure markdown="span">
   ![alt text](cad/2_3_front.png){ width="600" }
   <figcaption>December 7th: Avionics bay</figcaption>
-
-
 </figure>
 
 ## Initial Requirements and Design Goals
 
 The primary goal of dingboard is to enable my personal learning.
-This will be the first board of many. The successor to dingboard will be a CAN enabled system in a 4-inch diameter form factor which will hopefully be launched this summer.
+This will be the first board of many. This wil be a CAN enabled system in a 4-inch diameter form factor.
 
-Primary Functional Requirements for dingboard:
+### Primary Functional Requirements for dingboard:
 
 - Easy to operate and understand
 - Don't be janky
@@ -29,31 +28,21 @@ Primary Functional Requirements for dingboard:
 - Assemblable by JLCPCB PCBA
 - Utilize all known best practices to enable scalability
 
+### Secondary Functional Requirements for dingboard:
+
+- Battery charger with quick disconnect using magnetic connector.
+- Remove before flight banana pins for ejection charges
+- Point of load regulation
+
 [Here's the link](https://github.com/zeulewan/dingboard) to the project repo with the Solidworks and Altium files.
 
-## Checklist (for power 0.0.2)
+## Cool things for the next board
 
-- [x] Altium with GitHub
-- [x] Begin PCB V1
-- [x] Complete board schematic
-- [x] solid works and altium
-  - [ ] ~~set board dimensions~~ Gonna set the board dimensions after I get the first iteration of the power board ordered
-- [x] get proper PCIe dimensions
-- [ ] ~~add power switch for battery~~ Forget it i'll just unplug it for this version
-- [x] finish routing
-  - [x] buck boost
-  - [x] fuel gauge
-- [ ] ~~add test points~~ there are enough exposed connections i can poke at
-- [X] add all LCSC designators
-- [x] double check all connections
-- [x] order from JLC
+- USB multiplexer controlled by something like a raspberry pi zero. The backplate will have the MUX. There will also be the ability to digitally reboot things. We can remove all usb ports except for on the rp zero.
+- Ethernet
+- 2.4 GHz for camera transmission
 
-## Library
-
-I started using the [Celestial Altium Library](https://altiumlibrary.com/).
-[Install video](https://www.youtube.com/watch?v=lBvwvbw83iY)
-
-I finally found a [PCIe x1 footprint](https://www.snapeda.com/parts/PCIE-036-02-S-D-EMS3/Samtec%20Inc./view-part/). edit: should have just made it from scratch. That footprint was garbage, had to redo it.
+For now we still have to figure out CAN
 
 ## Video references
 
@@ -70,6 +59,8 @@ Good videos:
 - [ECAD-MCAD CoDesign with Altium 365 & SOLIDWORKS](https://www.youtube.com/watch?v=ciPQ3UqYVuc)
 
 - [Types of PCB Grounding Explained | PCB Layout](https://www.youtube.com/watch?v=19WnYPhNOH0)
+
+- [Impedance Explained.](https://www.youtube.com/watch?v=3QtpaICzSNc)
 
 ## Open source
 
