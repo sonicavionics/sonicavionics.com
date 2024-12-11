@@ -36,3 +36,5 @@
   - remove before flight banana pins
   - power/charging
   - for solid: ignition
+
+All boards are going to have to be 4 layer
