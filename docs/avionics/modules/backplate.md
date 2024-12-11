@@ -1,5 +1,5 @@
 # Backplate
-![alt text](1.png){ width="300" }
+![alt text](backplate/1.png){ width="300" }
 
 ## Characteristic Impedance
 
@@ -11,13 +11,15 @@ GND<br>
 Power<br>
 Signal
 
-![alt text](2.png){ width="400" }
+![alt text](backplate/2.png){ width="400" }
 
 ### Calculating Impedance 
 
 #### By hand
 
-Gonna come back to this
+[Gonna come back to this](https://www.youtube.com/watch?v=0fteCxn5XXA)
+
+[discussion on stack exchange ](https://electronics.stackexchange.com/questions/516824/can-bus-on-pcb-traces-instead-of-twisted-pair-cable-points-to-consider)
 
 <!-- First capacitance:
 
@@ -33,6 +35,7 @@ $$ -->
 
 #### JLCPCB Calculator
 
+[Calculator](https://jlcpcb.com/pcb-impedance-calculator)
 If around 0.1148mm is right, then I'll be able to route between the PCIe pins just fine. 
 
 ![alt text](image.png)
@@ -53,4 +56,10 @@ step file from [this website](https://www.3dcontentcentral.com/download-model.as
 
 [Critical Spacing of CAN Bus Connections](https://www.ti.com/lit/an/slla279a/slla279a.pdf)
 
-[good video](https://www.youtube.com/watch?v=0fteCxn5XXA)
+### Videos
+
+- [KiCad Controlled Impedance Traces (e.g. 50Ω) - Phil's Lab #3](https://www.youtube.com/watch?v=0fteCxn5XXA)
+- [What Are Differential Pairs? ](https://www.youtube.com/watch?v=7DF25ohH8v4)
+- [When Does a Trace Act Like a Transmission Line?](https://www.youtube.com/watch?v=UhTxEaw-Mck)
+
+
