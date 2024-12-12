@@ -34,7 +34,7 @@ Gotta pick which software to use. Most teams use KiCAD and Solidworks.
 - KiCAD doesn't have dark mode on windows. Altium's UI is dark by default, but I don't think you can add themes for the actual schematic editor. So that's 
 - Altium actually has better git integration surprisingly.
 - You can only have one project open per instance. ```open -n /Applications/KiCad/kicad.app```
-- I've experienced more crashes than Altium. Running tally of crashes: 7
+- I've experienced more crashes than Altium. Running tally of crashes: 10
 - Sometimes the footprints don't show up in the previewer windows when selecting a chip
 
 ## Solidworks vs OnShape
