@@ -51,6 +51,11 @@ Need temperature and pressure and high sample rate.
 
 [BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/) Cheaper than the BMP390, slightly less accurate though. 200hz sample rate. 
 
+#### Payload Module
+
+We might add a payload module with a bunch of different sensors and the "experiment" will be to see the discrepancies in their readings.
+
+
 ### 0201, 0402 or 0603?
 Should I use 0603, 0402 or 0201?
 If I go with 0603 we can solder it pretty easily. 0201 its not happening, and 0402 is harder. Those components aren't even the expensive ones to have JLCPCB assemble for you. Actually 0201 is more expensive I think. Okay 0402 it is then. 
