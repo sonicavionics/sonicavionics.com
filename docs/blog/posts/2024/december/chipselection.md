@@ -43,7 +43,9 @@ Using this in Highest Voltage Operation (VCOMP) mode with the battery as the mai
 
 Need IMU with accelerometer, gyroscope and magnetometer, high sample rate, some vibration resistance, onboard sensor fusion and on JLC.
 
-[BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/) This chip is very simple and meets all the requirements, it has a slightly on the low end sample rate of 100Hz but thats all right. I considered a bunch of other chips, but this one has the extra advantage of simplicity. You can't run your own code on it but that's fine. $14 though rip.
+[BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/) This chip is very simple and meets all the requirements, it has a slightly on the low end sample rate of 100Hz but thats all right. It also only does +-16 Gs. I considered a bunch of other chips, but this one has the extra advantage of simplicity. You can't run your own code on it but that's fine. 
+
+So it's not available for economic assembly with JLC. It's also like 20$ on digikey. It's also hard to solder. Two options: use another chip or get a adafruit breakout board so we can reuse the chip. Note to self: make sure the chips are available with economic assembly
 
 #### Pressure
 
@@ -60,6 +62,7 @@ We might add a payload module with a bunch of different sensors and the "experim
 Should I use 0603, 0402 or 0201?
 If I go with 0603 we can solder it pretty easily. 0201 its not happening, and 0402 is harder. Those components aren't even the expensive ones to have JLCPCB assemble for you. Actually 0201 is more expensive I think. Okay 0402 it is then. 
 
+Okay there's not that many JLC basic resistors so I'll use 0603 and hand solder those ones.
 
 ### Conclusion
 It's not a good idea to spend too long on chip selection, better to just start making shit and find out along the way. I'll probably regret some of these choices, but that is part of learning.
