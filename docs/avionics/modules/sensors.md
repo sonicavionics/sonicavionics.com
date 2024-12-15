@@ -1,17 +1,41 @@
 # Sensor Module
 
-MCU: RP 2040, [Hardware design guide](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf), [datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
+## Chips
+ 
 
-Flash: [W25Q128JV](https://datasheet.ciiva.com/pdfs/VipMasterIC/IC/WBND/WBND-S-A0008390754/WBND-S-A0008390754-1.pdf?src-supplier=IHS+Markit)
+### MCU
 
-IMU: [BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
+[RP 2040](https://www.raspberrypi.com/products/rp2040/)
 
-The RESET pin is connected to a GPIO port so it needs to be brought 
+#### Flash
 
-Altimeter: [BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/)
+[W25Q128JVP](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q128JV)
 
-Power multiplexer: [TPS2121](https://www.ti.com/lit/ds/symlink/tps2121.pdf?ts=1733915332904&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS2121#SLVSEA31194)
-Using it in Highest Voltage Operation (VCOMP) mode with the battery as the main and USB as secondary  
+#### Crystal
+
+[ABM8-272-T3](https://www.digikey.ca/en/products/detail/abracon-llc/ABM8-272-T3/22472366)
+
+### USB-C 
+
+[USB-C port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018)
+
+### Regulator
+
+[LMR51430YFDDCR](https://jlcpcb.com/partdetail/TexasInstruments-LMR51430YFDDCR/C5219261)
+
+### Power MUX
+
+[TPS2121RUXR](https://jlcpcb.com/partdetail/TexasInstruments-TPS2121RUXR/C485916)
+
+### Sensors
+
+#### IMU
+
+[BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
+
+#### Altimeter
+
+[BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/)
 
 ## USB Impedance matching:
 

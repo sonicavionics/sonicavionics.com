@@ -38,7 +38,7 @@ $$ -->
 [Calculator](https://jlcpcb.com/pcb-impedance-calculator)
 If around 0.1148mm is right, then I'll be able to route between the PCIe pins just fine. 
 
-![alt text](image.png)
+![alt text](backplate/image.png)
 
 ## Links
 
