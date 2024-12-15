@@ -19,9 +19,13 @@
 
 [USB-C port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018)
 
-### Regulator
+### 3.3v regulator
 
-[LMR51430YFDDCR](https://jlcpcb.com/partdetail/TexasInstruments-LMR51430YFDDCR/C5219261)
+[LMR51430YFDDCR](https://www.ti.com/product/LMR51430/part-details/LMR51430YFDDCR)
+
+### 5v buck-boost
+
+[TPS630701](https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1734177677058)
 
 ### Power MUX
 
