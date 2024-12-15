@@ -8,7 +8,7 @@ categories:
   - dingboard
 ---
 
-Here is the post outlining the reasons for picking the chips on dingboard.This post will be updated in the future with reasons why or why not to pick these chips. Requirement for all chips was being available on JLC. 
+Here is the post outlining the reasons for picking the chips. This post will be updated in the future with reasons why or why not to pick these chips. Requirement for all chips was being available on JLC. 
 
 ### MCU
 
@@ -28,9 +28,15 @@ ESP chips get kind of expensive, although they have some kind of CAN and etherne
 
 [USB-C port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018) Easy choice; pretty much only one on JLCPCB at the time
 
-### Regulator
+### Power
+
+#### 3.3v Regulator
 
 [LMR51430YFDDCR](https://jlcpcb.com/partdetail/TexasInstruments-LMR51430YFDDCR/C5219261) Constant, 1kHz switching reg, wide voltage input range, goes to 3.3v, cheap
+
+#### 5v buck-boost
+
+[TPS630701](https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1734177677058)
 
 ### Power MUX
 
