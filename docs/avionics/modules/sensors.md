@@ -1,8 +1,9 @@
 # Sensor Module
 
+[Current Schematic](https://github.com/zeulewan/dingboard/blob/main/dingboard_kicad/sensors/sensors.pdf)
+
 ## Chips
  
-
 ### MCU
 
 [RP 2040](https://www.raspberrypi.com/products/rp2040/)
@@ -64,5 +65,8 @@ Since we're using a 4 layer board, I'll use the [JLC impedance calculator](https
 
 
 Current KiCad bom
+
+
+https://github.com/zeulewan/dingboard/blob/main/dingboard_kicad/sensors/bom.csv
 
 {{ read_csv('sensors/bom.csv') }}
