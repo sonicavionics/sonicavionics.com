@@ -3,48 +3,38 @@
 [Current Schematic](https://github.com/zeulewan/dingboard/blob/main/dingboard_kicad/sensors/sensors.pdf)
 
 ## Chips
- 
-### MCU
 
-[RP 2040](https://www.raspberrypi.com/products/rp2040/)
+- MCU
 
-#### Flash
+    - MCU [RP 2040](https://www.raspberrypi.com/products/rp2040/)
 
-[W25Q128JVP](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q128JV)
+    - Flash [W25Q128JVP](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q128JV)
 
-#### Crystal
+    - MCU Crystal [ABM8-272-T3](https://www.digikey.ca/en/products/detail/abracon-llc/ABM8-272-T3/22472366)
 
-[ABM8-272-T3](https://www.digikey.ca/en/products/detail/abracon-llc/ABM8-272-T3/22472366)
+- USB-C [JLC USB-C port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018)
 
-### USB-C 
+- Regulators 
 
-[USB-C port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018)
+    - 3.3v buck [LMR51430YFDDCR](https://www.ti.com/product/LMR51430/part-details/LMR51430YFDDCR)
 
-### 3.3v regulator
+    - 5v buck-boost for CAN chip [TPS630701](https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1734177677058)
 
-[LMR51430YFDDCR](https://www.ti.com/product/LMR51430/part-details/LMR51430YFDDCR)
+- Power MUX [TPS2121RUXR](https://jlcpcb.com/partdetail/TexasInstruments-TPS2121RUXR/C485916)
 
-### 5v buck-boost
+- Sensors
 
-[TPS630701](https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1734177677058)
+    - IMU [BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
 
-### Power MUX
+        - IMU Crystal [ABM8-272-T3](https://www.digikey.ca/en/products/detail/abracon-llc/ABM8-272-T3/22472366)
 
-[TPS2121RUXR](https://jlcpcb.com/partdetail/TexasInstruments-TPS2121RUXR/C485916)
+    - Altimeter [BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/)
 
-### Sensors
-
-#### IMU
-
-[BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
-
-#### Altimeter
-
-[BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/)
+- CAN [Controller and transceiver](https://www.digikey.ca/en/products/detail/microchip-technology/MCP25625T-E-ML/4860099)
 
 ## USB Impedance matching:
 
-From the RP2040 hardware design guide:
+From the RP2040 hardware design guide
 ```
 Even though RP2040 is limited to full speed data rate (12Mbps), we should try and makes sure that the characteristic
 impedance of the transmission lines (the copper tracks connecting the chip to the connector) are close to the USB
@@ -63,9 +53,7 @@ likely to work in many applications, but it’s probably not going to be complia
 
 Since we're using a 4 layer board, I'll use the [JLC impedance calculator](https://jlcpcb.com/pcb-impedance-calculator) to get the 90Ω
 
-
 Current KiCad bom
-
 
 https://github.com/zeulewan/dingboard/blob/main/dingboard_kicad/sensors/bom.csv
 
