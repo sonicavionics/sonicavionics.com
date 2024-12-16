@@ -20,7 +20,7 @@
 
     - 5v buck-boost for CAN chip [TPS630701](https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1734177677058)
 
-- Power MUX [TPS2121RUXR](https://jlcpcb.com/partdetail/TexasInstruments-TPS2121RUXR/C485916)
+- Power MUX [TPS2121RUXR](https://www.ti.com/product/TPS2121/part-details/TPS2121RUXR)
 
 - Sensors
 
