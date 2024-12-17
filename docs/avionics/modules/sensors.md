@@ -1,4 +1,4 @@
-# Sensor Module
+# Sensors
 
 [Current Schematic](https://github.com/zeulewan/dingboard/blob/main/dingboard_kicad/sensors/sensors.pdf)
 

@@ -1,4 +1,4 @@
-# Recovery Module
+# Recovery
 
 This board will be in charge of checking continuity, and arming the ejection charges. it will report on tall this over the CAN network. It will also have it's own barometer for independency. We will be able to turn on or off automatic ejection. If the rocket target altitude is lower than expected, the sensor board will alert us, and the 
 
