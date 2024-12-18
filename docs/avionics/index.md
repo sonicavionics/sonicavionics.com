@@ -36,11 +36,12 @@ This will be the first board of many. This wil be a CAN enabled system in a 4-in
 
 [Here's the link](https://github.com/zeulewan/dingboard) to the project repo with the Solidworks and Altium files.
 
-## Cool things for the next board
+## Things for the next board
 
 - USB multiplexer controlled by something like a raspberry pi zero. The backplate will have the MUX. There will also be the ability to digitally reboot things. We can remove all usb ports except for on the rp zero.
 - Ethernet
 - 2.4 GHz for camera transmission
+- Usb protection IC
 
 For now we still have to figure out CAN
 
