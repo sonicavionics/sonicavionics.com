@@ -26,7 +26,7 @@
 
     - IMU [BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
 
-        - IMU Crystal [ABM8-272-T3](https://www.digikey.ca/en/products/detail/abracon-llc/ABM8-272-T3/22472366)
+        - IMU Crystal [ABS07-32.768KHZ-T](https://www.digikey.ca/en/products/detail/abracon-llc/ABS07-32-768KHZ-T/1236858)
 
     - Altimeter [BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/)
 
