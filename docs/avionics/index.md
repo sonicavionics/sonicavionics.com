@@ -5,9 +5,13 @@ Maybe I should rename this before it's too late. Actually it's already too late.
 ******
 
 <figure markdown="span">
-
   ![alt text](modules/power/0_0_2/powerdec2.png){ width="600" }
   <figcaption>December 1st: Power Board 0.0.2</figcaption>
+</figure>
+
+<figure markdown="span">
+  ![alt text](modules/power/0_0_2/dec19_3.JPG){ width="600" }
+  <figcaption>December 19st: Power Board 0.0.2</figcaption>
 </figure>
 
 <figure markdown="span">
