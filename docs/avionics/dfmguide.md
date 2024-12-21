@@ -7,21 +7,21 @@
 
 JLCPCB is owned by LCSC, which is a large component distributor. An LCSC Part Number is a unique identifier for a given component. They will start with a “C” follow by several digits (e.g. C6186, C51230, etc.). We add these part numbers to our KiCAD schematics for parts we want assembled, and then can automatically generate a BOM (bill of material) that JLCPCB can accept. You can find these numbers on the JLCPCB page.
 
-![Untitled](1.png)
+![Untitled](dfmguide/1.png)
 
 ## JLCPCB Basic vs. Extended Parts
 
 When searching for components through JLCPCB, they are labelled either “Basic” or “Extended”. Basic components are ones that are used very frequently, and are thus loaded into the pick-and-place machines already. Extended components are less commonly used, and thus require additional effort to load them into machines. This extra effort translates to an **additional fixed cost of ~$4CAD** (”Feeder Loading fee”) for every Extended part. See [this page](https://jlcpcb.com/help/article/98-PCB-Assembly-FAQs) for more pricing details. We want to use Basic parts wherever possible. (Note: Even when currency is set to CAD, the prices on JLCPCB’s part inventory seem to be USD).
 
-![Untitled](2.png)
+![Untitled](dfmguide/2.png)
 
 ## JLCPCB Economic vs. Standard PCB Assembly
 
 When asking JLCPCB to solder components for us, they have two tiers; Economic and Standard. Economic comes with many benefits, largely the reduced price & option for Basic parts being free. Standard PCBA gives more options, but is more expensive (~$25 extra) and requires a loading fee for ALL components, thus resulting in a much higher price. More advanced features, such as very small components or gold-plated edge connectors, require Standard PCBA. See [this page for more info about JLCPCB’s Manufacturing and Assembly Capabilities](https://jlcpcb.com/capabilities/pcb-assembly-capabilities). We want to use the Economic option whenever possible. If “Economic” is selected, any “Standard Only” components will be highlighted after uploading the BOM during the order process. You can also use JLCPCB’s “[BOM Tool](https://jlcpcb.com/parts/bom-tool/)” to evaluate current part selection.
 
-![Untitled](3.png)
+![Untitled](dfmguide/3.png)
 
-![Untitled](4.png)
+![Untitled](dfmguide/4.png)
 
 ## Passive SMD Component Sizes
 
@@ -31,9 +31,9 @@ We very commonly use the **Imperial** naming scheme when referring to passive SM
 
 We will be trying to avoid 0402 components where possible, to make assembly & repairs easier. 0603 and 0804 are our go-to sizes. Ideally we want to select components that JLCPCB stocks and avoid extended parts where possible.
 
-![Untitled](5.png)
+![Untitled](dfmguide/5.png)
 
-![Untitled](6.png)
+![Untitled](dfmguide/6.png)
 
 ## JLCPCB Generic SMD Components (WIP)
 
