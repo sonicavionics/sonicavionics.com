@@ -1,12 +1,12 @@
-site_name: zeuldocs
+site_name: Sonic Avionics
 
-site_url: https://zeuldocs.com/
-site_description: Zeul's documentation
-site_author: Zeul
-repo_url: https://github.com/zeulewan/zeuldocs
+site_url: https://sonicavionics.com/
+site_description: Sonic Avionics
+site_author: Sonic Avionics
+repo_url: https://github.com/sonicavionics/sonicavionics.com
 edit_uri: edit/main/docs/
 
-#copyright: mars.group@torontomu.ca
+copyright: zeul@mordasiewicz.com
 
 theme:
   name: material
@@ -57,7 +57,7 @@ plugins:
       enable_creation_date: true
       timezone: America/Toronto
   #- git-committers:
-  #    repository: marstmu/marswebsite
+  #    repository: sonicavionics/sonicavionics.com
   #   token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - blog:
       authors: true
@@ -95,14 +95,6 @@ markdown_extensions:
 
 extra:
   generator: true
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/zeulewan
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/zeulewan
-    - icon: fontawesome/solid/shuttle-space
-      link: https://zeul.ca
-
 
 extra_javascript:
   # - javascripts/mathjax.js
