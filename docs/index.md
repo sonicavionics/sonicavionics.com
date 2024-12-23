@@ -6,14 +6,14 @@ hide:
 ---
 # Home
 
-This is Zeul's other website for his other documentation and other blog
+This is the Sonic Avionics documentation and blog.
 
-<figure markdown="span">
+<!-- <figure markdown="span">
 
   ![alt text](img/IMG_0629.jpg){ width="300" }
   <figcaption>Zeul</figcaption>
 
-</figure>
+</figure> -->
 
 
 
@@ -35,17 +35,9 @@ table, table * {
   <tr>
     <td align="center">
       <img src="avionics/modules/power/0_0_2/powerdec1.png" width="300" /><br>
-      <a href="avionics/">dingboard</a>
+      <a href="avionics/">Power Module 0.0.2</a>
     </td>
-    <td align="center">
-      <img src="img/comp.jpg" width="300" /><br>
-      <a href="https://zeul.ca/projects/archive/template.php?day=7&month=6&year=2024&title=6502_8_bit_computer">8-bit computer</a>
-    </td>
-    <td align="center">
-      <img src="img/marscomp.jpg" width="400" /><br>
-      <a href="https://marstmu.com/">MARS flight computers</a>
-    </td>
-  </tr>
+
 </table>
 
 </div>
