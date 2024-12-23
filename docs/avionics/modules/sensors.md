@@ -1,6 +1,7 @@
 # Sensors
 
-[Current Schematic](https://github.com/sonicavionics/4in/blob/main/dingboard_kicad/sensors/sensors.pdf)
+
+![alt text](sensors/sch.png)
 
 ## Chips
 
