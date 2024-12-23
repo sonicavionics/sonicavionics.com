@@ -33,50 +33,52 @@ We will be trying to avoid 0402 components where possible, to make assembly & re
 
 ![Untitled](dfmguide/5.png)
 
-![Untitled](dfmguide/6.png)
+## JLC Basic Components
 
-## JLCPCB Generic SMD Components (WIP)
+I don't believe there are any basic inductors.
 
-| **Value** | **Type** | **Footprint** | **Link** | **LCSC #** | **JLC Basic?** | **Notes** |
-| --- | --- | --- | --- | --- | --- | --- |
-| Red LED | LED | 0603 | [Link](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0603R/C2286) | C2286 | YES |  |
-| Red LED | LED | 0805 | [Link](https://jlcpcb.com/partdetail/85425-NCD0805R1/C84256) | C84256 | YES |  |
-| White LED | LED | 0603 | [Link](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0603W/C2290) | C2290 | YES |  |
-| White LED | LED | 0805 | [Link](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0805W/C34499) | C34499 | YES |  |
-| Yellow LED | LED | 0603 | [Link](https://jlcpcb.com/partdetail/73147-19_213_Y2C_CQ2R2L_3T_CY/C72038) | C72038 | YES |  |
-| Yellow LED | LED | 0805 | [Link](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0805Y/C2296) | C2296 | YES |  |
-| Green LED | LED | 0805 | [Link](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0805G/C2297) | C2297 | YES |  |
-|  |  |  |  |  |  |  |
-| 2N7002 | N-MOSFET | SOT-23 | [Link](https://jlcpcb.com/partdetail/9040-2N7002/C8545) | C8545 | YES |  |
-| AO3400A | N-MOSFET | SOT-23-3L | [Link](https://jlcpcb.com/partdetail/Alpha_OmegaSemicon-AO3400A/C20917) | C20917 | YES |  |
-| AO3401A | P-MOSFET | SOT-23 | [Link](https://jlcpcb.com/partdetail/Alpha_OmegaSemicon-AO3401A/C15127) | C15127 | YES |  |
-| SI2301CDS | P-MOSFET | SOT-23 | [Link](https://jlcpcb.com/partdetail/VishayIntertech-SI2301CDS_T1GE3/C10487) | C10487 | YES |  |
-| 1N5819WS | Schottky Diode | SOD-323 | [Link](https://jlcpcb.com/partdetail/GuangdongHottech-1N5819WS/C191023) | C191023 | YES |  |
-| SS14 | Schottky Diode | DO-214AC | [Link](https://jlcpcb.com/partdetail/Mdd-SS14/C2480) | C2480 | YES |  |
-|  |  |  |  |  |  |  |
-| 1k | Resistor | **0805** | [Link](https://jlcpcb.com/partdetail/18201-0805W8F1001T5E/C17513) | C17513 | YES |  |
-|  |  |  |  |  |  |  |
-| 10pF | MLC Capacitor | 0603 |  | C1634 | YES |  |
-| 10pF | MLC Capacitor | 0402 |  | C32949 | YES |  |
-| 30pF | MLC Capacitor | 0603 |  | C1658 | YES |  |
-| 2.2nF | Capacitor | 0603 |  | C1604 | YES |  |
-| 10nF | MLC Capacitor | 0603 |  | C57112 | YES |  |
-| 10nF | MLC Capacitor | 0402 |  | C15195 | YES |  |
-| 100nF | MLC Capacitor | 0603 |  | C14663 | YES |  |
-| 100nF | MLC Capacitor | 0402 |  | C1525 | YES |  |
-| 1uF | MLC Capacitor | 0805 |  | C28323 | YES |  |
-| 1uF | MLC Capacitor | 0603 |  | C15849 | YES |  |
-| 1uF | MLC Capacitor | 0402 |  | C52923 | YES |  |
-| 4.7uF | MLC Capacitor | 0805 |  | C1779 | YES |  |
-| 10uF | MLC Capacitor | 0603 |  | C96446 | YES |  |
-| 10uF | MLC Capacitor | 0402 |  | C15525 | YES |  |
-| 22uF | MLC Capacitor | 0805 |  | C45783 | YES |  |
-|  |  |  |  |  |  |  |
-| 100Ohm | Ferrite Bead | 0805 |  | C1015 | YES |  |
-| 600Ohm | Ferrite Bead | 0805 |  | C1017 | YES |  |
-|  |  |  |  |  |  |  |
+### Basic SMD Components (WIP)
 
-## JLCPCB “Basic Part” 0603 Resistors
+| **Value**        | **Type**         | **Footprint** | **LCSC #**                                                                                     |
+|------------------|------------------|---------------|------------------------------------------------------------------------------------------------|
+| Red LED          | LED              | 0603          | [C2286](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0603R/C2286)                           |
+| Red LED          | LED              | 0805          | [C84256](https://jlcpcb.com/partdetail/85425-NCD0805R1/C84256)                                 |
+| White LED        | LED              | 0603          | [C2290](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0603W/C2290)                           |
+| White LED        | LED              | 0805          | [C34499](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0805W/C34499)                         |
+| Yellow LED       | LED              | 0603          | [C72038](https://jlcpcb.com/partdetail/73147-19_213_Y2C_CQ2R2L_3T_CY/C72038)                   |
+| Yellow LED       | LED              | 0805          | [C2296](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0805Y/C2296)                           |
+| Green LED        | LED              | 0805          | [C2297](https://jlcpcb.com/partdetail/Hubei_KentoElec-KT0805G/C2297)                           |
+| 2N7002           | N-MOSFET         | SOT-23        | [C8545](https://jlcpcb.com/partdetail/9040-2N7002/C8545)                                       |
+| AO3400A          | N-MOSFET         | SOT-23-3L     | [C20917](https://jlcpcb.com/partdetail/Alpha_OmegaSemicon-AO3400A/C20917)                      |
+| AO3401A          | P-MOSFET         | SOT-23        | [C15127](https://jlcpcb.com/partdetail/Alpha_OmegaSemicon-AO3401A/C15127)                      |
+| SI2301CDS        | P-MOSFET         | SOT-23        | [C10487](https://jlcpcb.com/partdetail/VishayIntertech-SI2301CDS_T1GE3/C10487)                 |
+| 1N5819WS         | Schottky Diode   | SOD-323       | [C191023](https://jlcpcb.com/partdetail/GuangdongHottech-1N5819WS/C191023)                     |
+| SS14             | Schottky Diode   | DO-214AC      | [C2480](https://jlcpcb.com/partdetail/Mdd-SS14/C2480)                                          |
+| 1k               | Resistor         | 0805          | [C17513](https://jlcpcb.com/partdetail/18201-0805W8F1001T5E/C17513)                            |
+| 10pF             | MLC Capacitor    | 0603          | [C1634](https://jlcpcb.com/partdetail/C1634)                                                   |
+| 10pF             | MLC Capacitor    | 0402          | [C32949](https://jlcpcb.com/partdetail/C32949)                                                 |
+| 30pF             | MLC Capacitor    | 0603          | [C1658](https://jlcpcb.com/partdetail/C1658)                                                   |
+| 2.2nF            | Capacitor        | 0603          | [C1604](https://jlcpcb.com/partdetail/C1604)                                                   |
+| 10nF             | MLC Capacitor    | 0603          | [C57112](https://jlcpcb.com/partdetail/C57112)                                                 |
+| 10nF             | MLC Capacitor    | 0402          | [C15195](https://jlcpcb.com/partdetail/C15195)                                                 |
+| 100nF            | MLC Capacitor    | 0603          | [C14663](https://jlcpcb.com/partdetail/C14663)                                                 |
+| 100nF            | MLC Capacitor    | 0402          | [C1525](https://jlcpcb.com/partdetail/C1525)                                                   |
+| 1uF              | MLC Capacitor    | 0805          | [C28323](https://jlcpcb.com/partdetail/C28323)                                                 |
+| 1uF              | MLC Capacitor    | 0603          | [C15849](https://jlcpcb.com/partdetail/C15849)                                                 |
+| 1uF              | MLC Capacitor    | 0402          | [C52923](https://jlcpcb.com/partdetail/C52923)                                                 |
+| 4.7uF            | MLC Capacitor    | 0805          | [C1779](https://jlcpcb.com/partdetail/C1779)                                                   |
+| 10uF             | MLC Capacitor    | 0603          | [C96446](https://jlcpcb.com/partdetail/C96446)                                                 |
+| 10uF             | MLC Capacitor    | 0402          | [C15525](https://jlcpcb.com/partdetail/C15525)                                                 |
+| 22uF             | MLC Capacitor    | 0805          | [C45783](https://jlcpcb.com/partdetail/C45783)                                                 |
+| 100Ohm           | Ferrite Bead     | 0805          | [C1015](https://jlcpcb.com/partdetail/C1015)                                                   |
+| 600Ohm           | Ferrite Bead     | 0805          | [C1017](https://jlcpcb.com/partdetail/C1017)                                                   |
+
+
+
+### 0603 Resistors
+
+Most of these come in 0402 basic as well.
+
 
 | **Value** | **LCSC Part Number** |
 | --- | --- |
