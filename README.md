@@ -5,12 +5,12 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/zeulewan/zeuldocs/actions/workflows/ci.yml"><img
-    src="https://github.com/zeulewan/zeuldocs/actions/workflows/ci.yml/badge.svg"
+  <a href="https://github.com/sonicavionics/sonicavionics.com/actions/workflows/ci.yml"><img
+    src="https://github.com/sonicavionics/sonicavionics.com/actions/workflows/ci.yml/badge.svg"
     alt="Build"
   /></a>
-  <a href="https://github.com/zeulewan/zeuldocs/actions/workflows/pages/pages-build-deployment"><img
-    src="https://github.com/zeulewan/zeuldocs/actions/workflows/pages/pages-build-deployment/badge.svg"
+  <a href="https://github.com/sonicavionics/sonicavionics.com/actions/workflows/pages/pages-build-deployment"><img
+    src="https://github.com/sonicavionics/sonicavionics.com/actions/workflows/pages/pages-build-deployment/badge.svg"
     alt="Downloads"
   /></a>
 </p>
