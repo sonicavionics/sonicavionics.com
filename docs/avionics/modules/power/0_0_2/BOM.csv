@@ -23,7 +23,7 @@ Buck-Boost,U5,SOT-583,C5219190,no
 Charger/Switcher,U2,VQFN (16) ,C140288,no
 FET,"Q1, Q2",VSON-8(3.3x3.3),C2861720,no
 JST Connector,P1,"SMD,P=2mm",C295747,no
-[PCIe Gold Fingers](docs/dingboard/power/PCIe_specs.pdf),J2,n/a,n/a,n/a
+[PCIe Gold Fingers](docs/avionics/power/PCIe_specs.pdf),J2,n/a,n/a,n/a
 Red LED,D1,0603,C2286,yes
 [USB-C](https://www.digikey.ca/en/products/detail/gct/USB4085-GF-A/9859662),J1,n/a,n/a,n/a
 White LED,D2,0603,C2290,yes

@@ -1,8 +1,7 @@
-# Dingboard
+# 4" Avionics
 
-<p style="font-size: 20px;">Avionics for the rocket</p>
-Maybe I should rename this before it's too late. Actually it's already too late.
-******
+<p style="font-size: 20px;">Avionics for a 4 inch rocket</p>
+
 
 <figure markdown="span">
   ![alt text](modules/power/0_0_2/powerdec2.png){ width="600" }
@@ -21,10 +20,10 @@ Maybe I should rename this before it's too late. Actually it's already too late.
 
 ## Initial Requirements and Design Goals
 
-The primary goal of dingboard is to enable my personal learning.
+The primary goal of the 4 inch avionics is to enable my personal learning.
 This will be the first board of many. This wil be a CAN enabled system in a 4-inch diameter form factor.
 
-### Primary Functional Requirements for dingboard:
+### Primary Functional Requirements for 4 inch avionics:
 
 - Easy to operate and understand
 - Don't be janky
@@ -32,13 +31,13 @@ This will be the first board of many. This wil be a CAN enabled system in a 4-in
 - Assemblable by JLCPCB PCBA
 - Utilize all known best practices to enable scalability
 
-### Secondary Functional Requirements for dingboard:
+### Secondary Functional Requirements for 4 inch avionics:
 
 - Battery charger with quick disconnect using magnetic connector.
 - Remove before flight banana pins for ejection charges
 - Point of load regulation
 
-[Here's the link](https://github.com/zeulewan/dingboard) to the project repo with the Solidworks and Altium files.
+[Here's the link](https://github.com/sonicavionics/4in) to the project repo with the Solidworks and Altium files.
 
 ## Things for the next board
 
@@ -77,7 +76,7 @@ I've been inspired by rocketry teams such as [Waterloo](https://www.waterloorock
 
 #### CAN bus
 
-Every team settles on CAN bus. I have no experience with it, but I will be implementing it on dingboard.
+Every team settles on CAN bus. I have no experience with it, but I will be implementing it on the 4 inch avionics.
 
 #### Modularity with PCIe connectors
 
