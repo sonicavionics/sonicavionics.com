@@ -6,7 +6,7 @@ site_author: Sonic Avionics
 repo_url: https://github.com/sonicavionics/sonicavionics.com
 edit_uri: edit/main/docs/
 
-copyright: zeul@mordasiewicz.com
+# copyright: zeul@mordasiewicz.com
 
 theme:
   name: material
