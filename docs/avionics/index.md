@@ -42,6 +42,7 @@ This will be the first board of many. This wil be a CAN enabled system in a 4-in
 ## Things for the next board
 
 - USB multiplexer controlled by something like a raspberry pi zero. The backplate will have the MUX. There will also be the ability to digitally reboot things. We can remove all usb ports except for on the rp zero.
+- programmable Power mux to be able to reboot anything remotely 
 - Ethernet
 - 2.4 GHz for camera transmission
 - Usb protection IC
