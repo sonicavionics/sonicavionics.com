@@ -5,7 +5,7 @@ comments: true
 authors:
   - zeul
 categories:
-  - dingboard
+  - 4" Avionics
 ---
 
 Gotta pick which software to use. Most teams use KiCAD and Solidworks.

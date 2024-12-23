@@ -5,7 +5,7 @@ comments: true
 authors:
   - zeul
 categories:
-  - dingboard
+  - 4" Avionics
 ---
 
 Here is the post outlining the reasons for picking the chips. This post will be updated in the future with reasons why or why not to pick these chips. Requirement for all chips was being available on JLC. 

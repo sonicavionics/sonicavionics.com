@@ -1,6 +1,6 @@
 # Sensors
 
-[Current Schematic](https://github.com/zeulewan/dingboard/blob/main/dingboard_kicad/sensors/sensors.pdf)
+[Current Schematic](https://github.com/sonicavionics/4in/blob/main/dingboard_kicad/sensors/sensors.pdf)
 
 ## Chips
 
@@ -98,6 +98,6 @@ likely to work in many applications, but it’s probably not going to be complia
 
 Since we're using a 4 layer board, I'll use the [JLC impedance calculator](https://jlcpcb.com/pcb-impedance-calculator) to get the 90Ω
 
-[Current KiCad bom](https://github.com/zeulewan/dingboard/blob/main/dingboard_kicad/sensors/bom.csv)
+[Current KiCad bom](https://github.com/sonicavionics/4in/blob/main/dingboard_kicad/sensors/bom.csv)
 
 {{ read_csv('sensors/bom.csv') }}
