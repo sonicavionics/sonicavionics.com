@@ -36,9 +36,18 @@ table, table * {
 <table style="margin: 0 auto;">
   <tr>
     <td align="center">
-      <img src="avionics/modules/power/0_0_2/powerdec1.png" width="300" /><br>
-      <a href="avionics/">Power Module 0.0.2</a>
+      <img src="/avionics/modules/sensors/sch.png" width="300" /><br>
+      <a href="/avionics/modules/sensors/">Current Sensors Module 0.1.0 Schematic</a>
     </td>
+    <td align="center">
+      <img src="/avionics/cad/2_3_front.png" width="300" /><br>
+      <a href="avionics/cad/cad/">4" Avionics CAD</a>
+    </td>
+    <td align="center">
+      <img src="/avionics/modules/power/0_0_2/1.jpg" width="300" /><br>
+      <a href="/avionics/modules/power/0_0_2/">Power Module 0.0.2</a>
+    </td>
+
 
 </table>
 
