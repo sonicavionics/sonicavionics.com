@@ -8,6 +8,8 @@ hide:
 
 This is the Sonic Avionics documentation and blog.
 
+Sonic Avionics will create open source avionics products for high powered rocketry.
+
 <!-- <figure markdown="span">
 
   ![alt text](img/IMG_0629.jpg){ width="300" }
