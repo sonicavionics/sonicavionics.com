@@ -8,7 +8,7 @@ hide:
 
 This is the Sonic Avionics documentation and blog.
 
-Sonic Avionics will create open source avionics products for high powered rocketry.
+Sonic Avionics is a research organization that focuses on avionics systems. We will create open source non profit avionincs sytems for use in high powered rocketry.
 
 <!-- <figure markdown="span">
 
