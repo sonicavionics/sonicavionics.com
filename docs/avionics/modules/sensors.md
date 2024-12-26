@@ -77,6 +77,17 @@ The voltage ranges for all the chips are as follows
 
 Running the system at 3.33 volts will be fine, and it will save a lot of money or time.
 
+### Point of Load vs Bus Regulation
+
+Point of load regulation is where your power bus is lets say 7.4 volts, and all your chips are 5v so you regulate the voltage near each chip. Bus regulation would be having the bus 5v. 
+
+Point of load means multiple regulators at each load, but inherently less stable. 
+If you can get away without having to do point of load regulation you could save a lot of money though.
+
+To reduce costs, both the 5v and the 3.3v regulators will be deleted from the modules, in favour of regulated bus power. Before the power module is ready however, we will need a very basic 2 slot PCIe connector that can supply 5v to the board.
+
+I'll save around $375 buy not doing point of load. Delete the two regs and mux, that gets rid of 5 extended JLCPCB parts. It costs $3 per extended part. The minimum order number is 5 (actually 2 but I'd wanna do 5). There will be 5 modules. 5 * 3 * 5 * 5 = 375.
+
 
 ## USB Impedance matching:
 
