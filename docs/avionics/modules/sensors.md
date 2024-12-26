@@ -15,14 +15,6 @@
 
 - USB-C [JLC USB-C port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018)
 
-- Regulators 
-
-    - 3.3v buck [LMR51430YFDDCR](https://www.ti.com/product/LMR51430/part-details/LMR51430YFDDCR)
-
-    - 5v buck-boost for CAN chip [TPS630701](https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1734177677058)
-
-- Power MUX [TPS2121RUXR](https://www.ti.com/product/TPS2121/part-details/TPS2121RUXR) VCOMP mode
-
 - Sensors
 
     - IMU [BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
