@@ -15,6 +15,8 @@
 
 - USB-C [JLC USB-C port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018)
 
+- Momentary Button [TS-1187A-B-A-B](https://jlcpcb.com/partdetail/XkbConnectivity-TS_1187A_B_AB/C318884)
+
 - Sensors
 
     - IMU [BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
