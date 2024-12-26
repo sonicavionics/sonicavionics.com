@@ -37,6 +37,10 @@ Gotta pick which software to use. Most teams use KiCAD and Solidworks.
 - I've experienced more crashes than Altium. Running tally of crashes: 10
 - Sometimes the footprints don't show up in the previewer windows when selecting a chip
 
+### Routing
+
+Altium has better routing. Dragging chips that already have traces around in Altium works much better than in KiCad
+
 ## Solidworks vs OnShape
 
 I'll do pros and cons of Solidworks
