@@ -39,7 +39,11 @@ Gotta pick which software to use. Most teams use KiCAD and Solidworks.
 
 ### Routing
 
-Altium has better routing. Dragging chips that already have traces around in Altium works much better than in KiCad
+Altium has much better routing. Dragging chips that already have traces around in Altium works much better than in KiCad. 
+
+### Design Rules
+
+The design rules manger is much better in Altium.
 
 ## Solidworks vs OnShape
 
