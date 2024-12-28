@@ -21,6 +21,8 @@
 
     - IMU [ICM-20948](https://invensense.tdk.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf)
 
+        - LDO [TLV75718PDRV](https://www.ti.com/lit/ds/symlink/tlv757p.pdf?ts=1735322919232&ref_url=https%253A%252F%252Fwww.mouser.com%252F)
+
     - Altimeter [MS5607-02BA03](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5607-02BA03%7FB2%7Fpdf%7FEnglish%7FENG_DS_MS5607-02BA03_B2.pdf%7FCAT-BLPS0035)
 
 - CAN [Controller and transceiver](https://www.digikey.ca/en/products/detail/microchip-technology/MCP25625T-E-ML/4860099)

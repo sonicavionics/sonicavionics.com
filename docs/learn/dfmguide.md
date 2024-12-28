@@ -11,7 +11,9 @@ JLCPCB is owned by LCSC, which is a large component distributor. An LCSC Part Nu
 
 ## JLCPCB Basic vs. Extended Parts
 
-When searching for components through JLCPCB, they are labelled either “Basic” or “Extended”. Basic components are ones that are used very frequently, and are thus loaded into the pick-and-place machines already. Extended components are less commonly used, and thus require additional effort to load them into machines. This extra effort translates to an **additional fixed cost of ~$3CAD** (”Feeder Loading fee”) for every unique Extended part per batch. See [this page](https://jlcpcb.com/help/article/98-PCB-Assembly-FAQs) for more pricing details. We want to use Basic parts wherever possible.
+When searching for components through JLCPCB, they are labelled either “Basic” or “Extended”. Basic components are ones that are used very frequently, and are thus loaded into the pick-and-place machines already. Extended components are less commonly used, and thus require additional effort to load them into machines. This extra effort translates to an **additional fixed cost of ~$4.31CAD** (”Feeders Loading fee”) for every unique Extended part per batch. For standard assembly, all components have a flat Feeders Loading fee of 2.16. There are cases where using standard assembly can actually be cheaper than economic assembly such as if all your components are extended rather than basic.
+
+ See [this page](https://jlcpcb.com/help/article/98-PCB-Assembly-FAQs) for more pricing details. We want to use Basic parts wherever possible.
 
 [This website](https://sparks.gogo.co.nz/resistor_paralleler.html) automatically calculates the equivalent parallel or series resistor combinator to your desired resistance using only JLC basic parts.
 
