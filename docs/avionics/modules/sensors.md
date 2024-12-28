@@ -19,11 +19,9 @@
 
 - Sensors
 
-    - IMU [BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
+    - IMU [ICM-20948](https://invensense.tdk.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf)
 
-        - IMU Crystal [ABS07-32.768KHZ-T](https://www.digikey.ca/en/products/detail/abracon-llc/ABS07-32-768KHZ-T/1236858)
-
-    - Altimeter [BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/)
+    - Altimeter [MS5607-02BA03](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5607-02BA03%7FB2%7Fpdf%7FEnglish%7FENG_DS_MS5607-02BA03_B2.pdf%7FCAT-BLPS0035)
 
 - CAN [Controller and transceiver](https://www.digikey.ca/en/products/detail/microchip-technology/MCP25625T-E-ML/4860099)
 
