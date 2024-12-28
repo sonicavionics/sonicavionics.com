@@ -49,15 +49,32 @@ Using this in Highest Voltage Operation (VCOMP) mode with the battery as the mai
 
 Need IMU with accelerometer, gyroscope and magnetometer, high sample rate, some vibration resistance, onboard sensor fusion and on JLC.
 
-[BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/) This chip is very simple and meets all the requirements, it has a slightly on the low end sample rate of 100Hz but thats all right. It also only does +-16 Gs. I considered a bunch of other chips, but this one has the extra advantage of simplicity. You can't run your own code on it but that's fine. 
+BNO055, BNO055, BMX055, MPU-9250 are off the table because they need standard assembly. The options are:
+- MPU-6050 (only 6-axis)
+- ICM-20948 (9-axis with fusion)
 
-So it's not available for economic assembly with JLC. It's also like 20$ on digikey. It's also hard to solder. Two options: use another chip or get a adafruit breakout board so we can reuse the chip. Note to self: make sure the chips are available with economic assembly
+So there's only the ICM-20948 if I wan't to do 9 axis.
 
 #### Pressure
 
 Need temperature and pressure and high sample rate.
 
-[BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/) Cheaper than the BMP390, slightly less accurate though. 200hz sample rate. 
+Some JLC options for pressure sensors:
+- MS563702BA03-50
+- GZP6816D
+- GZP131-701A
+- MS560702BA03-50
+- HP203B
+- C2886574
+- C2914328
+- C3037991
+- C19100541
+- C242002
+- C5441134
+- C3253775
+
+MS560702BA03-50 was chosen for high speed capabilities.
+
 
 #### Payload Module
 
