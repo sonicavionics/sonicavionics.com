@@ -11,19 +11,17 @@
 
     - Flash [W25Q128JVP](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q128JV)
 
-    - MCU Crystal [ABM8-272-T3](https://www.digikey.ca/en/products/detail/abracon-llc/ABM8-272-T3/22472366)
-
-- USB-C [JLC USB-C port](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018)
+- USB-C [JLC USB-C port](https://jlcpcb.com/partdetail/ShouHan-TYPE_C_16PIN_2MD_073/C2765186)
 
 - Momentary Button [TS-1187A-B-A-B](https://jlcpcb.com/partdetail/XkbConnectivity-TS_1187A_B_AB/C318884)
 
 - Sensors
 
-    - IMU [ICM-20948](https://invensense.tdk.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf)
+    - IMU [BNO055](https://www.bosch-sensortec.com/products/smart-sensor-systems/bno055/)
 
-        - LDO [TLV75718PDRV](https://www.ti.com/lit/ds/symlink/tlv757p.pdf?ts=1735322919232&ref_url=https%253A%252F%252Fwww.mouser.com%252F)
+        - IMU Crystal [ABS07-32.768KHZ-T](https://www.digikey.ca/en/products/detail/abracon-llc/ABS07-32-768KHZ-T/1236858)
 
-    - Altimeter [MS5607-02BA03](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5607-02BA03%7FB2%7Fpdf%7FEnglish%7FENG_DS_MS5607-02BA03_B2.pdf%7FCAT-BLPS0035)
+    - Altimeter [BMP388](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp388/)
 
 - CAN [Controller and transceiver](https://www.digikey.ca/en/products/detail/microchip-technology/MCP25625T-E-ML/4860099)
 
