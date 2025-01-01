@@ -37,7 +37,7 @@ table, table * {
   <tr>
     <td align="center">
       <img src="/avionics/modules/sensors/sensors.png" width="300" /><br>
-      <a href="/avionics/modules/sensors/">Initial sensor module 0.2.0 render</a>
+      <a href="/avionics/modules/sensors/">Initial sensor module 0.1.0 render</a>
     </td>
     <td align="center">
       <img src="/avionics/cad/2_3_front.png" width="300" /><br>
