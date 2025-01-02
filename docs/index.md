@@ -6,9 +6,11 @@ hide:
 ---
 # Home
 
-This is the Sonic Avionics documentation and blog.
+*Sonic Avionics* is a research organization that focuses on building flight computers. 
 
-Sonic Avionics is a research organization that focuses on avionics systems. We will create open source non profit avionincs sytems for use in high powered rocketry.
+All hardware and code is on [GitHub](https://github.com/sonicavionics/4in).
+
+Hardware will be sold as a kit once it's ready.
 
 <!-- <figure markdown="span">
 
@@ -16,9 +18,6 @@ Sonic Avionics is a research organization that focuses on avionics systems. We w
   <figcaption>Zeul</figcaption>
 
 </figure> -->
-
-
-
 
 <div style="text-align: center;">
 
@@ -48,7 +47,5 @@ table, table * {
       <a href="/avionics/modules/power/0_0_2/">Power Module 0.0.2</a>
     </td>
 
-
 </table>
-
 </div>
