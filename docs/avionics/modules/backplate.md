@@ -1,45 +1,12 @@
 # Backplate
 
-![alt text](backplate/1.png){ width="300" }
+This is the back plate. It was kept very simple
 
-## Characteristic Impedance
+![alt text](backplate/thumbnail.png)
 
-The characteristic impedance should be 120 ohms. The bus should also have two 120 ohm resistors at either end.
+![alt text](backplate/4.png){ width="500" }
 
-I need to know if I can fit my traces between these pins or if I need to use more pins for each net. Gonna be using a 4 layer PCB with a stack up of<br>
-Signal<br>
-GND<br>
-Power<br>
-Signal
 
-![alt text](backplate/2.png){ width="400" }
-
-### Calculating Impedance 
-
-#### By hand
-
-[Gonna come back to this](https://www.youtube.com/watch?v=0fteCxn5XXA)
-
-[discussion on stack exchange ](https://electronics.stackexchange.com/questions/516824/can-bus-on-pcb-traces-instead-of-twisted-pair-cable-points-to-consider)
-
-<!-- First capacitance:
-
-$$
-C = \frac{\varepsilon A}{d}
-$$
-
-This is the impedance
-
-$$
-Z_0 = \sqrt{\frac{L}{C}}
-$$ -->
-
-#### JLCPCB Calculator
-
-[Calculator](https://jlcpcb.com/pcb-impedance-calculator)
-If around 0.1148mm is right, then I'll be able to route between the PCIe pins just fine. 
-
-![alt text](backplate/image.png)
 
 ## Links
 

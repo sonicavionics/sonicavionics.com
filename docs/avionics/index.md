@@ -4,8 +4,8 @@
 
 
 <figure markdown="span">
-  ![alt text](modules/power/0_0_2/powerdec2.png){ width="600" }
-  <figcaption>December 1st: Power Board 0.0.2</figcaption>
+  ![alt text](modules/sensors/thumbnail.png){ width="600" }
+  <figcaption>January 2nd: Sensor Board 0.1.0</figcaption>
 </figure>
 
 <figure markdown="span">
@@ -14,56 +14,77 @@
 </figure>
 
 <figure markdown="span">
-  ![alt text](cad/2_3_front.png){ width="600" }
-  <figcaption>December 7th: Avionics bay</figcaption>
+  ![alt text](cad/thumbnail.png){ width="600" }
+  <figcaption>December 7th: Avionics bay 0.1.0</figcaption>
 </figure>
+
+<figure markdown="span">
+  ![alt text](modules/backplate/thumbnail.png){ width="600" }
+  <figcaption>January 2nd: Backplate 0.1.0</figcaption>
+</figure>
+
+---
 
 ## Initial Requirements and Design Goals
 
-The primary goal of the 4 inch avionics is to enable my personal learning.
-This will be the first board of many. This wil be a CAN enabled system in a 4-inch diameter form factor.
+The primary goal of the 4-inch avionics system is to enable personal learning. This will be the first board of many. It will be a CAN-enabled system in a 4-inch diameter form factor.
 
-### Primary Functional Requirements for 4 inch avionics:
+### Primary Functional Requirements
 
-- Easy to operate and understand
-- Don't be janky
-- Fully open source
-- Assemblable by JLCPCB PCBA
-- Utilize all known best practices to enable scalability
+- Easy to operate and understand.
+- Don't be janky.
+- Fully open-source.
+- Assemblable by JLCPCB PCBA.
+- Incorporate all known best practices to enable scalability.
 
-### Secondary Functional Requirements for 4 inch avionics:
+### Secondary Functional Requirements
 
-- Battery charger with quick disconnect using magnetic connector.
-- Remove before flight banana pins for ejection charges
-- Point of load regulation
+- Battery charger with a quick disconnect using a magnetic connector.
+- "Remove before flight" banana pins for ejection charges.
+- ~~Point-of-load regulation.~~
 
-[Here's the link](https://github.com/sonicavionics/4in) to the project repo with the Solidworks and Altium files.
+[Visit the project repository](https://github.com/sonicavionics/4in) for KiCad, Solidwords and Altium files.
 
-## Things for the next board
+---
 
-- USB multiplexer controlled by something like a raspberry pi zero. The backplate will have the MUX. There will also be the ability to digitally reboot things. We can remove all usb ports except for on the rp zero.
-- programmable Power mux to be able to reboot anything remotely 
-- Ethernet
-- 2.4 GHz for camera transmission
-- Usb protection IC
+## Improvements for the Next Board
 
-For now we still have to figure out CAN
+- **USB Multiplexer**: Controlled by a Raspberry Pi Zero. The backplate will host the MUX, enabling digital reboots and removal of USB ports except on the Pi Zero.
+- **Programmable Power MUX**: Allows remote rebooting of components.
+- **Ethernet**: Inclusion for data transmission.
+- **2.4 GHz Camera Transmission**
+- **USB Protection IC**
 
-## Open source
+### CAN Bus Integration
 
-The student rocketry community is quite open to sharing ideas. This makes it easier for new student teams such as my own to build themselves up. The goal is to have a thriving space industry. The bottom line is that the more people we have that are knowledgeable in rocketry the better chance humanity has. This is largely the philosophy the rocketry teams I've spoken to have. We stand on the shoulders of giants. It is unfeasible to donate to every single open source project you gain knowledge from, so the least we can do is to contribute back the the community by open sourcing everything we do. We have everything to gain from the success of others. Open source doesn't mean copying others stuff, and being a free loader. We strive to learn from and contribute to each step of the process.
+The implementation of CAN bus is crucial, as it is a standard in the rocketry community. Although we have no prior experience, it will be integrated into the 4-inch avionics system.
+
+---
+
+## Open Source Philosophy
+
+The student rocketry community is quite open to sharing ideas. This makes it easier for new student teams such as my own to build themselves up. The goal is to have a thriving space industry. The bottom line is that the more people we have that are knowledgeable in rocketry the better chance humanity has. This is largely the philosophy the rocketry teams I've spoken to have. 
+
+We stand on the shoulders of giants. It is unfeasible to donate to every single open source project you gain knowledge from, so the least we can do is to contribute back the the community by open sourcing everything we do. We have everything to gain from the success of others. Open source doesn't mean copying others stuff, and being a free loader. We strive to learn from and contribute to each step of the process.
 
 ### Inspiration
 
-I've been inspired by rocketry teams such as [Waterloo](https://www.waterloorocketry.com/), [Queens](https://qret.ca/), [Etes](https://rockets.etsmtl.ca/), and [Oronos](https://oronospolytechnique.com/en.html). Waterloo is extremely helpful due to all of their documentation being public on their website. I've visited Queens a few times and they are always okay with sharing info. Without these two teams, Sonic Avionics' success would be a lot harder.
+This project draws inspiration from rocketry teams such as:
 
-#### CAN bus
+- [Waterloo Rocketry](https://www.waterloorocketry.com/)
+- [Queens Rocket Engineering Team](https://qret.ca/)
+- [ÉTS Rocketry](https://rockets.etsmtl.ca/)
+- [Oronos Polytechnique](https://oronospolytechnique.com/en.html)
 
-Every team settles on CAN bus. I have no experience with it, but I will be implementing it on the 4 inch avionics.
+Queens and Waterloo have especially been helpful.
 
-#### Modularity with PCIe connectors
+Without these teams, Sonic Avionics' progress would have been significantly harder.
 
-The modular system I first noticed at LC 2023. Etes showed me their system. I noticed Queens also did it, then I noticed Oronos did it. It seems like an obvious place to start, I mean it makes things really easy and elegant. The downside is that its not as structurally robust as Waterloos RocketCAN system.
+---
+
+### Modularity with PCIe Connectors
+
+The modular avionics system is inspired by designs showcased at LC 2023 by ÉTS. This approach is also used by Queens and Oronos, making it a natural starting point. While it simplifies design and enhances elegance, it is less structurally robust compared to Waterloo’s RocketCAN system.
 
 <figure markdown="span">
 
@@ -78,6 +99,8 @@ The modular system I first noticed at LC 2023. Etes showed me their system. I no
 
 </figure>
 
+---
+
 ## Battery
 
-For the SRAD board we will be using a SRAD battery back and the opposite is true for the COTS stuff. For the first launch it will be a 2s 2p pack inspired by [this video.](https://www.youtube.com/watch?v=3dD5KmM8ciU)
+The system will use a SRAD battery pack for custom-built boards, and COTS components will use a commercial battery pack. For the first launch, a 2s 2p pack inspired by [this video](https://www.youtube.com/watch?v=3dD5KmM8ciU) will be used.

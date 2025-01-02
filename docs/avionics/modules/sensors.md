@@ -1,6 +1,6 @@
 # Sensors
 
-![alt text](sensors/sensors.png)
+![alt text](sensors/thumbnail.png)
 
 ![alt text](sensors/sch.png)
 
