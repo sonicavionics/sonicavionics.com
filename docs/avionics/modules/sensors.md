@@ -4,7 +4,7 @@
 
 ![alt text](sensors/sch.png)
 
-## Chips
+## Main chips
 
 - MCU
 
@@ -28,81 +28,28 @@
 
     - CAN chip crystal [X322516MLB4SI](https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322516MLB4SI_C13738.pdf)
 
-## Notes about chips
+## Assembly
 
-### 3.3v buck
+Standard assembly will be used over economic assembly. The primary reason is that the BNO055 and BMP388 aren't available with economic assembly. The number of extended parts on the board is exactly half of all unique components on the board, therefore the loading fee is equal either way. 
 
-For the 3.3v buck it called for a 22.1kΩ resistor for R_FBB. 
-![alt text](sensors/1.png)
-*22kΩ* is a standard resistor. So changing that to 22 will change the output voltage a tad.
 
-For the resistor divider:
-
-Starting from:
-
-\[
-V_{\text{FB}} = V_{\text{OUT}} \left( 1 - \frac{R_{\text{FBT}}}{R_{\text{FBB}} + R_{\text{FBT}}} \right)
-\]
-
-Solving for V_OUT:
-
-\[
-V_{\text{OUT}} = V_{\text{FB}} \cdot \frac{R_{\text{FBB}} + R_{\text{FBT}}}{R_{\text{FBB}}}.
-\]
-
-Subbing in the values:
-
-\[
-V_{\text{FB}} = 0.6, \quad R_{\text{FBT}} = 100K, \quad R_{\text{FBB}} = 22K
-\]
-
-\[
-V_{\text{OUT}} = 3.327273
-\]
-
-The voltage ranges for all the chips are as follows
-
-- RP2040: -0.5 to 3.63
-- Flash: 2.7 to 3.6
-- CAN controller: 2.6 to 5.5
-- IMU: -0.3 to 3.6
-- Altimeter: -0.3 to 3.8
-
-Running the system at 3.33 volts will be fine, and it will save a lot of money or time.
-
-### Point of Load vs Bus Regulation
+## Point of Load vs Bus Regulation
 
 Point of load regulation is where your power bus is lets say 7.4 volts, and all your chips are 5v so you regulate the voltage near each chip. Bus regulation would be having the bus 5v. 
 
-Point of load means multiple regulators at each load, but inherently less stable. 
-If you can get away without having to do point of load regulation you could save a lot of money though.
+Point of load means having regulators on each module, but inherently less stability. 
+If you can get away without having to do point of load regulation you could save a lot of money though. 
 
-To reduce costs, both the 5v and the 3.3v regulators will be deleted from the modules, in favour of regulated bus power. Before the power module is ready however, we will need a very basic 2 slot PCIe connector that can supply 5v to the board.
+To reduce costs, both the 5v and the 3.3v regulators will be deleted from the modules, in favour of regulated bus power. Before the full power module is ready however, we will need a very power module that supplies 5v and 3.3v.
 
-I'll save around $375 buy not doing point of load. Delete the two regs and mux, that gets rid of 5 extended JLCPCB parts. It costs $3 per extended part. The minimum order number is 5 (actually 2 but I'd wanna do 5). There will be 5 modules. 5 * 3 * 5 * 5 = 375.
+$375 can be saved buy not doing point of load. Delete the two regs and mux, that gets rid of 5 extended JLCPCB parts. It costs $3 per extended part (actually it's about 2.21). The minimum order number is 5. There will be 5 modules. 5 * 3 * 5 * 5 = 375.
 
+## Impedance matching
 
-## USB Impedance matching:
+[This guide](https://www.digikey.ca/en/maker/projects/how-to-route-differential-pairs-in-kicad-for-usb/45b99011f5d34879ae1831dce1f13e93) was used to do the impedance matching. The KiCad calculator and the [JLCPCB design rules](https://jlcpcb.com/capabilities/pcb-capabilities) were used. 
 
-From the RP2040 hardware design guide
-```
-Even though RP2040 is limited to full speed data rate (12Mbps), we should try and makes sure that the characteristic
-impedance of the transmission lines (the copper tracks connecting the chip to the connector) are close to the USB
-specification of 90Ω (measured differentially). On a 1mm thick board such as this, if we use 0.8mm wide tracks on
-USB_DP and USB_DM, with a gap of 0.15mm between them, we should get a differential characteristic impedance of
-around 90Ω. This is to ensure that the signals can travel along these transmission lines as cleanly as possible,
-minimising voltage reflections which can reduce the integrity of the signal. In order for these transmission lines to work
-properly, we need to make sure that directly below these lines is a ground. A solid, uninterrupted area of ground copper,
-stretching the entire length of the track. On this design, almost the entirety of the bottom copper layer is devoted to
-ground, and particular care was taken to ensure that the USB tracks pass over nothing but ground. If a PCB thicker than
-1mm is chosen for your build, then we have two options. We could re-engineer the USB transmission lines to
-compensate for the greater distance between the track and ground underneath (which could be a physical
-impossibility), or we could ignore it, and hope for the best. USB FS can be quite forgiving, but your mileage may vary. It is
-likely to work in many applications, but it’s probably not going to be compliant to the USB standard.
-```
+## BOM
 
-Since we're using a 4 layer board, I'll use the [JLC impedance calculator](https://jlcpcb.com/pcb-impedance-calculator) to get the 90Ω
-
-[Current KiCad bom](https://github.com/sonicavionics/4in/blob/main/dingboard_kicad/sensors/bom.csv)
+[Current KiCad bom](https://github.com/sonicavionics/4in/blob/main/kicad/modules/sensors/bom.csv)
 
 {{ read_csv('sensors/bom.csv') }}
