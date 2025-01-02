@@ -35,15 +35,15 @@ table, table * {
 <table style="margin: 0 auto;">
   <tr>
     <td align="center">
-      <img src="/avionics/modules/sensors/sensors.png" width="300" /><br>
+      <img src="/avionics/modules/sensors/thumbnail.png" width="300" /><br>
       <a href="/avionics/modules/sensors/">Initial sensor module 0.1.0 render</a>
     </td>
     <td align="center">
-      <img src="/avionics/cad/2_3_front.png" width="300" /><br>
+      <img src="/avionics/cad/thumbnail.png" width="300" /><br>
       <a href="avionics/cad/cad/">4" Avionics CAD</a>
     </td>
     <td align="center">
-      <img src="/avionics/modules/power/0_0_2/1.jpg" width="300" /><br>
+      <img src="/avionics/modules/power/0_0_2/thumbnail.jpg" width="300" /><br>
       <a href="/avionics/modules/power/0_0_2/">Power Module 0.0.2</a>
     </td>
 
