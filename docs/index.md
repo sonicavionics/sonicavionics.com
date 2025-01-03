@@ -40,7 +40,7 @@ table, table * {
     </td>
     <td align="center">
       <img src="/avionics/cad/thumbnail.png" width="300" /><br>
-      <a href="avionics/cad/cad/">4" Avionics CAD</a>
+      <a href="avionics/cad/">4" Avionics CAD</a>
     </td>
     <td align="center">
       <img src="/avionics/modules/power/0_0_2/thumbnail.jpg" width="300" /><br>
