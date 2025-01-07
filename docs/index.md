@@ -25,11 +25,11 @@ hide:
 
 <!-- Model Viewer -->
 <model-viewer 
-  src="frontpage/board.glb" 
+  src="model/ImageToStl.com_board.front.glb" 
   alt="3D model of a board"
   auto-rotate 
   camera-controls 
-  poster="frontpage/poster.webp"
+  poster="model/poster.webp" 
   touch-action="pan-y"
   style="width: 30%; height: 300px;">
 </model-viewer>
