@@ -31,7 +31,7 @@ hide:
   camera-controls 
   poster="frontpage/poster.webp"
   touch-action="pan-y"
-  style="width: 50%; height: 300px;">
+  style="width: 30%; height: 300px;">
 </model-viewer>
 
 </div>
