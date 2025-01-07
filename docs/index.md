@@ -9,8 +9,7 @@ hide:
 <div style="display: flex; align-items: center; gap: 20px;">
 
 <!-- Text Content -->
-<div style="flex: 1;">
-<p>
+<div style="flex: 1; text-align: justify;"><p>
   <b>Sonic Avionics</b> is a research organization that focuses on building flight computers.
 </p>
 <p>
