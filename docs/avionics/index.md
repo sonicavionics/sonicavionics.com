@@ -2,7 +2,17 @@
 
 <p style="font-size: 20px;">Avionics for a 4 inch rocket</p>
 
+<style>
+/* Disable background highlight on hover */
+table tr:hover, table td:hover {
+  background-color: transparent !important;
+}
 
+/* Prevent text selection when hovering */
+table, table * {
+  user-select: none;
+}
+</style>
 <div align="center">
   <table>
     <tr>
