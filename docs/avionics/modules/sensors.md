@@ -17,11 +17,11 @@
   <table>
     <tr>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/pcbf.png" alt="Front" style="max-height:500px; width:auto;"><br>
+        <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/pcbf.svg" alt="Front" style="max-height:500px; width:auto;"><br>
         <em>Front</em>
       </td>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/pcbb.png" alt="Back" style="max-height:500px; width:auto;"><br>
+        <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/pcbb.svg" alt="Back" style="max-height:500px; width:auto;"><br>
         <em>Back</em>
       </td>
     </tr>
