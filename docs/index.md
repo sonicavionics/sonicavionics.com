@@ -61,7 +61,7 @@ table, table * {
 <table style="margin: 0 auto;">
   <tr>
       <td align="center" style="vertical-align: middle;">
-      <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.png" width="300" /><br>
+      <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" width="300" /><br>
       <a href="/avionics/modules/sensors/">Sensor Module 0.1.0</a>
     </td>
       <td align="center" style="vertical-align: middle;">
