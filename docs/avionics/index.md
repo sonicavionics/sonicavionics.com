@@ -3,24 +3,36 @@
 <p style="font-size: 20px;">Avionics for a 4 inch rocket</p>
 
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" style="vertical-align: middle;">
+        <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.png" height="250" />
+        <br />
+        <i>Sensor Board Render</i>
+      </td>
+      <td align="center" style="vertical-align: middle;">
+        <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/board.png" height="250" />
+        <br />
+        <i>PowerSim Board Render</i>
+      </td>
+      <td align="center" style="vertical-align: middle;">
+        <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.png" height="450" />
+        <br />
+        <i>Backplate Render</i>
+      </td>
+    </tr>
+  </table>
+</div>
+
 <figure markdown="span">
-  ![alt text](modules/sensors/thumbnail.png){ width="600" }
-  <figcaption>January 2nd: Sensor Board 0.1.0</figcaption>
+  ![alt text](modules/power/0_0_2/dec19_3.JPG){ width="400" }
+  <figcaption>Power Module Prototype</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![alt text](modules/power/0_0_2/dec19_3.JPG){ width="600" }
-  <figcaption>December 19st: Power Board 0.0.2</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![alt text](cad/thumbnail.png){ width="600" }
+  ![alt text](cad/thumbnail.png){ width="400" }
   <figcaption>December 7th: Avionics bay 0.1.0</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![alt text](modules/backplate/thumbnail.png){ width="600" }
-  <figcaption>January 2nd: Backplate 0.1.0</figcaption>
 </figure>
 
 ---
