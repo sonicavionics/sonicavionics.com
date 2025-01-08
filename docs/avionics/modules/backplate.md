@@ -3,36 +3,25 @@
 ---
 
 <div align="center">
-
   <div>
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.front.png" alt="3D Render" style="max-height:450px; width:auto;"><br>
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.front.png" alt="3D Render" style="height: auto; width: 150px;">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.back.png" alt="3D Render" style="height: auto; width: 150px;">
     <p><em>3D Render</em></p>
   </div>
   <br>
 
   <div>
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/sch.svg" alt="Schematic" style="max-height:500px; width:auto;"><br>
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/sch.svg" alt="Schematic" style="height: auto; max-width: 600px;"><br>
     <p><em>Schematic</em></p>
   </div>
   <br>
-
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbf.svg" alt="Front" style="max-height:500px; width:auto;"><br>
-        <em>Front</em>
-      </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbb.svg" alt="Back" style="max-height:500px; width:auto;"><br>
-        <em>Back</em>
-      </td>
-    </tr>
-  </table>
-
+  
+  <div>
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbf.svg" alt="Front" style="height: auto; width: 150px;">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbb.svg" alt="Back" style="height: auto; width: 150px;"><br>
+    <em>Footprint</em>
+  </div>
 </div>
-
-
-
 
 ## Links
 
