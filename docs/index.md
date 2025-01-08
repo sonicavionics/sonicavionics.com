@@ -60,15 +60,15 @@ table, table * {
 </style>
 <table style="margin: 0 auto;">
   <tr>
-    <td align="center">
-      <img src="/avionics/modules/sensors/thumbnail.png" width="300" /><br>
-      <a href="/avionics/modules/sensors/">Initial sensor module 0.1.0 render</a>
+      <td align="center" style="vertical-align: middle;">
+      <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.png" width="300" /><br>
+      <a href="/avionics/modules/sensors/">Sensor Module 0.1.0</a>
     </td>
-    <td align="center">
-      <img src="/avionics/cad/thumbnail.png" width="300" /><br>
-      <a href="avionics/cad/">4" Avionics CAD</a>
+      <td align="center" style="vertical-align: middle;">
+      <img src="/avionics/cad/thumbnail.png" width="250" /><br>
+      <a href="avionics/cad/">Avionics CAD</a>
     </td>
-    <td align="center">
+      <td align="center" style="vertical-align: middle;">
       <img src="/avionics/modules/power/0_0_2/thumbnail.jpg" width="300" /><br>
       <a href="/avionics/modules/power/0_0_2/">Power Module 0.0.2</a>
     </td>
