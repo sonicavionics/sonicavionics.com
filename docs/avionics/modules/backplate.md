@@ -1,10 +1,36 @@
 # Backplate
 
-This is the back plate. It was kept very simple
+---
 
-![alt text](backplate/thumbnail.png)
+<div align="center">
 
-![alt text](backplate/4.png){ width="500" }
+  <div>
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.png" alt="3D Render" style="max-height:500px; width:auto;"><br>
+    <p><em>3D Render</em></p>
+  </div>
+  <br>
+
+  <div>
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/sch.svg" alt="Schematic" style="max-height:500px; width:auto;"><br>
+    <p><em>Schematic</em></p>
+  </div>
+  <br>
+
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbf.png" alt="Front" style="max-height:500px; width:auto;"><br>
+        <em>Front</em>
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbb.png" alt="Back" style="max-height:500px; width:auto;"><br>
+        <em>Back</em>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
 
 
 
