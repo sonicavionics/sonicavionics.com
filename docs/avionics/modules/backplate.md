@@ -5,7 +5,7 @@
 <div align="center">
 
   <div>
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.png" alt="3D Render" style="max-height:450px; width:auto;"><br>
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.front.png" alt="3D Render" style="max-height:450px; width:auto;"><br>
     <p><em>3D Render</em></p>
   </div>
   <br>
