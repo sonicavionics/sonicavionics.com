@@ -11,7 +11,7 @@
   <br>
 
   <div>
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/sch.svg" alt="Schematic" style="height: auto; max-width: 600px;"><br>
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/sch.svg" alt="Schematic" style="height: auto; width: 600px;"><br>
     <p><em>Schematic</em></p>
   </div>
   <br>
