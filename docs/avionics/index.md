@@ -36,7 +36,7 @@ table, table * {
 </div>
 
 <figure markdown="span">
-  ![alt text](modules/power/0_0_2/dec19_3.JPG){ width="400" }
+  ![alt text](PCB-Modules/power/0_0_2/dec19_3.JPG){ width="400" }
   <figcaption>Power Module Prototype</figcaption>
 </figure>
 
