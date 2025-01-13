@@ -5,14 +5,14 @@
 <div align="center">
   <div>
     <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" alt="3D Render" style="height: auto; width: 300px;">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.back.png" alt="3D Render" style="height: auto; width: 300px;">
-    <p><em>3D Render</em></p>
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.back.png" alt="3D Render" style="height: auto; width: 300px;"><br>
+    <em>3D Render</em>
   </div>
   <br>
 
   <div>
     <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/sch.svg" alt="Schematic" style="height: auto; width: 600px;"><br>
-    <p><em>Schematic</em></p>
+    <em>Schematic</em>
   </div>
   <br>
   
