@@ -1,9 +1,16 @@
 # Code
 
-Micro Python will initially be used to program the modules. The reason for this the ease of use over C
+Using Circuit python for now.
 
 ## Commands
 
 REPL for RP2040 on Mac
 
-    screen /dev/tty.usbmodem1101 115200
+    screen /dev/tty.usbmodem1101 
+
+List modules in board
+
+    dir(board)
+
+
+[Adafruit_CircuitPython_Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases)
