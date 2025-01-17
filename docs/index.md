@@ -13,7 +13,7 @@ hide:
   <b>Sonic Avionics</b> is a research organization that focuses on building flight computers.
 </p>
 <p>
-  All hardware and code is on <a href="https://github.com/sonicavionics/4in">GitHub</a>.
+  All hardware and code is on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>.
 </p>
 <p>
   Hardware will be sold as a kit once it's ready.
