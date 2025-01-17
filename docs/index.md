@@ -62,7 +62,7 @@ table, table * {
   <tr>
       <td align="center" style="vertical-align: middle;">
       <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" width="300" /><br>
-      <a href="/avionics/PCB-Modules/sensors/">Sensor Module 0.1.0</a>
+      <a href="/avionics/PCB-Modules/sensors/">Sensor Module 0.2.0</a>
     </td>
       <td align="center" style="vertical-align: middle;">
       <img src="/avionics/cad/thumbnail.png" width="250" /><br>
