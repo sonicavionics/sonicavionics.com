@@ -1,8 +1,6 @@
 ---
 hide:
-  - navigation
   - toc
-  - title
 ---
 
 # Join us
