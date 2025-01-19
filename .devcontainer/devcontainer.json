@@ -11,9 +11,10 @@
         "mkdocs-rss-plugin",
         "mkdocs-table-reader-plugin"
       ]
-    },
-    "ghcr.io/devcontainers-contrib/features/yamllint": {},
-    "ghcr.io/robinmordasiewicz/features/zzz-preinstall-extensions": {
+    }
+  },
+  "customizations": {
+    "vscode": {
       "extensions": [
         "ms-python.python",
         "streetsidesoftware.code-spell-checker",
