@@ -19,7 +19,8 @@
         "ms-python.python",
         "streetsidesoftware.code-spell-checker",
         "github.vscode-github-actions",
-        "mechatroner.rainbow-csv"
+        "mechatroner.rainbow-csv",
+        "ritwickdey.LiveServer"
       ]
     }
   }
