@@ -33,4 +33,4 @@ The rack will use [these threaded inserts](https://www.amazon.ca/gp/product/B0CN
 The rack had to be printed at a 45 degree angle.
 
 ![alt text](cad/rack.png)
-<p class="image-caption">This is the caption for the image.</p>
+<p class="image-caption">Slicer Render</p>
