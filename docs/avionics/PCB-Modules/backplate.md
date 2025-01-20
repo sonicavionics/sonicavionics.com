@@ -2,26 +2,20 @@
 
 ---
 
-<div align="center">
-  <div>
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.front.png" alt="3D Render" style="height: auto; width: 150px;">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.back.png" alt="3D Render" style="height: auto; width: 150px;"><br>
-    <em>3D Render</em>
-  </div>
-  <br>
-
-  <div>
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/sch.svg" alt="Schematic" style="height: auto; width: 600px;"><br>
-    <em>Schematic</em>
-  </div>
-  <br>
-  
-  <div>
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbf.svg" alt="Front" style="height: auto; width: 150px;">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbb.svg" alt="Back" style="height: auto; width: 150px;"><br>
-    <em>Footprint</em>
-  </div>
+<div class="image-row">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.front.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.back.png" alt="3D Render">
 </div>
+<p class="image-caption">3D Render</p>
+
+![alt text](https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/sch.svg)
+<p class="image-caption">Schematic</p>
+
+<div class="image-row">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbf.svg" alt="Front">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/pcbb.svg" alt="Back">
+</div>
+<p class="image-caption">Footprint</p>
 
 ## Links
 

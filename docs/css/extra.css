@@ -120,6 +120,20 @@ h5.doc-heading {
 
 .image-caption {
     text-align: center;
-    margin-top: -10px; /* Adjust this value as needed */
+    /* margin-top: -10px; Adjust this value as needed */
     font-style: italic; /* Ensures the text is italicized */
 }
+
+
+.image-row {
+    display: flex;
+    justify-content: center; /* Centers the images within the row */
+    gap: 20px; /* Adds space between the images */
+}
+
+.image-row img {
+    max-width: 45%; /* Ensures the images are responsive */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+
