@@ -69,8 +69,8 @@ table, table * {
       <a href="avionics/cad/">Avionics CAD</a>
     </td>
       <td align="center" style="vertical-align: middle;">
-      <img src="/avionics/PCB-Modules/power/0.0.2/thumbnail.jpg" width="300" /><br>
-      <a href="/avionics/PCB-Modules/power/0.0.2/">Power Module 0.0.2</a>
+      <img src="/avionics/archive/old/PCB-Modules/power/0.0.2/thumbnail.jpg" width="300" /><br>
+      <a href="/avionics/archive/old/PCB-Modules/power/0.0.2.md">Power Module 0.0.2</a>
     </td>
 
 </table>
