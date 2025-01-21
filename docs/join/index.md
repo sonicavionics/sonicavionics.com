@@ -40,4 +40,4 @@ Before doing the [Learn Git Branching](https://learngitbranching.js.org/) tutori
 
 ## Upon Completion
 
-If you have the requirements, and have completed your challenge contact 'zeulewan' on discord or email: zeul@mordasiewicz.com
+If you have the requirements, and have completed the challenge contact 'zeulewan' on discord or email: zeul@mordasiewicz.com
