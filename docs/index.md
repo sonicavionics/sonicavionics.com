@@ -16,10 +16,10 @@ hide:
   All hardware and code is on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>.
 </p>
 <p>
-  Hardware will be sold as a kit once it's ready.
+  Sonic Avionics aims to offer an open-source, modular avionics system that can be customized and built upon to meet individual needs.
 </p>
 <p>
-  We are currently working on a 4 inch diameter avionics system for high powered model rockets. 
+  We are currently working on a 4 inch diameter avionics system that will be compatible with the <a href="https://www.halfcatrocketry.com/mojave-sphinx">Mojave Sphinx</a>
 </p>
 </div>
 
