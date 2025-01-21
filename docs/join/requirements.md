@@ -23,5 +23,6 @@ Before doing the [Learn Git Branching](https://learngitbranching.js.org/) tutori
 
 ## Hardware Engineer Requirements
 
-- Do a small KiCad project using GitHub and implement the [DFM guide](/learn/dfmguide/).
+- Do a small KiCad project using GitHub and implement the [DFM guide](/learn/dfmguide/). Document it and put it on the website
 - Contribute to documentation on sonicavionics.com
+
