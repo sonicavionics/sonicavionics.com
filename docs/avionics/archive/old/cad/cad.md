@@ -7,12 +7,16 @@ hide:
 
 This is the page to describe the avionics bay CAD.
 
+![alt text](cad/1.png)
+<p class="image-caption">Version 1</p>
+
+
 ![alt text](cad/thumbnail.png)
-<p class="image-caption">Version 0.1.0</p>
+<p class="image-caption">Version 2</p>
 
 
 ![alt text](cad/2_3_side.png)
-<p class="image-caption">Version 0.1.0, Section View</p>
+<p class="image-caption">Version 2, Section View</p>
 
 
 There's just barely enough space to fit the RFD900 on a module. so why not?

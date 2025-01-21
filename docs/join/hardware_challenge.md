@@ -13,7 +13,7 @@ Feel free to add more features or remove some requirements if you see fit.
 
 The files should be publicly available on your GitHub. Use a protected main branch, as well as all the techniques you learnt in the [Learn Git Branching](https://learngitbranching.js.org/) tutorial. Commit messages will be read through, so it is important to use [proper commit messages](https://github.com/zeulewan/git-commit-message).
 
-Implement the [DFM Guide](../../learn/dfmguide/).
+Implement the [DFM Guide](../learn/dfmguide.md).
 
 ## Document
 
