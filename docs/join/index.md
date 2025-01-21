@@ -38,6 +38,6 @@ Before doing the [Learn Git Branching](https://learngitbranching.js.org/) tutori
 - Use [zsh](https://opensource.com/article/19/9/getting-started-zsh) and [Oh My Zsh](https://ohmyz.sh/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - Get [VSCode](https://code.visualstudio.com), and sign in with GitHub
 
-## Contact
+## Upon Completion
 
-zeul@mordasiewicz.com
+If you have the requirements, and have completed your challenge contact 'zeulewan' on discord or email: zeul@mordasiewicz.com
