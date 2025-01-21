@@ -26,8 +26,8 @@ Sonic Avionics intends to scale and create increasingly complex projects. We use
 
 - Experience with GitHub and Git
 - Completed [Learn Git Branching](https://learngitbranching.js.org/) tutorial, and apply all concepts in a GitHub repo
-- Do a small project of your specialization using GitHub
 - Read: [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
+- Do the challenge of your specialization
 
 ### Guidelines
 
@@ -37,15 +37,6 @@ Before doing the [Learn Git Branching](https://learngitbranching.js.org/) tutori
 - Set up [GitHub CLI](https://cli.github.com/)
 - Use [zsh](https://opensource.com/article/19/9/getting-started-zsh) and [Oh My Zsh](https://ohmyz.sh/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - Get [VSCode](https://code.visualstudio.com), and sign in with GitHub
-
-### What will be expected from you
-
-- Document everything you do in markdown, and put it on the website
-
-### Hardware Engineer Requirements
-
-- Complete the [Hardware Challenge](hardware_challenge.md)
-- Contribute to documentation on sonicavionics.com
 
 ## Contact
 
