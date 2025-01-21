@@ -4,7 +4,7 @@ To join the hardware team, you must complete the following.
 
 ## Design a Module
 
-Design a status module for the 4-inch avionics system in KiCad using the [challenge template](https://github.com/sonicavionics/4in-challengetemplate).
+Design a status module for the 4-inch avionics system in KiCad using the [challenge template](https://github.com/sonicavionics/4in-challengetemplate). Feel free to look at/copy various things from the [sensors module](https://github.com/sonicavionics/4in-sensors/tree/main).
 Chips in the template are locked in the PCB editor you can move them around as long a the USB and CAN differential pairing/impdedance matching is adhered to.
 
 The module should include a mountable SD card reader to log all CAN messages.
