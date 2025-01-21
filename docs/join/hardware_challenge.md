@@ -5,6 +5,8 @@ To join the hardware team, you must complete the following.
 ## Design a Module
 
 Design a status module for the 4-inch avionics system in KiCad using the [challenge template](https://github.com/sonicavionics/4in-challengetemplate).
+Chips in the template are locked in the PCB editor you can move them around as long a the USB and CAN differential pairing/impdedance matching is adhered to.
+
 The module should include a mountable SD card reader to log all CAN messages.
 Additionally, it should have indicators for battery level and e-match continuity, both of which are received from the CAN.
 Feel free to add more features or remove some requirements if you see fit.
