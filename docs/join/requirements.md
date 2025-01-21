@@ -9,13 +9,14 @@ Sonic Avionics intends to scale and create increasingly complex projects. We use
 - Do a small project of your specialization using GitHub
 - Read: [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
 
-## Git Guidelines
+## Guidelines
 
 Before doing the [Learn Git Branching](https://learngitbranching.js.org/) tutorial, it is recommended you do the following:
 
 - If you're on windows, install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 - Set up [GitHub CLI](https://cli.github.com/)
 - Use [zsh](https://opensource.com/article/19/9/getting-started-zsh) and [Oh My Zsh](https://ohmyz.sh/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- Get [VSCode](https://code.visualstudio.com), and sign in with GitHub
 
 ## What will be expected from you
 
