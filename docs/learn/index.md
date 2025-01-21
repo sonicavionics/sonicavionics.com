@@ -26,3 +26,6 @@ Here are some resources to help learn things.
 ## Differential Pairs
 
 - [KiCad](https://www.digikey.ca/en/maker/projects/how-to-route-differential-pairs-in-kicad-for-usb/45b99011f5d34879ae1831dce1f13e93)
+- [KiCad Controlled Impedance Traces (e.g. 50Ω) - Phil's Lab #3](https://www.youtube.com/watch?v=0fteCxn5XXA)
+- [What Are Differential Pairs? ](https://www.youtube.com/watch?v=7DF25ohH8v4)
+- [When Does a Trace Act Like a Transmission Line?](https://www.youtube.com/watch?v=UhTxEaw-Mck)
