@@ -8,12 +8,7 @@ hide:
 This is the page to describe the avionics bay CAD.
 
 ![alt text](cad/thumbnail.png)
-<p class="image-caption">Version 0.1.0</p>
-
-
-![alt text](cad/2_3_side.png)
-<p class="image-caption">Version 0.1.0, Section View</p>
-
+<p class="image-caption">Version 0.2.0</p>
 
 There's just barely enough space to fit the RFD900 on a module. so why not?
 The challenge is to see if these over hangs can print.
@@ -23,6 +18,15 @@ The challenge is to see if these over hangs can print.
 ## Rack
 
 The rack will use [these threaded inserts](https://www.amazon.ca/gp/product/B0CNRSJ1B2?psc=1)
+
+
+## Antenna Card Assembly
+
+![alt text](cad/rfd_board.png)
+
+
+Antenna CAD taken from [here](https://grabcad.com/library/gsm-antenna-3)
+
 
 ### 3D printing
 
