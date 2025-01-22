@@ -22,7 +22,12 @@ The rack will use [these threaded inserts](https://www.amazon.ca/gp/product/B0CN
 
 ## Antenna Card Assembly
 
-![alt text](cad/rfd_board.png)![alt text](cad/rfd_board2.png)
+<div class="image-row">
+    <img src="rfd_board.png" alt="3D Render">
+    <img src="rfd_board2.png" alt="3D Render">
+</div>
+<p class="image-caption">Antenna Module Render</p>
+
 
 ### Components
 
