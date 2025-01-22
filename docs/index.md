@@ -10,7 +10,7 @@ hide:
 
 <!-- Text Content -->
 <div style="flex: 1; text-align: justify;"><p>
-  <b>Sonic Avionics</b> is a research organization out of [TMU](https://www.torontomu.ca/) that focuses on building flight computers.
+  <b>Sonic Avionics</b> is a research organization that focuses on building flight computers.
 </p>
 <p>
   All hardware and code is on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>.
