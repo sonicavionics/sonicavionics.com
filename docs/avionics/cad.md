@@ -34,7 +34,7 @@ The rack will use [these threaded inserts](https://www.amazon.ca/gp/product/B0CN
 - [Antenna](https://grabcad.com/library/gsm-antenna-3)
 - [RFD900](https://grabcad.com/library/rfd-900-radio-modem-1)
 - [Standoffs](https://www.mcmaster.com/94868A719/)
-
+- [Washers](https://www.mcmaster.com/97022A879/)
 
 ### 3D printing
 
