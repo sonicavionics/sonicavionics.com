@@ -22,10 +22,13 @@ The rack will use [these threaded inserts](https://www.amazon.ca/gp/product/B0CN
 
 ## Antenna Card Assembly
 
-![alt text](cad/rfd_board.png)
+![alt text](cad/rfd_board.png)![alt text](cad/rfd_board2.png)
 
+### Components
 
-Antenna CAD taken from [here](https://grabcad.com/library/gsm-antenna-3)
+- [Antenna](https://grabcad.com/library/gsm-antenna-3)
+- [RFD900](https://grabcad.com/library/rfd-900-radio-modem-1)
+- [Standoffs](https://www.mcmaster.com/94868A719/)
 
 
 ### 3D printing
