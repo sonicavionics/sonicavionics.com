@@ -25,7 +25,7 @@ hide:
 
 <!-- Model Viewer -->
 <model-viewer 
-  src="model/ImageToStl.com_board.front.glb" 
+  src="model/backplate.glb" 
   alt="3D model of a board"
   auto-rotate 
   camera-controls 
