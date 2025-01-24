@@ -24,7 +24,7 @@ table, table * {
       <td align="center" style="vertical-align: middle;">
         <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/board.front.png" height="250" />
         <br />
-        <a href="PCB-Modules/power/0.1.0"><i>PowerSim</i></a>
+        <a href="PCB-Modules/powersim"><i>PowerSim</i></a>
       </td>
       <td align="center" style="vertical-align: middle;">
         <img src="https://raw.githubusercontent.com/sonicavionics/4in-backplate/refs/heads/main/images/board.front.png" height="450" />
