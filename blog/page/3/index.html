@@ -1606,6 +1606,60 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2024-11-24 00:00:00+00:00">November 24, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a>, 
+              <a href="../../category/complaints/" class="md-meta__link">complaints</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="jlcpcb-and-altium-design-rules-issues"><a class="toclink" href="../../2024/11/24/jlcpcb-and-altium-design-rules-issues/">JLCPCB and Altium Design Rules Issues</a></h2>
+<p>JLCPCB <a href="https://jlcpcb.com/capabilities/pcb-capabilities">"PCB Manufacturing &amp; Assembly Capabilities"</a> is kinda confusing.</p>
+<p>So for a two layer PCB,</p>
+<p><img alt="alt text" src="../../2024/november/24/image.png" /></p>
+<p>it says <em>"2-layer: 0.15mm hole size / 0.25mm via diameter."</em> That would mean the pad width or "annular ring" can be 0.05mm right? </p>
+<div class="arithmatex">\[
+\frac{0.25}{2} - \frac{0.15}{2} = 0.05
+\]</div>
+<p>but wait:
+<img alt="alt text" src="../../2024/november/24/image-1.png" /></p>
+<p>Now it says: <em>"2-layer: 1 oz: Recommended 0.25 mm or above; absolute minimum 0.18 mm."</em> </p>
+<p><strong>I guess a via doesn't count as a PTH (Plated Through Hole)?</strong></p>
+<p>By default in Altium you set your minimum annular ring:
+<img alt="alt text" src="../../2024/november/24/3.png" />
+and this applies to vias and PTH. So... I guess Altium probably shouldn't do this by default?</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2024-11-21 00:00:00+00:00">November 21, 2024</time></li>
         
           <li class="md-meta__item">
