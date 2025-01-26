@@ -1,6 +1,6 @@
 # Recovery
 
-[v0.1.0-alpha](https://github.com/sonicavionics/4in-recovery/)
+[Recovery Module](https://github.com/sonicavionics/4in-recovery/)
 
 ---
 
