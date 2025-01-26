@@ -19,23 +19,6 @@ The challenge is to see if these over hangs can print.
 
 The rack will use [these threaded inserts](https://www.amazon.ca/gp/product/B0CNRSJ1B2?psc=1)
 
-
-## Antenna Card Assembly
-
-<div class="image-row">
-    <img src="rfd_board.png" alt="3D Render">
-    <img src="rfd_board2.png" alt="3D Render">
-</div>
-<p class="image-caption">Antenna Module Render</p>
-
-
-### Components
-
-- [Antenna](https://grabcad.com/library/gsm-antenna-3)
-- [RFD900](https://grabcad.com/library/rfd-900-radio-modem-1)
-- [Standoffs](https://www.mcmaster.com/94868A719/)
-- [Washers](https://www.mcmaster.com/97022A879/)
-
 ### 3D printing
 
 The rack had to be printed at a 45 degree angle.
