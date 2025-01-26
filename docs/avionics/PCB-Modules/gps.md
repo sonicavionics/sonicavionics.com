@@ -13,3 +13,9 @@ The purpose of the ferrite bead in the circuit is to act as a low-pass filter, e
 In the M10S design, a ferrite bead was chosen over an inductor as a cost-effective solution, with the option to replace it in future iterations if needed. Additionally, a TVS diode was incorporated to ensure ESD protection, while a capacitor and resistor were added to meet the guidelines specified in section 4.3.4 of the integration manual.
 
 [MAX-M10S Integration manual](https://content.u-blox.com/sites/default/files/MAX-M10S_IntegrationManual_UBX-20053088.pdf)
+
+## Switch from MAX M10S to NEO-M9N
+
+The MAX M10S GPS module was replaced with the NEO-M9N to enhance navigation performance. The NEO-M9N supports multiple GNSS constellations (GPS, Galileo, GLONASS, BeiDou) simultaneously, providing faster position acquisition, improved accuracy, and greater reliability. With update rates of up to 25 Hz, it delivers real-time position data critical for precise control and dynamic adjustments during use. Additionally, its suitable for high-altitude and high-velocity environments.
+
+[NEO-M9N Integration manual](https://content.u-blox.com/sites/default/files/NEO-M9N_Integrationmanual_UBX-19014286.pdf)
