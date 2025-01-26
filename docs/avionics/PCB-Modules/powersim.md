@@ -1,6 +1,6 @@
 # PowerSim
 
-[v0.2.0-alpha](https://github.com/sonicavionics/4in-powersim/tree/87c5420f04c32dd049ac773f05f2169482eee1a7)
+[v0.2.0-alpha](https://github.com/sonicavionics/4in-powersim/tree/v0.2.0-alpha)
 
 ---
 
@@ -9,17 +9,17 @@ The PowerSim module is a precursor to the Power module. It's meant to be very si
 ---
 
 <div class="image-row">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/87c5420f04c32dd049ac773f05f2169482eee1a7/images/board.front.png" alt="3D Render">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/87c5420f04c32dd049ac773f05f2169482eee1a7/images/board.back.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/board.front.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/board.back.png" alt="3D Render">
 </div>
 <p class="image-caption">3D Render</p>
 
-![alt text](https://raw.githubusercontent.com/sonicavionics/4in-powersim/87c5420f04c32dd049ac773f05f2169482eee1a7/images/sch.svg)
+![alt text](https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/sch.svg)
 <p class="image-caption">Schematic</p>
 
 <div class="image-row">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/87c5420f04c32dd049ac773f05f2169482eee1a7/images/pcbf.svg" alt="Front">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/87c5420f04c32dd049ac773f05f2169482eee1a7/images/pcbb.svg" alt="Back">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/pcbf.svg" alt="Front">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/pcbb.svg" alt="Back">
 </div>
 <p class="image-caption">Footprint</p>
 
