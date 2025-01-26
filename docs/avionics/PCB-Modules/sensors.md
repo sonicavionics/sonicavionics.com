@@ -4,7 +4,7 @@
 
 ---
 
-The sensors module is responsible for logging and transmitting telemetry data. It utilizes the BNO055 for sensor fusion. A custom sensor fusion algorithm will compare its results with those from the BNO055.
+The sensors module is responsible for logging and transmitting telemetry data over the CAN. It utilizes the BNO055 for sensor fusion. A custom sensor fusion algorithm will compare its results with those from the BNO055.
 
 
 ---
