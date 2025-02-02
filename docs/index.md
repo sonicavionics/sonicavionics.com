@@ -70,8 +70,7 @@ table, table * {
     </td>
       <td align="center" style="vertical-align: middle;">
       <img src="/avionics/archive/old/PCB-Modules/power/0.0.2/thumbnail.jpg" width="300" /><br>
-      <a href="/avionics/archive/old/PCB-Modules/power/0.0.2.md">Power Module 0.0.2</a>
+      <a href="/avionics/archive/old/PCB-Modules/power/0.0.2/">Power Module 0.0.2</a>
     </td>
-
 </table>
 </div>
