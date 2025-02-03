@@ -24,11 +24,11 @@ Sonic Avionics intends to scale and create increasingly complex projects. We use
 
 ### General Requirements 
 
-- Experience with GitHub and Git
-- Completed [Learn Git Branching](https://learngitbranching.js.org/) tutorial, and apply all concepts in a GitHub repo
-- Read: [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
-- Understand what cloning and forking and pull requests are on GitHub.
-- Do the challenge of your specialization
+1. Experience with GitHub and Git
+2. Completed [Learn Git Branching](https://learngitbranching.js.org/) tutorial, and apply all concepts in a GitHub repo
+3. Read: [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
+4. Understand what cloning and forking and pull requests are on GitHub.
+5. Do the challenge of your specialization
 
 ### Guidelines
 
