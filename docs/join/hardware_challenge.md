@@ -8,6 +8,7 @@ Design a status module for the 4-inch avionics system in KiCad using the [challe
 Chips in the template are locked in the PCB editor you can move them around as long a the USB and [CAN](https://www.youtube.com/watch?v=YBrU_eZM110) differential pairing/impdedance matching is adhered to.
 
 The module should include a mountable SD card reader to log all CAN messages.
+The status module can use either an LED array or LCD screen to display information relayed by other modules.
 Additionally, it should have a method to indicate battery level and e-match continuity, both of which are received from the [CAN](https://www.youtube.com/watch?v=YBrU_eZM110).
 Feel free to add more features or remove some requirements if you see fit.
 
