@@ -25,7 +25,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7758b05.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -671,6 +671,60 @@
   <a href="#switch-from-max-m10s-to-neo-m9n" class="md-nav__link">
     <span class="md-ellipsis">
       Switch from MAX M10S to NEO-M9N
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choice-of-usb-hub-over-multiplexer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choice of USB Hub Over Multiplexer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switching-from-usb-hub-to-dedicated-usb-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switching from USB Hub to Dedicated USB Port
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sma-connector-positioning-for-90-degree-antenna-bend" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMA Connector Positioning for 90-Degree Antenna Bend
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-placement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Placement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rechargeable-3v-lithium-cell-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rechargeable 3V Lithium Cell Selection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration-to-4-layer-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration to 4-Layer PCB
     </span>
   </a>
   
@@ -1762,6 +1816,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#choice-of-usb-hub-over-multiplexer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choice of USB Hub Over Multiplexer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switching-from-usb-hub-to-dedicated-usb-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switching from USB Hub to Dedicated USB Port
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sma-connector-positioning-for-90-degree-antenna-bend" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMA Connector Positioning for 90-Degree Antenna Bend
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-placement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Placement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rechargeable-3v-lithium-cell-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rechargeable 3V Lithium Cell Selection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration-to-4-layer-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration to 4-Layer PCB
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1797,6 +1905,30 @@
 <h2 id="switch-from-max-m10s-to-neo-m9n">Switch from MAX M10S to NEO-M9N</h2>
 <p>The MAX M10S GPS module was replaced with the NEO-M9N to enhance navigation performance. The NEO-M9N supports multiple GNSS constellations (GPS, Galileo, GLONASS, BeiDou) simultaneously, providing faster position acquisition, improved accuracy, and greater reliability. With update rates of up to 25 Hz, it delivers real-time position data critical for precise control and dynamic adjustments during use. Additionally, its suitable for high-altitude and high-velocity environments.</p>
 <p><a href="https://content.u-blox.com/sites/default/files/NEO-M9N_Integrationmanual_UBX-19014286.pdf">NEO-M9N Integration manual</a></p>
+<h2 id="choice-of-usb-hub-over-multiplexer">Choice of USB Hub Over Multiplexer</h2>
+<p>The decision to use a USB hub instead of a multiplexer (MUX) was driven by the need to support simultaneous access to the GPS and MCU. A USB hub allows concurrent bandwidth sharing across devices, whereas a MUX only connects one device at a time, requiring active switching.</p>
+<h2 id="switching-from-usb-hub-to-dedicated-usb-port">Switching from USB Hub to Dedicated USB Port</h2>
+<p>Due to space constraints on the pcb, the USB hub was replaced with a dedicated secondary USB port. While this sacrifices concurrent device support, it simplifies routing, reduces component count.</p>
+<h2 id="sma-connector-positioning-for-90-degree-antenna-bend">SMA Connector Positioning for 90-Degree Antenna Bend</h2>
+<p>To accommodate the antenna’s 90-degree bend in the rack enclosure:</p>
+<p>A right-angle SMA connector was in the middle of the board</p>
+<p>The RF trace to the SMA connector follows a 50-Ω signle-coplanar design with a continuous ground plane beneath it and beside it to maintain signal integrity at 1.575 GHz (GPS L1 band).</p>
+<h2 id="component-placement">Component Placement</h2>
+<p>RP2040 Microcontroller: Positioned near the USB ports to shorten high-speed traces.</p>
+<p>CAN Transceiver: Isolated to prevent noise coupling.</p>
+<h2 id="rechargeable-3v-lithium-cell-selection">Rechargeable 3V Lithium Cell Selection</h2>
+<p>A 6.8mm rechargeable lithium cell (MS621FE) was chosen over CR2032/CR1220 due to:</p>
+<p>Size constraints: The 6.8mm fits better on the pcb.
+Rechargeability: Supports 500+ cycles, reducing long-term maintenance.</p>
+<p>Trade-offs: Lower capacity (25 mAh vs. CR2032’s 225 mAh).</p>
+<p><a href="https://www.sii.co.jp/en/me/files/2024/01/MicroBattery_E_20230330_rev05-security.pdf">Micro Battery Documentation</a></p>
+<h2 id="migration-to-4-layer-pcb">Migration to 4-Layer PCB</h2>
+<p>Upgrading from a 2-layer to a 4-layer board was driven by the NEO-M9N’s high-performance requirements:</p>
+<p>Layer stackup: Signal/Ground – Ground – Power – Signal. This provides:</p>
+<p>A dedicated ground plane for RF sections (GPS, SMA connector).</p>
+<p>Improved EMI shielding and signal integrity for USB 3.0 and CAN FD traces.</p>
+<p>Reduced parasitic capacitance in high-speed lines.</p>
+<p>Thermal management: Inner power planes distribute heat from the CAN transceiver and RP2040.</p>
 
 
 
@@ -1819,7 +1951,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 26, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 16, 2025</span>
   </span>
 
     
