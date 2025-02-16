@@ -1571,18 +1571,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#design-a-module" class="md-nav__link">
+  <a href="#pcb" class="md-nav__link">
     <span class="md-ellipsis">
-      Design a Module
+      PCB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sd-card-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      SD Card reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indicate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indicate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#document" class="md-nav__link">
+  <a href="#deadline" class="md-nav__link">
     <span class="md-ellipsis">
-      Document
+      Deadline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Template repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Information
     </span>
   </a>
   
@@ -1719,18 +1770,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#design-a-module" class="md-nav__link">
+  <a href="#pcb" class="md-nav__link">
     <span class="md-ellipsis">
-      Design a Module
+      PCB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sd-card-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      SD Card reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indicate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indicate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#document" class="md-nav__link">
+  <a href="#deadline" class="md-nav__link">
     <span class="md-ellipsis">
-      Document
+      Deadline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Template repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Information
     </span>
   </a>
   
@@ -1761,18 +1863,49 @@
 
 
 <h1 id="hardware-challenge">Hardware Challenge</h1>
-<p>To join the hardware team, you must complete the following.</p>
-<h2 id="design-a-module">Design a Module</h2>
-<p>Design a status module for the 4-inch avionics system in KiCad using the <a href="https://github.com/sonicavionics/4in-challengetemplate">challenge template</a>. Feel free to look at/copy various things from the <a href="https://github.com/sonicavionics/4in-sensors/tree/main">sensors module</a>.
-Chips in the template are locked in the PCB editor you can move them around as long a the USB and <a href="https://www.youtube.com/watch?v=YBrU_eZM110">CAN</a> differential pairing/impdedance matching is adhered to.</p>
-<p>The module should include a mountable SD card reader to log all CAN messages.
-The status module can use either an LED array or LCD screen to display information relayed by other modules.
-Additionally, it should have a method to indicate battery level and e-match continuity, both of which are received from the <a href="https://www.youtube.com/watch?v=YBrU_eZM110">CAN</a>.
-Feel free to add more features or remove some requirements if you see fit.</p>
-<p>The files should be publicly available on your GitHub. Use a protected main branch, as well as all the techniques you learnt in the <a href="https://learngitbranching.js.org/">Learn Git Branching</a> tutorial. Commit messages will be read through, so it is important to use <a href="https://github.com/zeulewan/git-commit-message">proper commit messages</a>.</p>
-<p>Implement the <a href="../../resources/dfmguide/">DFM Guide</a>.</p>
-<h2 id="document">Document</h2>
-<p>Make a fork of this website, contribute to a section that needs modification, make a pull request. Preferably to contribute to the DFM guide or anything in the learn tab.</p>
+<p>Complete the following.</p>
+<h2 id="pcb">PCB</h2>
+<p>Design a status module for the avionics system. It should have:</p>
+<h3 id="sd-card-reader">SD Card reader</h3>
+<p>The board should have an SD card hooked up to the RP2040 that logs all data coming from the CAN bus.</p>
+<h3 id="indicate">Indicate</h3>
+<p>Indicate the status of the other boards. Including:</p>
+<ol>
+<li>Battery level</li>
+<li>E-match continuity</li>
+<li>Acceleration, gyroscope and magnetometer readings</li>
+</ol>
+<p>The status module will listen to everything on the <a href="https://www.youtube.com/watch?v=YBrU_eZM110">CAN</a> bus and display all relevant information. It may include buttons to cycle through different information. It can use either an LED array or LCD screen to display information.</p>
+<h2 id="documentation">Documentation</h2>
+<ol>
+<li>Document Everything you do and put it on the website</li>
+<li>Contribute to the website in another way.</li>
+</ol>
+<h2 id="deadline">Deadline</h2>
+<p><strong>2025 March 16th</strong></p>
+<h2 id="template-repository">Template repository</h2>
+<p>When creating a new repo, use the <a href="https://github.com/sonicavionics/4in-challengetemplate">challenge template</a> as your repo's template.</p>
+<p>There are some chips already selected for you:
+1. MCU: RP2040
+2. Flash chip for RP2040
+3. RP2040 Clock
+4. CAN Controller/Transceiver
+5. CAN Controller/Transceiver Clock
+6. USB-C Port
+7. PCIe gold fingers</p>
+<h2 id="further-information">Further Information</h2>
+<ul>
+<li>Implement the <a href="../../resources/dfmguide/">DFM Guide</a>.</li>
+<li>
+<p>use <a href="https://github.com/zeulewan/git-commit-message">proper commit messages</a>.</p>
+</li>
+<li>
+<p>When creating a new repo, select the <a href="https://github.com/sonicavionics/4in-challengetemplate">challenge template</a> for the template.</p>
+</li>
+<li>Feel free to look at/copy various things from the <a href="https://github.com/sonicavionics/4in-sensors/tree/main">sensors module</a>.</li>
+<li>USB and <a href="https://www.youtube.com/watch?v=YBrU_eZM110">CAN</a> differential pairing/impedance matching must be adhered to.</li>
+<li>Use a protected main branch, as well as all the techniques you learnt in the <a href="https://learngitbranching.js.org/">Learn Git Branching</a> tutorial.</li>
+</ul>
 
 
 
@@ -1795,7 +1928,7 @@ Feel free to add more features or remove some requirements if you see fit.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 7, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 16, 2025</span>
   </span>
 
     

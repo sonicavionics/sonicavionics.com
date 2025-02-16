@@ -1666,6 +1666,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview-of-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview of System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requirements-and-design-goals" class="md-nav__link">
     <span class="md-ellipsis">
       Requirements and Design Goals
@@ -1684,26 +1693,17 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overview-of-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview of System
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#battery" class="md-nav__link">
     <span class="md-ellipsis">
       Battery
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1780,6 +1780,8 @@ table, table * {
 <p class="image-caption">CAD</p>
 
 <hr />
+<h2 id="overview-of-system">Overview of System</h2>
+<p>The avionics system is composed of five  modules interconnected through CAN bus. These modules are: <a href="PCB-Modules/power.md">Power</a>, <a href="PCB-Modules/sensors/">Sensors</a>, <a href="PCB-Modules/gps/">GPS</a>, <a href="PCB-Modules/antenna/">Antenna</a>, and <a href="PCB-Modules/recovery/">Recovery</a>. The backplate features PCIe slots, and connects all the modules.</p>
 <h2 id="requirements-and-design-goals">Requirements and Design Goals</h2>
 <p>The primary goal of the 4-inch avionics system is to enable learning. This will be the first system of many. </p>
 <h3 id="primary-functional-requirements">Primary Functional Requirements</h3>
@@ -1790,16 +1792,14 @@ table, table * {
 <li>Incorporate all known best practices to enable scalability.</li>
 <li>It will be a CAN-enabled system in a 4-inch diameter form factor.</li>
 </ul>
-<h2 id="overview-of-system">Overview of System</h2>
-<p>The avionics system is composed of five  modules interconnected through CAN bus. These modules encompass Power, Sensors, GPS, Antenna, and Ejection Charges. The backplate features PCIe slots, and connects all the modules.</p>
-<h2 id="battery">Battery</h2>
+<h3 id="battery">Battery</h3>
 <p>The system will use a SRAD battery pack for custom-built boards, and COTS components will use a commercial battery pack. For the first launch, a 2s 2p pack inspired by <a href="https://www.youtube.com/watch?v=3dD5KmM8ciU">this video</a> will be used.</p>
 <h2 id="improvements-for-the-next-version">Improvements for the Next Version</h2>
 <ul>
 <li><strong>USB Multiplexer</strong>: Controlled by a Raspberry Pi Zero. The backplate will host the MUX, enabling digital reboots and removal of USB ports except on the Pi Zero.</li>
 <li><strong>Programmable Power MUX</strong>: Allows remote rebooting of components.</li>
 <li><strong>Ethernet</strong>: Inclusion for data transmission.</li>
-<li><strong>2.4 GHz Camera Transmission</strong></li>
+<li><strong>Camera Transmission</strong></li>
 <li><strong>USB Protection IC</strong></li>
 </ul>
 
@@ -1824,7 +1824,7 @@ table, table * {
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 23, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 16, 2025</span>
   </span>
 
     
