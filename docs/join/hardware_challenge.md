@@ -1,21 +1,50 @@
 # Hardware Challenge
 
-To join the hardware team, you must complete the following.
+Complete the following.
 
-## Design a Module
+## PCB
 
-Design a status module for the 4-inch avionics system in KiCad using the [challenge template](https://github.com/sonicavionics/4in-challengetemplate). Feel free to look at/copy various things from the [sensors module](https://github.com/sonicavionics/4in-sensors/tree/main).
-Chips in the template are locked in the PCB editor you can move them around as long a the USB and [CAN](https://www.youtube.com/watch?v=YBrU_eZM110) differential pairing/impdedance matching is adhered to.
+Design a status module for the avionics system. It should have:
 
-The module should include a mountable SD card reader to log all CAN messages.
-The status module can use either an LED array or LCD screen to display information relayed by other modules.
-Additionally, it should have a method to indicate battery level and e-match continuity, both of which are received from the [CAN](https://www.youtube.com/watch?v=YBrU_eZM110).
-Feel free to add more features or remove some requirements if you see fit.
+### SD Card reader
+The board should have an SD card hooked up to the RP2040 that logs all data coming from the CAN bus.
 
-The files should be publicly available on your GitHub. Use a protected main branch, as well as all the techniques you learnt in the [Learn Git Branching](https://learngitbranching.js.org/) tutorial. Commit messages will be read through, so it is important to use [proper commit messages](https://github.com/zeulewan/git-commit-message).
+### Indicate
+Indicate the status of the other boards. Including:
 
-Implement the [DFM Guide](../resources/dfmguide.md).
+1. Battery level
+2. E-match continuity
+3. Acceleration, gyroscope and magnetometer readings
 
-## Document
+The status module will listen to everything on the [CAN](https://www.youtube.com/watch?v=YBrU_eZM110) bus and display all relevant information. It may include buttons to cycle through different information. It can use either an LED array or LCD screen to display information.
 
-Make a fork of this website, contribute to a section that needs modification, make a pull request. Preferably to contribute to the DFM guide or anything in the learn tab.
+
+## Documentation
+1. Document Everything you do and put it on the website
+2. Contribute to the website in another way.
+
+## Deadline
+**2025 March 16th**
+
+## Template repository
+
+When creating a new repo, use the [challenge template](https://github.com/sonicavionics/4in-challengetemplate) as your repo's template.
+
+There are some chips already selected for you:
+1. MCU: RP2040
+2. Flash chip for RP2040
+3. RP2040 Clock
+4. CAN Controller/Transceiver
+5. CAN Controller/Transceiver Clock
+6. USB-C Port
+7. PCIe gold fingers
+
+## Further Information
+
+- Implement the [DFM Guide](../resources/dfmguide.md).
+- use [proper commit messages](https://github.com/zeulewan/git-commit-message).
+
+- When creating a new repo, select the [challenge template](https://github.com/sonicavionics/4in-challengetemplate) for the template.
+- Feel free to look at/copy various things from the [sensors module](https://github.com/sonicavionics/4in-sensors/tree/main).
+- USB and [CAN](https://www.youtube.com/watch?v=YBrU_eZM110) differential pairing/impedance matching must be adhered to.
+- Use a protected main branch, as well as all the techniques you learnt in the [Learn Git Branching](https://learngitbranching.js.org/) tutorial.
