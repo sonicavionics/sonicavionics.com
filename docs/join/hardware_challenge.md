@@ -31,6 +31,7 @@ The status module will listen to everything on the [CAN](https://www.youtube.com
 When creating a new repo, use the [challenge template](https://github.com/sonicavionics/4in-challengetemplate) as your repo's template.
 
 There are some chips already selected for you:
+
 1. MCU: RP2040
 2. Flash chip for RP2040
 3. RP2040 Clock
