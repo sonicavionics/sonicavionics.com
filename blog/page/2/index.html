@@ -1686,6 +1686,55 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2024-12-09 00:00:00+00:00">December 9, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="december-9th"><a class="toclink" href="../../2024/12/09/december-9th/">December 9th</a></h2>
+<p>Things I bought today:</p>
+<ul>
+<li>Test PCBs from JLC, module and backplate for the 4" Avionics</li>
+<li>12 18650s</li>
+<li>spot welder and threaded heat inserts</li>
+<li>PCIe and UCB-C receptacles</li>
+</ul>
+<p>Should I use 0603, 0402 or 0201?
+If I go with 0603 we can solder it pretty easily. 0201 its not happening, and 0402 it's harder. Those components aren't even the expensive ones to have JLCPCB assemble for you. Actually 0201 is more expensive I think. Okay 0402 it is then. </p>
+<p>For the next board, we'll have a way to upload new code over the air. The CAN network will have its bootselect pins on the PCIe bus, the raspberry pi 5 or something will be able to put any of them into mass storage mode, and upload new code on the USB lines... maybe I should just do this now. okay fine i'll do it now</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2024-12-08 00:00:00+00:00">December 8, 2024</time></li>
         
           <li class="md-meta__item">
@@ -2117,56 +2166,6 @@ Three sort of use cases: Primary MCAD, primary ECAD, and equal priority</p>
 <p>I would like for right now, to be able to push a board layout, a rough layout, to the board dimensions/connectors repo. This contains the gold fingers, USB and JST connectors. This is an initial push so it doesn't require both team's approval. Next I want to go into solidworks, move around the gold fingers, change the board diameter, lets say shrink it. Then I push to the dimensions/connectors repo. A pop up on Altium appears, it says "a change has been proposed". Then it says would you like to branch to check approvability? I finish my changes to the ECAD before I then branch the ECAD repo. This special branch pulls changes proposals from the dimensions/connectors repo. Then I look around to see if I can rework the PCB a bit to allow the changes. I rework the pcb a bit then accept the changes. I merge back the ECAD branch to main. The new main has a different git hash has associated with the dimensions/connectors submodule. </p>
 <p>Anyways there's some spit balling about an ideal version control ECAD/MCAD workflow. I don't think this can be done with kicad or some open source cad software. The two softwares would need to agree on a system for the dimensions/connectors files. And it's probably best the two softwares are kept separate. </p>
 <p>So you can use workarounds to avoid using Altium 365, but you loose too much convenience for it to be worth it. You'd have to keep exporting to a STEP in altium then in solid works you'd have to export to a DXF then in Altium import that to be the board shape.</p>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-11-25 00:00:00+00:00">November 25, 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a>, 
-              <a href="../../category/complaints/" class="md-meta__link">complaints</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="altium-complaints"><a class="toclink" href="../../2024/11/25/altium-complaints/">Altium Complaints</a></h2>
-<p>.lia files are fully broken in Altium. You literally just can't import them anymore.</p>
-<p>There's this nice <a href="https://circuitmaker.com/Projects/Details/Patrick-Reeb-2/PCIE-x1-Template">PCIe template</a> I want to use, but circuit maker is effed.
-Why are they even trying to keep circuit maker alive? It's fully broken because it wants you to sign in with a name and password but you can only use google to sign up in the browser and there's no option to change your password anywhere. </p>
-<p>There used to be a <a href="https://techdocs.altium.com/display/ALIVE/AltiumLive+-+Content+Store">template libary?</a>. Now all the "design content" links redirect to octopart which doesn't seem to have templates like the design content. <a href="https://designcontent.live.altium.com/#Search/pcie">https://designcontent.live.altium.com/#Search/pcie</a></p>
-<p>The license manager has to be one of the most annoying things known to man. Every now and then you start up Altium and you have to click "release" then roam on three licenses because it thinks you're signed in somewhere else.</p>
-<p>Altium, Solidworks and Onshape have different methods of rotation. </p>
-<p>Onshape is clearly the best, pan zoom and rotate are all done without a modifier. It's just constrained rotate which uses shift. I don't think solidworks even has that though.</p>
-<p>Altium is the worst is uses track ball rotation which inherently requires more clicks.</p>
-<p><a href="https://www.mattkeeter.com/projects/rotation/">Matt Keeter // 3D Rotation Design</a></p>
-<p>Everying time I paste a JLCPCB part number into the BOM the entire software freezes for a good 20 seconds. </p>
     
   </div>
 </article>
