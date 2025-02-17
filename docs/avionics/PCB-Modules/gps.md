@@ -66,3 +66,9 @@ Improved EMI shielding and signal integrity for USB 3.0 and CAN FD traces.
 Reduced parasitic capacitance in high-speed lines.
 
 Thermal management: Inner power planes distribute heat from the CAN transceiver and RP2040.
+
+## Antenna Selection
+
+The ANT-20087EB56 GPS antenna was purchased from DigiKey to confirm dimensions due to limited documentation. A right-angle SMA connector was used on the pcb to allow a 90-degree bend. Its whip format makes it ideal for the rack-mounted design. Physical measurements will be taken to confirm dimensions.
+
+[ANT-20087EB56 Digikey](https://www.digikey.com/en/products/detail/adam-tech/ANT-20087EB56/16123699)
