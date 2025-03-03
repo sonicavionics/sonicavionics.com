@@ -18,18 +18,18 @@
         <link rel="prev" href="../../sensors/">
       
       
-        <link rel="next" href="../../../archive/old/cad/">
+        <link rel="next" href="../quentin/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../feed_rss_created.xml">
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
-        <title>Cihad Status - Sonic Avionics</title>
+        <title>Cihad's Status Module - Sonic Avionics</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cihad-status" class="md-skip">
+        <a href="#cihads-status-module" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cihad Status
+              Cihad's Status Module
             
           </span>
         </div>
@@ -698,6 +698,8 @@
       
         
       
+        
+      
     
     
       
@@ -748,17 +750,79 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cihad's Status Module
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Cihad Status
+    Cihad's Status Module
     
   </span>
   
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#can-bus-mcp25625t-eml" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAN bus - MCP25625T-E/ML
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quentin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quentin - Status
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1750,6 +1814,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#can-bus-mcp25625t-eml" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAN bus - MCP25625T-E/ML
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1772,9 +1853,41 @@
   
 
 
-<h1 id="cihad-status">Cihad Status</h1>
-<p>test 
-<img alt="alt text" src="image.png" /></p>
+<h1 id="cihads-status-module">Cihad's Status Module</h1>
+<p><a href="https://github.com/sonicavionics/4in-cihadkhaled-statusmodule">Cihad's Status Module</a></p>
+<hr />
+<p>Cihad's prototype of the status module.</p>
+<hr />
+<div class="image-row">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-cihadkhaled-statusmodule/refs/heads/main/images/board.front.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-cihadkhaled-statusmodule/main/images/board.back.png" alt="3D Render">
+</div>
+<p class="image-caption">3D Render</p>
+
+<p><img alt="alt text" src="https://raw.githubusercontent.com/sonicavionics/4in-cihadkhaled-statusmodule/7132b87a29a3697091c76b3631324f0dcd40ff1d/images/sch.svg" /></p>
+<p class="image-caption">Schematic</p>
+
+<div class="image-row">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-cihadkhaled-statusmodule/7132b87a29a3697091c76b3631324f0dcd40ff1d/images/pcbf.svg" alt="Front">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-cihadkhaled-statusmodule/7132b87a29a3697091c76b3631324f0dcd40ff1d/images/pcbb.svg" alt="Back">
+</div>
+<p class="image-caption">Footprint</p>
+
+<!-- # Components -->
+
+<!-- - [Regulator](https://jlcpcb.com/partdetail/DiodesIncorporated-AP63203WU7/C780769)
+- [Inductor](https://jlcpcb.com/partdetail/Tdk-SLF7055T_6R8N2R83PF/C21218)
+- **USB-C** [JLC USB-C port](https://jlcpcb.com/partdetail/ShouHan-TYPE_C_16PIN_2MD_073/C2765186) -->
+
+<h2 id="can-bus-mcp25625t-eml">CAN bus - MCP25625T-E/ML</h2>
+<ul>
+<li>OSC1 &amp; 2 are connected to capacitors and an oscillator crystal - X322516MLB4SI</li>
+<li>CLKOUT is NC because the RP2040 already has a clock signal</li>
+<li>TxCAN -&gt; TxD (based on FIGURE 1-2)</li>
+<li>RxD -&gt; RxCAN (based on FIGURE 1-2)</li>
+</ul>
+<p>“The TXD and RXD pins of the CAN transceiver must be externally connected to the TxCAN and RxCAN pins of the CAN controller.” (Datasheet)</p>
+<p><img alt="alt text" src="canrp.png" /></p>
 
 
 
@@ -1797,7 +1910,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 28, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2025</span>
   </span>
 
     
