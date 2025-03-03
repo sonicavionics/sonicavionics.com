@@ -26,7 +26,7 @@ The status module will listen to everything on the [CAN](https://www.youtube.com
 2. Contribute to the website in another way.
 
 ## Deadline
-**2025 March 16th**
+**2025 March 23rd**
 
 ## Template repository
 
