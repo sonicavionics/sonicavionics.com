@@ -10,11 +10,13 @@ Design a status module for the avionics system. It should have:
 The board should have an SD card hooked up to the RP2040 that logs all data coming from the CAN bus.
 
 ### Indicate
-Indicate the status of the other boards. Including:
+There will be **other boards** that will collect the following data:
 
 1. Battery level
 2. E-match continuity
 3. Acceleration, gyroscope and magnetometer readings
+
+The status module will log the data in the SD card and display it.
 
 The status module will listen to everything on the [CAN](https://www.youtube.com/watch?v=YBrU_eZM110) bus and display all relevant information. It may include buttons to cycle through different information. It can use either an LED array or LCD screen to display information.
 
@@ -24,7 +26,7 @@ The status module will listen to everything on the [CAN](https://www.youtube.com
 2. Contribute to the website in another way.
 
 ## Deadline
-**2025 March 16th**
+**2025 March 23rd**
 
 ## Template repository
 
