@@ -74,5 +74,3 @@ table, table * {
     </td>
 </table>
 </div>
-
-test
