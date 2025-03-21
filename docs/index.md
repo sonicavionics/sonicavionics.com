@@ -6,10 +6,27 @@ hide:
 ---
 # Home
 
-<div style="display: flex; align-items: center; gap: 20px;">
 
 <!-- Text Content -->
-<div style="display: flex; align-items: center; gap: 20px;"> <!-- Text Content --> <div style="flex: 1; text-align: justify;"><p> <b>Sonic Avionics</b> empowers Canadian students and rocketry enthusiasts with an open-source, modular avionics platform. Our beginner-friendly flight computers bridge the gap between theory and practice, tackling the engineering skills shortage with hands-on learning. All hardware and code are available on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>. Currently, we’re developing a 4-inch avionics system which is scalable for all skill levels. </p></div>
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1; text-align: justify;">
+    <p>
+      <b>Sonic Avionics</b> empowers Canadian students and rocketry enthusiasts with an open-source, modular avionics platform.
+    </p>
+    <p>
+      Our beginner-friendly flight computers bridge the gap between theory and practice, tackling the engineering skills shortage with hands-on learning.
+    </p>
+    <p>
+      All hardware and code are available on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>.
+    </p>
+    <p>
+      Currently, we’re developing a 4-inch avionics system which is scalable for all skill levels.
+    </p>
+  </div>
+
+</div>
+
 
   
 <!-- Model Viewer -->
