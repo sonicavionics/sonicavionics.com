@@ -15,13 +15,13 @@ The status module displays the status of other avionics subsystems.
 </div>
 <p class="image-caption">3D Render</p>
 
-![alt text](https://raw.githubusercontent.com/sonicavionics/4in-quentindelatorre-statusmodule/96679ecf9674df52feabe7829dd80ba4ced6ef1e/images/sch.svg)
+![alt text](https://raw.githubusercontent.com/sonicavionics/4in-quentindelatorre-statusmodule/refs/heads/main/images/sch.svg)
 <p class="image-caption">Schematic</p>
 
 
 <div class="image-row">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-quentindelatorre-statusmodule/96679ecf9674df52feabe7829dd80ba4ced6ef1e/images/pcbf.svg" alt="Front">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-quentindelatorre-statusmodule/96679ecf9674df52feabe7829dd80ba4ced6ef1e/images/pcbb.svg" alt="Back">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-quentindelatorre-statusmodule/refs/heads/main/images/pcbf.svg" alt="Front">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-quentindelatorre-statusmodule/refs/heads/main/images/pcbb.svg" alt="Back">
 </div>
 <p class="image-caption">Footprint</p>
 
