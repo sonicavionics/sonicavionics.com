@@ -9,20 +9,9 @@ hide:
 <div style="display: flex; align-items: center; gap: 20px;">
 
 <!-- Text Content -->
-<div style="flex: 1; text-align: justify;"><p>
-  <b>Sonic Avionics</b> is a research organization that focuses on building flight computers.
-</p>
-<p>
-  All hardware and code is on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>.
-</p>
-<p>
-  Sonic Avionics aims to offer an open-source, modular avionics system that can be customized and built upon to meet individual needs.
-</p>
-<p>
-  We are currently working on a 4 inch diameter avionics system that will be compatible with the <a href="https://www.halfcatrocketry.com/mojave-sphinx">Mojave Sphinx</a>
-</p>
-</div>
+<div style="display: flex; align-items: center; gap: 20px;"> <!-- Text Content --> <div style="flex: 1; text-align: justify;"><p> <b>Sonic Avionics</b> empowers Canadian students and rocketry enthusiasts with an open-source, modular avionics platform. Our beginner-friendly flight computers bridge the gap between theory and practice, tackling the engineering skills shortage with hands-on learning. All hardware and code are available on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>. Currently, we’re developing a 4-inch avionics system which is scalable for all skill levels. </p></div>
 
+  
 <!-- Model Viewer -->
 <model-viewer 
   src="model/backplate.glb" 
