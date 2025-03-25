@@ -28,3 +28,13 @@
 ## Batteries
 
 A 2s 3p 18650 pack might be used.
+
+## MCU
+
+MCU selection isn't set yet.
+
+RP2040
+
+[stm32 f405rgt6](https://www.st.com/en/microcontrollers-microprocessors/stm32f405rg.html)
+
+[apm f405rgt6](https://jlcpcb.com/partdetail/Geehy-APM32F405RGT6/C5290473) knock off?
