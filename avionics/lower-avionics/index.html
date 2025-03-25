@@ -548,9 +548,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pressure-transducers" class="md-nav__link">
+  <a href="#mcu-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Pressure Transducers
+      MCU Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MCU Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputsoutputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inputs/Outputs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batteries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batteries
     </span>
   </a>
   
@@ -1865,9 +1898,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pressure-transducers" class="md-nav__link">
+  <a href="#mcu-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Pressure Transducers
+      MCU Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MCU Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputsoutputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inputs/Outputs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batteries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batteries
     </span>
   </a>
   
@@ -1898,8 +1964,39 @@
 
 
 <h1 id="lower-avionics-system">Lower Avionics System</h1>
-<h2 id="pressure-transducers">Pressure Transducers</h2>
-<p>The <a href="https://www.automationdirect.com/adc/shopping/catalog/process_control_-a-_measurement/pressure_sensors/pressure_transmitters/lppt25-20-1000h">LPPT25-20-1000H</a> was chosen. It has a slightly higher tolerance at 1% compared to some others, but it is considerably cheaper. It's current output not voltage output which means better reliability. We will need a high tolerance resistor to put in series, and potentially a current sensor.</p>
+<h2 id="mcu-requirements">MCU Requirements</h2>
+<h3 id="inputsoutputs">Inputs/Outputs</h3>
+<ul>
+<li><strong>Pressure Transducers</strong>: Up to 4x <a href="https://www.automationdirect.com/adc/shopping/catalog/process_control_-a-_measurement/pressure_sensors/pressure_transmitters/lppt25-20-1000h">LPPT25-20-1000H</a> (1% accuracy, current output)<ul>
+<li>Ox</li>
+<li>Fuel</li>
+<li>Chamber</li>
+<li>Extra in case we want to put one somewhere else</li>
+</ul>
+</li>
+<li><strong>Servos</strong>: Up to 5x servo outputs<ul>
+<li>Ox</li>
+<li>Fuel</li>
+<li>Purge</li>
+<li>Ox globe valve</li>
+<li>Regulator (potential)</li>
+</ul>
+</li>
+<li><strong>Regulators</strong>: Electronic control for <span class="arithmatex">\(CO_2\)</span></li>
+<li><strong>Load Cells</strong>: 2x<ul>
+<li>Tank weight</li>
+<li>Thrust</li>
+</ul>
+</li>
+</ul>
+<h3 id="communication">Communication</h3>
+<ul>
+<li>CAN connection to upper avionics</li>
+<li>RFD900 port for testing purposes</li>
+<li>No wired ground testing connection needed</li>
+</ul>
+<h2 id="batteries">Batteries</h2>
+<p>A 2s 3p 18650 pack might be used.</p>
 
 
 
@@ -1922,7 +2019,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 5, 2025 00:44:17">March 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 25, 2025 11:26:52">March 25, 2025</span>
   </span>
 
     
