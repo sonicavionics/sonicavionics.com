@@ -4,7 +4,8 @@
 
 ---
 
-This is the GPS module.
+The GPS module features a u-blox NEO-M9N GNSS receiver with multi-constellation support and 25 Hz update rates. It includes an RP2040 microcontroller, CAN FD interface, external SMA antenna connection, and backup battery for fast satellite acquisition after power cycling.
+
 
 ---
 
