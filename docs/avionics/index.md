@@ -91,3 +91,4 @@ The system will use a SRAD battery pack for custom-built boards, and COTS compon
 - **Ethernet**: Inclusion for data transmission.
 - **Camera Transmission**
 - **USB Protection IC**
+- **Auto fuel fill**
