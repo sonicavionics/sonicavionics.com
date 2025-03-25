@@ -10,7 +10,7 @@ hide:
 
 <!-- Text Content -->
 <div style="flex: 1; text-align: justify;"><p>
-  <b>Sonic Avionics</b> empowers Canadian students and rocketry enthusiasts with an open-source, modular avionics platform.
+  <b>Sonic Avionics</b> empowers students and rocketry enthusiasts with an open-source, modular avionics platform.
 </p>
 <p>
   Our beginner-friendly flight computers bridge the gap between theory and practice, tackling the engineering skills shortage with hands-on learning.
@@ -22,7 +22,7 @@ hide:
 </div>
 
 <!-- Model Viewer -->
-<model-viewer 
+<!-- <model-viewer 
   src="model/backplate.glb" 
   alt="3D model of a board"
   auto-rotate 
@@ -30,7 +30,7 @@ hide:
   poster="model/poster.webp" 
   touch-action="pan-y"
   style="width: 30%; height: 300px;">
-</model-viewer>
+</model-viewer> -->
 
 </div>
 
