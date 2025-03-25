@@ -34,7 +34,7 @@ hide:
 
 </div>
 
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<!-- <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script> -->
 
 <!-- <figure markdown="span">
 
@@ -63,7 +63,7 @@ table, table * {
       <a href="/avionics/PCB-Modules/sensors/">Sensor Module 0.2.0</a>
     </td>
       <td align="center" style="vertical-align: middle;">
-      <img src="/avionics/cad/thumbnail.png" width="250" /><br>
+      <img src="https://raw.githubusercontent.com/sonicavionics/4in-avionics/refs/heads/main/exports/images/avionics_rack.PNG" width="250" /><br>
       <a href="avionics/cad/">Avionics CAD</a>
     </td>
       <td align="center" style="vertical-align: middle;">

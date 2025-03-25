@@ -59,7 +59,7 @@ table, table * {
   </table>
 </div>
 
-![alt text](cad/thumbnail.png)
+![alt text](https://raw.githubusercontent.com/sonicavionics/4in-avionics/refs/heads/main/exports/images/avionics_rack.PNG)
 <p class="image-caption">CAD</p>
 
 ---
