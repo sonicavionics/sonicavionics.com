@@ -95,6 +95,17 @@ markdown_extensions:
 
 extra:
   generator: true
+  social:
+    # - icon: fontawesome/brands/github
+    #   link: https://github.com/marstmu/
+    # - icon: fontawesome/brands/instagram
+    #   link: https://www.instagram.com/mars.tmu/
+    # - icon: fontawesome/brands/linkedin
+    #   link: https://www.linkedin.com/company/marstmu/?originalSubdomain=ca
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Wc7pYAxd
+    # - icon: custom/notion
+    #   link: https://marstmu.notion.site/MARS-Notion-1912fcb069e2804d92e6dc49248b4dbb
 
 extra_javascript:
   # - javascripts/mathjax.js
