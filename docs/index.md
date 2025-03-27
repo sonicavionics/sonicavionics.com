@@ -18,7 +18,10 @@ hide:
 <p>
   All hardware and code are available on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>.</p>
 <p>
-  Currently, we’re developing a 4-inch avionics system which is scalable for all skill levels.</p>
+  Currently, we're developing a 4-inch avionics system which is scalable for all skill levels.</p>
+<p>
+  <a href="https://discord.gg/Wc7pYAxd">Join our discord</a> where we talk about development and new ideas.</p>
+
 </div>
 
 <!-- Model Viewer -->
