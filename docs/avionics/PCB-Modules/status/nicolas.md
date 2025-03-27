@@ -24,11 +24,9 @@ The status module displays the status of other avionics subsystems.
     <img src="https://raw.githubusercontent.com/sonicavionics/4in-NicolasSuarez-statusmodule/v0.2.0-alpha/images/pcbb.svg" alt="Back">
 </div>
 <p class="image-caption">Footprint</p>
-<!-- ## Components
 
-Bill of Materials
 
-![alt text](<nicolas/image copy.png>)
+---
 
 Components
 
@@ -36,7 +34,9 @@ Components
 
 <a href="https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf" target="_blank">RP2040 MCU</a>
 
+---
 
+<!-- ## Components
 
 - **MCU**
 
