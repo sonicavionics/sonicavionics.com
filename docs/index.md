@@ -13,15 +13,15 @@ hide:
   <b>Sonic Avionics</b> empowers students and rocketry enthusiasts with an open-source, modular avionics platform.
 </p>
 <p>
-  Our beginner-friendly flight computers bridge the gap between theory and practice, tackling the engineering skills shortage with hands-on learning.
+  Our flight computers bridge the gap between theory and practice, tackling the engineering skills shortage with hands-on learning.
 </p>
 <p>
-  All hardware and code are available on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>.</p>
+  All hardware and code are available on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>. We highly value feedback/contributions.</p>
 <p>
-  Currently, we're developing a 4-inch avionics system which is scalable for all skill levels.</p>
+  Currently, we're developing a 4-inch avionics system which is scalable for all skill levels, and compatible with the [Mojave Sphinx](https://www.halfcatrocketry.com/mojave-sphinx)</p>
 <p>
   <a href="https://discord.gg/Wc7pYAxd">Join our discord</a> where we talk about development and new ideas.</p>
-
+  <a href="img/esch.pdf">Read our Esch Application.</a> </p>
 </div>
 
 <!-- Model Viewer -->
