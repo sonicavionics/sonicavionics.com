@@ -18,7 +18,7 @@ hide:
 <p>
   All hardware and code are available on <a href="https://github.com/sonicavionics/4in-avionics">GitHub</a>. We highly value feedback and contributions.</p>
 <p>
-  Currently, we're developing a 4-inch avionics system which is scalable for all skill levels, and compatible with the [Mojave Sphinx](https://www.halfcatrocketry.com/mojave-sphinx).</p>
+  Currently, we're developing a 4-inch avionics system which is scalable for all skill levels, and compatible with the <a href="https://www.halfcatrocketry.com/mojave-sphinx">Mojave Sphinx</a>.</p>
 <p>
   <a href="https://discord.gg/Wc7pYAxd">Join our discord</a> where we talk about development and new ideas.</p>
   <a href="img/esch.pdf">Read our Esch Application.</a> </p>
