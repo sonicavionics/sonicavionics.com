@@ -25,6 +25,32 @@ The status module displays the status of other avionics subsystems.
 </div>
 <p class="image-caption">Footprint</p>
 
+---
+
+## Action Items
+
+### Schematic 
+
+- USB resistors 
+- Add buttons
+    - 4 LCD
+    - 1 reset
+    - 1 boot 
+- Source SD card mount
+
+### Routing
+
+- Routing USB and CAN 
+    - Learn differential pairs
+    - Learn about impedance matching
+- Digikey trace width calculator
+
+### Testing
+
+- Test out display module
+
+
+
 
 ---
 
@@ -33,6 +59,8 @@ Components
 <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/MCP25625-CAN-Controller-Data-Sheet-20005282C.pdf" target="_blank">MCP25625 CAN Controller</a>
 
 <a href="https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf" target="_blank">RP2040 MCU</a>
+
+
 
 ---
 
