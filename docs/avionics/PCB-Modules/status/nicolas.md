@@ -47,7 +47,7 @@ The status module displays the status of other avionics subsystems.
 
 ### Testing
 
-- Test out display module
+- Test out display module.
 
 
 
