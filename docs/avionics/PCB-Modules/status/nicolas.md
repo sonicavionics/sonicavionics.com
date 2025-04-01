@@ -59,7 +59,7 @@ The status module displays the status of other avionics subsystems.
 ### <a href="https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf" target="_blank">RP2040 MCU</a>
 -  Receives CAN messages and displays them on an LCD screen.
 -  Push buttons connected to the MCU will be used for resetting and booting the MCU.
-- Push buttons connected to the MCU will allow navigation through the CAN messages displayed on the LCD screen, enabling switching between different devices forward and backward.
+- Push buttons connected to the MCU will allow navigation through the CAN messages displayed on the LCD screen, enabling switching between different devices forward and backward
 
 ### <a href="https://www.lcsc.com/datasheet/lcsc_datasheet_2109061830_XUNPU-TF-115-BCP9_C720505.pdf" target="_blank">Micro SD Card Slot</a>
 - Capable of storing CAN data onto an SD card.
