@@ -51,18 +51,22 @@ The status module displays the status of other avionics subsystems.
 
 
 
+## Components
 
----
+### <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/MCP25625-CAN-Controller-Data-Sheet-20005282C.pdf" target="_blank">MCP25625 CAN Controller</a>
+- CAN controller reads CAN messages from different modules and transmits the data received to the RP2040 MCU
 
-Components
+### <a href="https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf" target="_blank">RP2040 MCU</a>
+-   Receives CAN messages and outputs the messages to an LCD screen
+-   Push Bottons connected to the MCU will be used to reset and boot the MCU
+- Push Buttons connected to the MCU will allow to interact with the CAN messages allowing to jump between devices
 
-<a href="https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/MCP25625-CAN-Controller-Data-Sheet-20005282C.pdf" target="_blank">MCP25625 CAN Controller</a>
-
-<a href="https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf" target="_blank">RP2040 MCU</a>
-
+### <a href="https://www.lcsc.com/datasheet/lcsc_datasheet_2109061830_XUNPU-TF-115-BCP9_C720505.pdf" target="_blank">Micro SD Card Slot</a>
+- Capable to store the CAN data into an SD card
 
 
----
+
+
 
 <!-- ## Components
 
