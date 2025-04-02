@@ -25,7 +25,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.10">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
@@ -166,11 +166,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -209,6 +211,7 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
@@ -726,6 +729,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Recovery
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -737,6 +753,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1904,6 +1948,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Components
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1929,7 +1990,7 @@
 <h1 id="recovery">Recovery</h1>
 <p><a href="https://github.com/sonicavionics/4in-recovery/">Recovery Module</a></p>
 <hr />
-<p>The recovery module is responsible for logging and transmitting telemetry data over the CAN. It utilizes the BNO055 for sensor fusion. A custom sensor fusion algorithm will compare its results with those from the BNO055.</p>
+<p>The recovery module is responsible for checking continuity and controlling ejection charges for parachute deployment. It features a BMP388 barometric sensor that enables autonomous deployment decisions independent of the sensors module. This approach provides redundancy in critical scenarios, ensuring parachute deployment even if the sensors module fails.</p>
 <hr />
 <div class="image-row">
     <img src="https://raw.githubusercontent.com/sonicavionics/4in-recovery/refs/heads/main/images/board.front.png" alt="3D Render">
@@ -1946,13 +2007,47 @@
 </div>
 <p class="image-caption">Footprint</p>
 
-<p>This board will be in charge of checking continuity, and arming the ejection charges. it will report on tall this over the CAN network. It will also have it's own barometer for independency. We will be able to turn on or off automatic ejection. If the rocket target altitude is lower than expected, the sensor board will alert us, and the </p>
-<p>There will be remove before flight tags in the form of banana connectors with a tag on it 
-<img alt="alt text" src="chute/mapmoxje.bmp" />
-<a href="https://www.digikey.ca/en/products/detail/mueller-electric-co/BU-PMDP-S-2/4073757">banana plug</a>
-<a href="https://www.digikey.ca/en/products/detail/pomona-electronics/2269-0/736335?s=N4IgjCBcoEwJxVAYygMwIYBsDOBTANCAPZQDaIAzACwBsVcA7CALqEAOALlCAMocBOASwB2AcxABfQmAAcFRCBSQMOAsTKUwDGTpbsukXgJHipIALQ0FSgQFc1JSORgsJZl05AAhAIIA5fx8AAgApHwBhAGk9EABWBTYoMHZEyBhYtyA">banana socket</a> order an extra 5/16-32 nut with this
-<a href="https://www.3dcontentcentral.com/secure/download-model.aspx?catalogid=171&amp;id=587137">cad from here</a>
-step file from <a href="https://www.3dcontentcentral.com/download-model.aspx?catalogid=171&amp;id=626290">this website</a></p>
+<p>This board will be in charge of checking continuity, and arming the ejection charges. it will report on tall this over the CAN network. It will also have it's own barometer for independency. We will be able to turn on or off automatic ejection. If the rocket target altitude is lower than expected, </p>
+<p>There will be remove before flight tags in the form of banana connectors with a tag on it which will disarm the charges.</p>
+<h2 id="components">Components</h2>
+<ul>
+<li><img alt="Banana connector image" src="dualbanana.png" /></li>
+<li><a href="https://www.digikey.ca/en/products/detail/mueller-electric-co/BU-PMDP-S-2/4073757">Banana plug</a></li>
+<li><a href="https://www.digikey.ca/en/products/detail/pomona-electronics/2269-0/736335?s=N4IgjCBcoEwJxVAYygMwIYBsDOBTANCAPZQDaIAzACwBsVcA7CALqEAOALlCAMocBOASwB2AcxABfQmAAcFRCBSQMOAsTKUwDGTpbsukXgJHipIALQ0FSgQFc1JSORgsJZl05AAhAIIA5fx8AAgApHwBhAGk9EABWBTYoMHZEyBhYtyA">Banana socket</a> (order an extra 5/16-32 nut with this)</li>
+<li><a href="https://www.3dcontentcentral.com/secure/download-model.aspx?catalogid=171&amp;id=587137">CAD model available here</a></li>
+<li>
+<p><a href="https://www.3dcontentcentral.com/download-model.aspx?catalogid=171&amp;id=626290">STEP file available here</a></p>
+</li>
+<li>
+<p><strong>MCU</strong></p>
+<ul>
+<li>
+<p>MCU <a href="https://www.raspberrypi.com/products/rp2040/">RP 2040</a></p>
+</li>
+<li>
+<p>Flash <a href="https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&amp;partNo=W25Q128JV">W25Q128JVP</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>USB-C</strong> <a href="https://jlcpcb.com/partdetail/ShouHan-TYPE_C_16PIN_2MD_073/C2765186">JLC USB-C port</a></p>
+</li>
+<li>
+<p><strong>Momentary Button</strong> <a href="https://jlcpcb.com/partdetail/XkbConnectivity-TS_1187A_B_AB/C318884">TS-1187A-B-A-B</a></p>
+</li>
+<li>
+<p><strong>CAN Controller and transceiver</strong> <a href="https://jlcpcb.com/partdetail/MicrochipTech-MCP25625T_EML/C191253">MCP25625</a></p>
+<ul>
+<li>CAN chip crystal <a href="https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322516MLB4SI_C13738.pdf">X322516MLB4SI</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Quick Connectors</strong> </p>
+<ul>
+<li><a href="https://jlcpcb.com/partdetail/Wago-2060_452_998404/C2765055">Wago 2060-452</a></li>
+</ul>
+</li>
+</ul>
 <p>The above will disable a relay by shorting the enable pin.</p>
 
 
@@ -1976,7 +2071,7 @@ step file from <a href="https://www.3dcontentcentral.com/download-model.aspx?cat
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 26, 2025 18:06:01">January 26, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 2, 2025 16:30:16">April 2, 2025</span>
   </span>
 
     
