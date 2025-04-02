@@ -4,8 +4,7 @@
 
 ---
 
-The recovery module is responsible for logging and transmitting telemetry data over the CAN. It utilizes the BNO055 for sensor fusion. A custom sensor fusion algorithm will compare its results with those from the BNO055.
-
+The recovery module is responsible for checking continuity and controlling ejection charges for parachute deployment. It features a BMP388 barometric sensor that enables autonomous deployment decisions independent of the sensors module. This approach provides redundancy in critical scenarios, ensuring parachute deployment even if the sensors module fails.
 
 ---
 
@@ -25,9 +24,10 @@ The recovery module is responsible for logging and transmitting telemetry data o
 </div>
 <p class="image-caption">Footprint</p>
 
-This board will be in charge of checking continuity, and arming the ejection charges. it will report on tall this over the CAN network. It will also have it's own barometer for independency. We will be able to turn on or off automatic ejection. If the rocket target altitude is lower than expected, the sensor board will alert us, and the 
+This board will be in charge of checking continuity, and arming the ejection charges. it will report on tall this over the CAN network. It will also have it's own barometer for independency. We will be able to turn on or off automatic ejection. If the rocket target altitude is lower than expected, 
 
-There will be remove before flight tags in the form of banana connectors with a tag on it 
+There will be remove before flight tags in the form of banana connectors with a tag on it which will disarm the charges.
+
 ![alt text](chute/mapmoxje.bmp)
 [banana plug](https://www.digikey.ca/en/products/detail/mueller-electric-co/BU-PMDP-S-2/4073757)
 [banana socket](https://www.digikey.ca/en/products/detail/pomona-electronics/2269-0/736335?s=N4IgjCBcoEwJxVAYygMwIYBsDOBTANCAPZQDaIAzACwBsVcA7CALqEAOALlCAMocBOASwB2AcxABfQmAAcFRCBSQMOAsTKUwDGTpbsukXgJHipIALQ0FSgQFc1JSORgsJZl05AAhAIIA5fx8AAgApHwBhAGk9EABWBTYoMHZEyBhYtyA) order an extra 5/16-32 nut with this
