@@ -51,7 +51,7 @@ There will be remove before flight tags in the form of banana connectors with a 
     - CAN chip crystal [X322516MLB4SI](https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322516MLB4SI_C13738.pdf)
 
 - **Quick Connectors** 
-    - [Wago 2060-452](https://jlcpcb.com/partdetail/Wago-2060_452_998404/C2765055)
+    - Wago 2060-452 [JLC](https://jlcpcb.com/partdetail/Wago-2060_452_998404/C2765055) [DigiKey](https://www.digikey.ca/en/products/detail/wago-corporation/2060-452-998-404/15540283)
 
 
 The above will disable a relay by shorting the enable pin.
