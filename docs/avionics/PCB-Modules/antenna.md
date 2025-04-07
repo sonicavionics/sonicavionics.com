@@ -1,6 +1,4 @@
-# Antenna
-
-[GitHub](https://github.com/sonicavionics/4in-antenna/)
+# [Antenna](https://github.com/sonicavionics/4in-antenna/)
 
 ---
 

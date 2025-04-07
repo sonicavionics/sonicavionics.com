@@ -1,6 +1,4 @@
-# PowerSim
-
-[v0.2.0-alpha](https://github.com/sonicavionics/4in-powersim/tree/v0.2.0-alpha)
+# [PowerSim](https://github.com/sonicavionics/4in-powersim)
 
 ---
 
