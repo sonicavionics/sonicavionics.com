@@ -10,7 +10,7 @@ The PowerSim module is a precursor to the Power module. It's meant to be very si
 
 <div class="image-row">
     <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/board.front.png" alt="3D Render">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/mages/board.back.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/board.back.png" alt="3D Render">
 </div>
 <p class="image-caption">3D Render</p>
 
