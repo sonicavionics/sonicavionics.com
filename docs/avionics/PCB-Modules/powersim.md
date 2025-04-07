@@ -9,17 +9,17 @@ The PowerSim module is a precursor to the Power module. It's meant to be very si
 ---
 
 <div class="image-row">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/board.front.png" alt="3D Render">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/board.back.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/board.front.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/mages/board.back.png" alt="3D Render">
 </div>
 <p class="image-caption">3D Render</p>
 
-![alt text](https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/sch.svg)
+![alt text](https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/sch.svg)
 <p class="image-caption">Schematic</p>
 
 <div class="image-row">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/pcbf.svg" alt="Front">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/v0.2.0-alpha/images/pcbb.svg" alt="Back">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/pcbf.svg" alt="Front">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/pcbb.svg" alt="Back">
 </div>
 <p class="image-caption">Footprint</p>
 
