@@ -11,7 +11,7 @@ The sensors module is responsible for logging and transmitting telemetry data ov
 
 <div class="image-row">
     <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" alt="3D Render">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/board.back.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.back.png" alt="3D Render">
 </div>
 <p class="image-caption">3D Render</p>
 
