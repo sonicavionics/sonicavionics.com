@@ -1,6 +1,6 @@
-# Nicolas - Status
+# Status
 
-[Nicolas - Status Module](https://github.com/sonicavionics/4in-NicolasSuarez-statusmodule)
+[GitHub](https://github.com/sonicavionics/4in-NicolasSuarez-statusmodule)
 
 ---
 
