@@ -1,6 +1,4 @@
-# GPS 
-
-[GPS Module](https://github.com/sonicavionics/4in-gps)
+# [GPS](https://github.com/sonicavionics/4in-gps) 
 
 ---
 

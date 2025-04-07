@@ -1,6 +1,4 @@
-# Sensors
-
-[v0.2.0-alpha](https://github.com/sonicavionics/4in-sensors/tree/v0.2.0-alpha)
+# [Sensors](https://github.com/sonicavionics/4in-sensors)
 
 ---
 

@@ -1,11 +1,8 @@
-# Status
-
-[GitHub](https://github.com/sonicavionics/4in-NicolasSuarez-statusmodule)
+# [Status](https://github.com/sonicavionics/4in-NicolasSuarez-statusmodule)
 
 ---
 
 The status module displays the status of other avionics subsystems.
-
 
 ---
 
