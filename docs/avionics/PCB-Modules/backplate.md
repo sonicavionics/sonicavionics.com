@@ -1,6 +1,4 @@
-# Backplate
-
-[v0.1.0-alpha](https://github.com/sonicavionics/4in-backplate/tree/v0.1.0-alpha)
+# [Backplate](https://github.com/sonicavionics/4in-backplate)
 
 ---
 
