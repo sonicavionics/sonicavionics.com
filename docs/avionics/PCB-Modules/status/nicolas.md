@@ -20,8 +20,8 @@ The status module displays the status of other avionics subsystems.
 
 
 <div class="image-row">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-NicolasSuarez-statusmodule/v0.2.0-alpha/images/pcbf.svg" alt="Front">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-NicolasSuarez-statusmodule/v0.2.0-alpha/images/pcbb.svg" alt="Back">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-NicolasSuarez-statusmodule/refs/heads/main/images/pcbf.svg" alt="Front">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-NicolasSuarez-statusmodule/refs/heads/main/images/pcbb.svg" alt="Back">
 </div>
 <p class="image-caption">Footprint</p>
 
