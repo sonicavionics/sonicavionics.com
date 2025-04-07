@@ -10,8 +10,8 @@ The sensors module is responsible for logging and transmitting telemetry data ov
 ---
 
 <div class="image-row">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/v0.2.0-alpha/images/board.front.png" alt="3D Render">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/v0.2.0-alpha/images/board.back.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" alt="3D Render">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/board.back.png" alt="3D Render">
 </div>
 <p class="image-caption">3D Render</p>
 
@@ -20,8 +20,8 @@ The sensors module is responsible for logging and transmitting telemetry data ov
 
 
 <div class="image-row">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/v0.2.0-alpha/images/pcbf.svg" alt="Front">
-    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/v0.2.0-alpha/images/pcbb.svg" alt="Back">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/pcbf.svg" alt="Front">
+    <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/pcbb.svg" alt="Back">
 </div>
 <p class="image-caption">Footprint</p>
 
