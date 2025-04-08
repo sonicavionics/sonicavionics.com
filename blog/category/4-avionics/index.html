@@ -1630,12 +1630,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../order/" class="md-nav__link">
+      <a href="../purchases/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Order
+    Purchases
     
   </span>
   
@@ -1913,13 +1913,55 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-04-07 00:00:00+00:00">April 7, 2025</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">4" Avionics</a>, 
+              <a href="../purchases/" class="md-meta__link">Purchases</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="april-7th-order"><a class="toclink" href="../../2025/04/07/april-7th-order/">April 7th Order</a></h2>
+<p>Another round of antenna module tests:</p>
+<p><img alt="alt text" src="../../2025/april/7/Screenshot%202025-04-07%20at%208.55.24%E2%80%AFPM.png" /></p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-02-12 00:00:00+00:00">February 12, 2025</time></li>
         
           <li class="md-meta__item">
             in
             
               <a href="./" class="md-meta__link">4" Avionics</a>, 
-              <a href="../order/" class="md-meta__link">Order</a></li>
+              <a href="../purchases/" class="md-meta__link">Purchases</a></li>
         
         
           
@@ -1965,7 +2007,7 @@
             in
             
               <a href="./" class="md-meta__link">4" Avionics</a>, 
-              <a href="../order/" class="md-meta__link">Order</a></li>
+              <a href="../purchases/" class="md-meta__link">Purchases</a></li>
         
         
           
@@ -2060,7 +2102,7 @@
             in
             
               <a href="./" class="md-meta__link">4" Avionics</a>, 
-              <a href="../order/" class="md-meta__link">Order</a></li>
+              <a href="../purchases/" class="md-meta__link">Purchases</a></li>
         
         
           
@@ -2147,7 +2189,7 @@
             in
             
               <a href="./" class="md-meta__link">4" Avionics</a>, 
-              <a href="../order/" class="md-meta__link">Order</a></li>
+              <a href="../purchases/" class="md-meta__link">Purchases</a></li>
         
         
           
@@ -2299,96 +2341,6 @@ Then I redesigned it with all economic components. It turned out the feeders loa
 <p>I even got the fuel gauge chip working.</p>
 <p><img alt="alt text" src="../../2024/december/20/image.png" /></p>
 <p>A month into this project, and I got a working PCB! I'm happy about that. Not often it works on the first try either. It took 15 days for the PCBs to arrive and it cost $116.28 CAD for assembly for 5 boards including shipping and tax and everything.</p>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-12-12 00:00:00+00:00">December 12, 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="./" class="md-meta__link">4" Avionics</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="chip-selection"><a class="toclink" href="../../2024/12/12/chip-selection/">Chip Selection</a></h2>
-<p>Here is the post outlining the reasons for picking the chips. This post will be updated in the future with reasons why or why not to pick these chips. Requirement for all chips was being available on JLC. </p>
-<h4 id="mcu"><a class="toclink" href="../../2024/12/12/chip-selection/#mcu">MCU</a></h4>
-<p><a href="https://www.raspberrypi.com/products/rp2040/">RP 2040</a></p>
-<p>I went with the RP2040 because the alternatives are usually more complex or more expensive. The documentation on the rp2040 is great and there's a great online community around it. It's more than fast enough to accomplish what we need to do. </p>
-<p>ESP chips get kind of expensive, although they have some kind of CAN and ethernet capability on board. When we do go ethernet it'll probably be an addition to the CAN bus though.</p>
-<h5 id="flash"><a class="toclink" href="../../2024/12/12/chip-selection/#flash">Flash</a></h5>
-<p><a href="https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&amp;partNo=W25Q128JV">W25Q128JVP</a> Didn't even read the data sheet. It's the one they use in the rp2040 hardware design guide, it's the most flash the rp2040 can use.</p>
-<h5 id="crystal"><a class="toclink" href="../../2024/12/12/chip-selection/#crystal">Crystal</a></h5>
-<p><a href="https://www.digikey.ca/en/products/detail/abracon-llc/ABM8-272-T3/22472366">ABM8-272-T3</a> In the rp2040 design guide. </p>
-<h4 id="usb-c"><a class="toclink" href="../../2024/12/12/chip-selection/#usb-c">USB-C</a></h4>
-<p><a href="https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018">USB-C port</a> Easy choice; pretty much only one on JLCPCB at the time</p>
-<h4 id="power"><a class="toclink" href="../../2024/12/12/chip-selection/#power">Power</a></h4>
-<h5 id="33v-regulator"><a class="toclink" href="../../2024/12/12/chip-selection/#33v-regulator">3.3v Regulator</a></h5>
-<p><a href="https://jlcpcb.com/partdetail/TexasInstruments-LMR51430YFDDCR/C5219261">LMR51430YFDDCR</a> Constant, 1kHz switching reg, wide voltage input range, goes to 3.3v, cheap</p>
-<h5 id="5v-buck-boost"><a class="toclink" href="../../2024/12/12/chip-selection/#5v-buck-boost">5v buck-boost</a></h5>
-<p><a href="https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1734177677058">TPS630701</a></p>
-<h4 id="power-mux"><a class="toclink" href="../../2024/12/12/chip-selection/#power-mux">Power MUX</a></h4>
-<p><a href="https://jlcpcb.com/partdetail/TexasInstruments-TPS2121RUXR/C485916">TPS2121RUXR</a> Two inputs, one output cheap, on JLC. done.
-Using this in Highest Voltage Operation (VCOMP) mode with the battery as the main and USB as secondary  </p>
-<h4 id="sensors"><a class="toclink" href="../../2024/12/12/chip-selection/#sensors">Sensors</a></h4>
-<h5 id="imu"><a class="toclink" href="../../2024/12/12/chip-selection/#imu">IMU</a></h5>
-<p>Need IMU with accelerometer, gyroscope and magnetometer, high sample rate, some vibration resistance, onboard sensor fusion and on JLC.</p>
-<p>BNO055, BNO055, BMX055, MPU-9250 are off the table because they need standard assembly. The options are:
-- MPU-6050 (only 6-axis)
-- ICM-20948 (9-axis with fusion)</p>
-<p>So there's only the ICM-20948 if I wan't to do 9 axis.</p>
-<h5 id="pressure"><a class="toclink" href="../../2024/12/12/chip-selection/#pressure">Pressure</a></h5>
-<p>Need temperature and pressure and high sample rate.</p>
-<p>Some JLC options for pressure sensors:
-- MS563702BA03-50
-- GZP6816D
-- GZP131-701A
-- MS560702BA03-50
-- HP203B
-- WF100SPZ 0.4BG S6 AT
-- MPXHZ6115AC6T1
-- GZP170-701A
-- LWLP5001DD
-- MPS-3117-006GC-A3
-- NSPAS1N115RR01</p>
-<p>MS560702BA03-50 was chosen for high speed capabilities.</p>
-<h5 id="payload-module"><a class="toclink" href="../../2024/12/12/chip-selection/#payload-module">Payload Module</a></h5>
-<p>We might add a payload module with a bunch of different sensors and the "experiment" will be to see the discrepancies in their readings.</p>
-<h4 id="0201-0402-or-0603"><a class="toclink" href="../../2024/12/12/chip-selection/#0201-0402-or-0603">0201, 0402 or 0603?</a></h4>
-<p>Should I use 0603, 0402 or 0201?
-If I go with 0603 we can solder it pretty easily. 0201 its not happening, and 0402 is harder. Those components aren't even the expensive ones to have JLCPCB assemble for you. Actually 0201 is more expensive I think. Okay 0402 it is then. </p>
-<p>Okay there's not that many JLC basic resistors so I'll use 0603 and hand solder those ones.</p>
-<h4 id="conclusion"><a class="toclink" href="../../2024/12/12/chip-selection/#conclusion">Conclusion</a></h4>
-<p>It's not a good idea to spend too long on chip selection, better to just start making shit and find out along the way. I'll probably regret some of these choices, but that is part of learning.
-Some chips I really didn't think that much about, if it does the job and is cheap enough I'll use it I don't need to compare it with every single alternative out there. Some chips like the sensors I compared a bunch of chips in the same range, and took inspiration from other teams and such. ChatGPT is great for suggesting chips, it currently gets the numbers wrong very often so you can't trust anything and have to read the data sheet yourself to confirm but it still makes it much much easier.
-Vibration wasn't too much a concern, most chips can withstand the vibration we'd put them through.</p>
     
   </div>
 </article>
