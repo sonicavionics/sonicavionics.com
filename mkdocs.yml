@@ -113,5 +113,6 @@ extra_javascript:
 
 extra_css:
   - css/extra.css
+  - css/home.css
 
 
