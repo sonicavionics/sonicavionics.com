@@ -1,18 +1,20 @@
+{# overrides/index.html #}
 {% extends "base.html" %}
 
+{# 1) Inject custom CSS into <head> for the homepage only #}
 {% block extrahead %}
   {{ super() }}
   <style>
-    /* 1️⃣ Full‑screen gradient behind EVERYTHING */
+    /* A) Full‑screen gradient behind everything */
     body::before {
       content: "";
       position: fixed;
-      inset: 0;
+      inset: 0;  /* top/right/bottom/left = 0 */
       background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%);
-      z-index: -1;
+      z-index: -1;  /* behind all content */
     }
 
-    /* 2️⃣ Make the header/nav bars transparent */
+    /* B) Make header and nav bars transparent */
     .md-header,
     .md-header-nav,
     .md-tabs {
@@ -20,16 +22,33 @@
       box-shadow: none          !important;
     }
 
-    /* 3️⃣ Strip the hero section of its own background & overlay */
+    /* C) Remove the hero’s own overlay (we already have a single gradient) */
     .home-hero {
       background: transparent !important;
     }
     .home-hero::before {
+      display: none           !important;
+    }
+
+    /* D) Hide the default page title and published dates */
+    /*    MkDocs‐Material wraps your Markdown in .md-container.md-typeset */
+    .md-container.md-typeset > h1,
+    .md-container.md-typeset > .md-meta {
+      display: none !important;
+    }
+
+    /* E) Hide the footer’s copyright/text, keep only the footer nav (social icons) */
+    .md-footer-meta {
       display: none !important;
     }
   </style>
 {% endblock %}
 
+{# 2) Disable the page_title block entirely so there’s no extra <title> injected #}
+{% block page_title %}{% endblock %}
+
+
+{# 3) Define your homepage content: the gradient hero, then any remaining Markdown #}
 {% block content %}
   <section class="home-hero">
     <div class="home-hero__inner">
@@ -43,5 +62,6 @@
       </div>
     </div>
   </section>
-  {{ super() }}
+
+  {{ super() }} {# Renders the rest of your Markdown (without its title or dates) #}
 {% endblock %}
