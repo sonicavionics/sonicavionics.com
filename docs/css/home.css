@@ -1,0 +1,57 @@
+/* reset so hero truly fills the screen */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* full‑viewport hero */
+.home-hero {
+  position: relative;
+  left: 50%; margin-left: -50vw;
+  width: 100vw; height: 100vh;
+  background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%);
+  color: #fff; text-align: center; overflow: hidden;
+}
+.home-hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+.home-hero__inner {
+  position: relative; z-index: 1;
+  max-width: 800px; margin: 0 auto; padding: 2rem 1rem;
+}
+
+/* headline & tagline */
+.home-hero h1 {
+  font-size: 3rem; margin-bottom: .5rem;
+}
+.home-hero p {
+  font-size: 1.25rem; margin-bottom: 2rem; line-height: 1.4;
+}
+
+/* buttons */
+.home-hero__cta .btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .75rem 1.75rem; border-radius: .5rem;
+  font-weight: 600; text-decoration: none; cursor: pointer;
+  transition: transform .2s, box-shadow .2s, background .3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1); margin: 0 .5rem;
+}
+.home-hero__cta .btn-primary {
+  background: linear-gradient(90deg, #6366f1, #ec4899); color: #fff; border: none;
+}
+.home-hero__cta .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  background: linear-gradient(90deg, #7f79e3, #f472b6);
+}
+.home-hero__cta .btn-secondary {
+  background: transparent; border: 2px solid #fff; color: #fff;
+}
+.home-hero__cta .btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  background: rgba(255,255,255,.15);
+}

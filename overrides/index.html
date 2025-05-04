@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <style>
+    /* 1️⃣ Full‑screen gradient behind EVERYTHING */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%);
+      z-index: -1;
+    }
+
+    /* 2️⃣ Make the header/nav bars transparent */
+    .md-header,
+    .md-header-nav,
+    .md-tabs {
+      background-color: transparent !important;
+      box-shadow: none          !important;
+    }
+
+    /* 3️⃣ Strip the hero section of its own background & overlay */
+    .home-hero {
+      background: transparent !important;
+    }
+    .home-hero::before {
+      display: none !important;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <section class="home-hero">
+    <div class="home-hero__inner">
+      <h1>{{ config.site_name }}</h1>
+      <p>{{ config.site_description }}</p>
+      <div class="home-hero__cta">
+        <a href="{{ 'getting-started/' | url }}" class="btn btn-primary">Get Started</a>
+        {% if config.repo_url %}
+        <a href="{{ config.repo_url }}" class="btn btn-secondary">GitHub</a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {{ super() }}
+{% endblock %}
