@@ -108,7 +108,6 @@
 {% block content %}
 
   <!-- Hero Section -->
-  <section class="home-hero slide-in-bottom">
     <div class="home-hero__inner">
       <h1>{{ config.site_name }}</h1>
       <p>The Metropolitan Aerospace Combustion Hub: A student team pioneering flight computers, propulsion testing, and ground stations.</p>
@@ -119,11 +118,11 @@
         {% endif %}
       </div>
     </div>
+
     <video autoplay muted loop playsinline>
       <source src="{{ base_url }}/assets/videos/hotfire.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </section>
 
 
   <!-- About Section -->
@@ -139,7 +138,7 @@
   <section class="features slide-in-bottom">
     <!-- Flight Computers -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/flight_computer.png" alt="Flight Computer">
+      <img src="{{ base_url }}/assets/images/template.png" alt="Flight Computer">
       <h3>Flight Computers</h3>
       <p>Developed with redundant sensors and real-time telemetry, our flight computers ensure safe and reliable rocket missions.</p>
       <a href="{{ 'flight-computers/' | url }}" class="btn btn-primary">Explore</a>
@@ -147,7 +146,7 @@
 
     <!-- Propulsion Testing -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/propulsion_test.png" alt="Propulsion Testing">
+      <img src="{{ base_url }}/assets/images/template.png" alt="Propulsion Testing">
       <h3>Propulsion Testing</h3>
       <p>Combining cold-flow injector experiments with full-scale hot-fire tests, we refine engine designs for peak performance and safety.</p>
       <a href="{{ 'propulsion-testing/' | url }}" class="btn btn-primary">View Tests</a>
@@ -155,7 +154,7 @@
 
     <!-- Ground Stations -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/ground_station.png" alt="Ground Station">
+      <img src="{{ base_url }}/assets/images/template.png" alt="Ground Station">
       <h3>Ground Stations</h3>
       <p>Custom SDR-based ground stations provide real-time telemetry, command uplink, and data visualization for every launch.</p>
       <a href="{{ 'ground-stations/' | url }}" class="btn btn-primary">Learn More</a>
@@ -163,7 +162,7 @@
 
     <!-- Technical Reports -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/technical_report.png" alt="Technical Report">
+      <img src="{{ base_url }}/assets/images/template.png" alt="Technical Report">
       <h3>Technical Reports</h3>
       <p>Our comprehensive reports document design methods, test procedures, and data analysis—supporting learning and peer review.</p>
       <a href="{{ 'reports/' | url }}" class="btn btn-primary">Read</a>
