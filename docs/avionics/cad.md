@@ -13,7 +13,7 @@ This is the page to describe the avionics bay CAD.
 There's just barely enough space to fit the RFD900 on a module. so why not?
 The challenge is to see if these over hangs can print.
 
-[Here](/blog/2024/12/07/avionics-bay-cad/) is a blog post showing some other revisions.
+[Here](../blog/posts/2024/december/7/7.md) is a blog post showing some other revisions.
 
 ## Rack
 
