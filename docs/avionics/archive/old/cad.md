@@ -11,7 +11,7 @@ This is the page to describe the avionics bay CAD.
 <p class="image-caption">Version 1</p>
 
 
-![alt text](cad/thumbnail.png)
+![alt text](cad/thumbnail2.png)
 <p class="image-caption">Version 2</p>
 
 
@@ -21,7 +21,7 @@ This is the page to describe the avionics bay CAD.
 
 There's just barely enough space to fit the RFD900x on a module. So why not?
 
-[Here](/blog/2024/12/07/avionics-bay-cad/) is a blog post showing some other revisions.
+[Here](../../../blog/posts/2024/december/7/7.md) is a blog post showing some other revisions.
 
 ## Rack
 
