@@ -115,4 +115,7 @@ extra_css:
   - css/extra.css
   - css/home.css
 
-
+watch:
+  - docs     
+  - overrides 
+  - mkdocs.yml
