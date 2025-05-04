@@ -1,13 +1,14 @@
 ---
-title: Home           # appears in the HTML <title>
-description: Short tagline   # used for SEO / social cards
+title: Home
+description: Short tagline
 template: index.html
-hide:
-  - navigation               # hide sidebar
-  - toc                      # hide on‑page table of contents
-  - path                     # hide breadcrumb (optional)
-search:
-  exclude: true              # keep the landing page out of search
----
 
-{newline}
+hide:
+  - navigation   # your existing rules…
+  - toc
+  - path
+  - title        # ← this will remove the “Home” heading
+
+search:
+  exclude: true
+---
