@@ -1,7 +1,5 @@
-{# overrides/index.html #}
 {% extends "base.html" %}
 
-{# 1) Inject homepage-only CSS & JS into <head> #}
 {% block extrahead %}
   {{ super() }}
   <style>
@@ -10,8 +8,19 @@
       content: "";
       position: fixed;
       inset: 0;
-      background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%);
+      background: linear-gradient(135deg, #1e3a8a 0%, #075985 100%);
       z-index: -1;
+    }
+
+    /* Ensure light text color in main content */
+    .md-main .md-typeset,
+    .md-main .md-typeset h1,
+    .md-main .md-typeset h2,
+    .md-main .md-typeset h3,
+    .md-main .md-typeset p,
+    .md-main .md-typeset a,
+    .md-main .btn {
+      color: #ffffff !important;
     }
 
     /* Transparent header and nav bars */
@@ -19,13 +28,14 @@
     .md-header-nav,
     .md-tabs {
       background-color: transparent !important;
-      box-shadow: none          !important;
+      box-shadow: none !important;
+      color: #ffffff !important;
     }
 
     /* Hero section transparent and reduced bottom padding */
     .home-hero {
       background: transparent !important;
-      padding-bottom: 1rem !important; /* Reduce space below hero */
+      padding-bottom: 1rem !important;
     }
     .home-hero::before { display: none !important; }
 
@@ -33,8 +43,8 @@
     .video-section {
       text-align: center;
       margin-bottom: 3rem;
-      padding-top: 1rem !important;  /* Reduce space above video */
-      margin-top: 0 !important;      /* Remove extra margin */
+      padding-top: 1rem !important;
+      margin-top: 0 !important;
     }
     .video-section video {
       width: 100%;
@@ -42,14 +52,9 @@
       border-radius: 0.5rem;
     }
 
-    /* Footer transparent */
-    .md-footer,
-    .md-footer-meta { background: transparent !important; box-shadow: none !important; }
-
-    /* Hide auto-generated title and metadata */
-    .md-container.md-typeset > h1,
-    .md-container.md-typeset > .md-meta { display: none !important; }
-    .md-footer-meta { display: none !important; }
+    /* Hide auto-generated title and metadata in main content */
+    .md-main .md-typeset > h1,
+    .md-main .md-typeset > .md-meta { display: none !important; }
 
     /* Scroll-reveal: slide up from bottom */
     .slide-in-bottom {
@@ -104,79 +109,70 @@
   </script>
 {% endblock %}
 
-{# 4) Homepage content sections #}
 {% block content %}
-
   <!-- Hero Section -->
-    <div class="home-hero__inner">
-      <h1>{{ config.site_name }}</h1>
-      <p>The Metropolitan Aerospace Combustion Hub: A student team pioneering flight computers, propulsion testing, and ground stations.</p>
-      <div class="home-hero__cta">
-        <a href="{{ 'getting-started/' | url }}" class="btn btn-primary btn-lg">Join Us</a>
-        {% if config.repo_url %}
-        <a href="{{ config.repo_url }}" class="btn btn-secondary btn-lg">GitHub</a>
-        {% endif %}
-      </div>
+  <div class="home-hero__inner">
+    <h1>{{ config.site_name }}</h1>
+    <p>Sonic Avionics: Empowering students and rocketry enthusiasts with an open-source, modular avionics platform. Winner of the 2025 Stage 1 Esch Awards!</p>
+    <div class="home-hero__cta">
+      <a href="{{ 'getting-started/' | url }}" class="btn btn-primary btn-lg">Join Us</a>
+      {% if config.repo_url %}
+      <a href="{{ config.repo_url }}" class="btn btn-secondary btn-lg">GitHub</a>
+      {% endif %}
+      <a href="https://discord.gg/[YourDiscordInvite]" class="btn btn-secondary btn-lg">Join Discord</a>
     </div>
-
-    <video autoplay muted loop playsinline>
-      <source src="{{ base_url }}/assets/videos/hotfire.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
+  </div>
 
   <!-- About Section -->
   <section class="about slide-in-bottom">
     <div class="md-container md-typeset">
-      <h2>About MACH</h2>
-      <p>MACH (Metropolitan Aerospace Combustion Hub) is a student-led group dedicated to aerospace innovation. We design and build flight computers, ground station software, and conduct both hot-fire and cold-flow rocket tests—producing technical reports that advance our field.</p>
-      <p>Our projects span from circuit design for avionics, data acquisition during engine tests, to mission control software for high-altitude flights. MACH provides hands-on aerospace experience for students passionate about propulsion and avionics.</p>
+      <h2>About Sonic Avionics</h2>
+      <p>Sonic Avionics develops open-source, modular avionics platforms for students and rocketry enthusiasts. Our 4-inch scalable flight computers, compatible with the Mojave Sphinx, bridge the gap between theory and practice, addressing the engineering skills shortage through hands-on learning.</p>
+      <p>All hardware and code are freely available on GitHub, and we actively encourage community feedback and contributions. Join our Discord to discuss development and share ideas!</p>
     </div>
   </section>
 
   <!-- Projects Grid -->
   <section class="features slide-in-bottom">
-    <!-- Flight Computers -->
+    <!-- Modular Flight Computers -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/template.png" alt="Flight Computer">
-      <h3>Flight Computers</h3>
-      <p>Developed with redundant sensors and real-time telemetry, our flight computers ensure safe and reliable rocket missions.</p>
-      <a href="{{ 'flight-computers/' | url }}" class="btn btn-primary">Explore</a>
+      <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" alt="Flight Computer">
+      <h3>Modular Flight Computers</h3>
+      <p>Scalable 4-inch avionics systems with redundant sensors and real-time telemetry, designed for the <a href="https://www.halfcatrocketry.com/mojave-sphinx">Mojave Sphinx</a> and other rockets.</p>
+      <a href="../avionics/PCB-Modules/sensors/" class="btn btn-primary">Explore</a>
     </div>
 
-    <!-- Propulsion Testing -->
+    <!-- Open-Source Software -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/template.png" alt="Propulsion Testing">
-      <h3>Propulsion Testing</h3>
-      <p>Combining cold-flow injector experiments with full-scale hot-fire tests, we refine engine designs for peak performance and safety.</p>
-      <a href="{{ 'propulsion-testing/' | url }}" class="btn btn-primary">View Tests</a>
+      <img src="{{ base_url }}/assets/images/software.png" alt="Open-Source Software">
+      <h3>Open-Source Software</h3>
+      <p>Customizable flight software hosted on GitHub, supporting real-time data acquisition and mission control.</p>
+      <a href="{{ 'software/' | url }}" class="btn btn-primary">View Code</a>
     </div>
 
-    <!-- Ground Stations -->
+    <!-- Ground Support Equipment -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/template.png" alt="Ground Station">
-      <h3>Ground Stations</h3>
-      <p>Custom SDR-based ground stations provide real-time telemetry, command uplink, and data visualization for every launch.</p>
-      <a href="{{ 'ground-stations/' | url }}" class="btn btn-primary">Learn More</a>
+      <img src="{{ base_url }}/assets/images/ground-support.png" alt="Ground Support">
+      <h3>Ground Support Equipment</h3>
+      <p>PLC-based test rigs and monitoring systems for reliable avionics testing and validation.</p>
+      <a href="{{ 'ground-support/' | url }}" class="btn btn-primary">Learn More</a>
     </div>
 
-    <!-- Technical Reports -->
+    <!-- Esch Awards -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/template.png" alt="Technical Report">
-      <h3>Technical Reports</h3>
-      <p>Our comprehensive reports document design methods, test procedures, and data analysis—supporting learning and peer review.</p>
-      <a href="{{ 'reports/' | url }}" class="btn btn-primary">Read</a>
+      <img src="assets/images/esch.png" alt="Esch Award">
+      <h3>2025 Esch Awards Winner</h3>
+      <p>Read our Esch application.</p>
+      <a href="assets/pdfs/esch.pdf" class="btn btn-primary">Read</a>
     </div>
   </section>
 
   <!-- Call-to-Action Section -->
   <section class="cta-section slide-in-bottom">
     <div class="md-container md-typeset" style="text-align:center;">
-      <h2>Get Involved with MACH</h2>
-      <p>Join us to gain hands-on aerospace systems experience—build flight computers, test rocket engines, and run ground station operations.</p>
-      <a href="{{ 'join/' | url }}" class="btn btn-primary btn-lg">Apply Now</a>
+      <h2>Get Involved with Sonic Avionics</h2>
+      <p>Contribute to our open-source platform, test flight computers, or share ideas on Discord. Help shape the future of rocketry!</p>
+      <a href="{{ 'join/' | url }}" class="btn btn-primary btn-lg">Join Now</a>
     </div>
   </section>
-
-  {{ super() }}
 {% endblock %}
