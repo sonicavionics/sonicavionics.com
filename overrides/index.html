@@ -3,6 +3,9 @@
 {% block extrahead %}
   {{ super() }}
   <style>
+    /* Importing custom fonts from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Mono:wght@400;500&display=swap');
+
     /* Full-screen gradient behind everything */
     body::before {
       content: "";
@@ -19,35 +22,96 @@
     .md-main .md-typeset h3,
     .md-main .md-typeset p {
       color: #ffffff !important;
+      font-family: 'Roboto Mono', monospace !important;
     }
 
     /* Make links in main content white */
     .md-main .md-typeset a {
       color: #ffffff !important;
+      font-family: 'Roboto Mono', monospace !important;
     }
 
     /* Make links inline light blue */
     .md-main .md-typeset a.link {
       color: #4FC3F7 !important;
+      font-family: 'Roboto Mono', monospace !important;
     }
 
-    /* Increase text size and set typewriter font in Hero Section */
-    .home-hero__inner h1 {
-      font-size: 3rem;
-      font-family: 'Courier New', Courier, monospace;
+    /* Center the hero section content */
+    .home-hero__inner {
+      text-align: center !important;
     }
+
+    /* Styling for Hero Section title with an even wilder, bolder font */
+    .home-hero__inner h1 {
+      font-size: 4rem;
+      font-family: 'Black Ops One', cursive !important;
+      color: #4FC3F7 !important;
+      text-shadow: 
+        0 0 15px rgba(79, 195, 247, 0.9), 
+        0 0 30px rgba(79, 195, 247, 0.7), 
+        0 0 50px rgba(79, 195, 247, 0.5);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      transform: perspective(500px) rotateX(10deg);
+      transition: none !important; /* Remove hover transition */
+    }
+
+    /* Remove hover effect */
+    .home-hero__inner h1:hover {
+      transform: perspective(500px) rotateX(10deg); /* Keep the same transform as non-hover state */
+    }
+
+    /* Hero section paragraph styling */
     .home-hero__inner p {
       font-size: 1.5rem;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'Roboto Mono', monospace !important;
+      color: #e0e0e0 !important;
     }
 
     /* Transparent header and nav bars */
     .md-header,
     .md-header-nav,
     .md-tabs {
-      background-color: transparent !important;
+      background: transparent !important;
       box-shadow: none !important;
       color: #ffffff !important;
+      font-family: 'Roboto Mono', monospace !important;
+    }
+
+    .md-header {
+      position: static !important;
+    }
+    .md-main__inner {
+      margin-top: 0 !important;
+    }
+    .md-tabs {
+      width: 100% !important;
+      left: 0 !important;
+      transform: none !important;
+    }
+
+    /* Ensure md-tabs__list is always visible */
+    .md-tabs {
+      display: flex !important; /* Force display as flex to keep it visible */
+      visibility: visible !important; /* Ensure visibility */
+      opacity: 1 !important; /* Prevent fading out */
+      overflow-x: auto !important; /* Allow horizontal scrolling if tabs overflow */
+      white-space: nowrap !important; /* Prevent wrapping */
+    }
+
+    /* Override any media queries that might hide md-tabs__list */
+    @media (max-width: 768px) {
+      .md-tabs__list {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+    }
+
+    /* Hide the entire header inner content (logo, search, GitHub link) */
+    .md-header__inner {
+      display: none !important;
     }
 
     /* Hero section transparent and reduced bottom padding */
@@ -110,15 +174,19 @@
     }
 
     .feature img {
-      width: 100%;
+      max-width: 100%;
       height: auto;
       border-radius: 0.5rem;
       margin-bottom: 1rem;
     }
 
-    .feature img.no-stretch {
-      width: auto;
-      max-width: 100%;
+    .feature h3 {
+      font-family: 'Black Ops One', cursive !important;
+      color: #ffffff !important;
+    }
+
+    .feature p {
+      font-family: 'Roboto Mono', monospace !important;
     }
 
     .feature-btn {
@@ -131,6 +199,7 @@
       background: linear-gradient(45deg, #047d92, #06b6d4);
       border-radius: 0.3rem;
       transition: background 0.3s ease;
+      font-family: 'Roboto Mono', monospace !important;
     }
 
     .feature-btn:hover {
@@ -140,11 +209,41 @@
     .btn-lg {
       padding: 1rem 2rem;
       font-size: 1.25rem;
+      font-family: 'Roboto Mono', monospace !important;
     }
 
     /* Ensure hero buttons maintain white text on hover */
     .home-hero__cta .btn {
       color: #ffffff !important;
+      font-family: 'Roboto Mono', monospace !important;
+    }
+
+    /* Flexbox for hero CTA buttons */
+    .home-hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center !important; /* Center the buttons */
+      gap: 1rem;
+    }
+
+    /* Media queries for mobile */
+    @media (max-width: 768px) {
+      .home-hero__inner h1 {
+        font-size: 2.8rem;
+      }
+      .home-hero__inner p {
+        font-size: 1rem;
+      }
+      section {
+        padding: 2rem 1rem;
+      }
+      .home-hero__cta {
+        gap: 0.5rem;
+      }
+      .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+      }
     }
   </style>
 
@@ -166,7 +265,7 @@
 {% block content %}
   <!-- Hero Section -->
   <div class="home-hero__inner">
-    <h1>{{ config.site_name }}</h1>
+    <h1>Sonic Avionics</h1>
     <p>Empowering students and rocketry enthusiasts with an open-source, modular avionics platform. Winner of the 2025 Stage 1 Esch Awards!</p>
     <div class="home-hero__cta">
       <a href="join/" class="btn btn-primary btn-lg">Join Us</a>
@@ -198,7 +297,7 @@
 
     <!-- Open-Source Hardware -->
     <div class="feature">
-      <img src="https://raw.githubusercontent.com/sonicavionics/4in-avionics/refs/heads/main/exports/images/avionics_rack.PNG" alt="Open-Source Hardware" class="no-stretch">
+      <img src="https://raw.githubusercontent.com/sonicavionics/4in-avionics/refs/heads/main/exports/images/avionics_rack.PNG" alt="Open-Source Hardware">
       <h3>Open-Source Hardware</h3>
       <p>Customizable CAD on GitHub, created in SOLIDWORKS.</p>
       <a href="https://github.com/sonicavionics/4in-avionics" class="feature-btn">View</a>
