@@ -31,6 +31,16 @@
       color: #4FC3F7 !important;
     }
 
+    /* Increase text size and set typewriter font in Hero Section */
+    .home-hero__inner h1 {
+      font-size: 3rem;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .home-hero__inner p {
+      font-size: 1.5rem;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
     /* Transparent header and nav bars */
     .md-header,
     .md-header-nav,
@@ -157,7 +167,7 @@
   <!-- Hero Section -->
   <div class="home-hero__inner">
     <h1>{{ config.site_name }}</h1>
-    <p>Sonic Avionics: Empowering students and rocketry enthusiasts with an open-source, modular avionics platform. Winner of the 2025 Stage 1 Esch Awards!</p>
+    <p>Empowering students and rocketry enthusiasts with an open-source, modular avionics platform. Winner of the 2025 Stage 1 Esch Awards!</p>
     <div class="home-hero__cta">
       <a href="join/" class="btn btn-primary btn-lg">Join Us</a>
       {% if config.repo_url %}
