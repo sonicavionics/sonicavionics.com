@@ -44,7 +44,7 @@ There are some chips already selected for you:
 
 ## Further Information
 
-- Implement the [DFM Guide](../resources/dfmguide.md).
+- Implement the [DFM Guide](../avionics/resources/dfmguide.md).
 - use [proper commit messages](https://github.com/zeulewan/git-commit-message).
 
 - When creating a new repo, select the [challenge template](https://github.com/sonicavionics/4in-challengetemplate) for the template.
