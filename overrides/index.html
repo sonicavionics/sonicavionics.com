@@ -2,7 +2,14 @@
 
 {% block extrahead %}
   {{ super() }}
+  <!-- Meta tag to indicate dark color scheme -->
+  <meta name="color-scheme" content="dark">
   <style>
+    /* Set color scheme to dark at the root level */
+    :root {
+      color-scheme: dark !important;
+    }
+
     /* Importing custom fonts from Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Mono:wght@400;500&display=swap');
 
@@ -90,23 +97,21 @@
       width: 100% !important;
       left: 0 !important;
       transform: none !important;
-      display: flex !important;
-      justify-content: left !important; /* Center the tabs container */
     }
-    
-    /* Ensure md-tabs__list shrinks with content and remains visible */
-    .md-tabs__list {
-      display: inline-flex !important; /* Use inline-flex to shrink to content width */
-      visibility: visible !important;
-      opacity: 1 !important;
-      overflow-x: auto !important;
-      white-space: nowrap !important;
+
+    /* Ensure md-tabs__list is always visible */
+    .md-tabs {
+      display: flex !important; /* Force display as flex to keep it visible */
+      visibility: visible !important; /* Ensure visibility */
+      opacity: 1 !important; /* Prevent fading out */
+      overflow-x: auto !important; /* Allow horizontal scrolling if tabs overflow */
+      white-space: nowrap !important; /* Prevent wrapping */
     }
 
     /* Override any media queries that might hide md-tabs__list */
     @media (max-width: 768px) {
       .md-tabs__list {
-        display: inline-flex !important;
+        display: flex !important;
         visibility: visible !important;
         opacity: 1 !important;
       }
@@ -248,7 +253,6 @@
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
       }
-      /* Adjust project cards to slim down more on mobile */
       .features {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important; /* Reduce min width for mobile */
       }
@@ -283,7 +287,7 @@
       <a href="https://discord.gg/HSY7DmDeq7" class="btn btn-secondary btn-lg">Discord</a>
     </div>
   </div>
-
+  <hr>
   <!-- About Section -->
   <section class="about slide-in-bottom">
     <div class="md-container md-typeset">
