@@ -55,6 +55,7 @@
       text-transform: uppercase;
       transform: perspective(500px) rotateX(10deg);
       transition: none !important; /* Remove hover transition */
+      white-space: nowrap !important; /* Prevent wrapping on larger screens */
     }
 
     /* Remove hover effect */
@@ -230,6 +231,7 @@
     @media (max-width: 768px) {
       .home-hero__inner h1 {
         font-size: 2.8rem;
+        white-space: normal !important; /* Allow wrapping on small screens */
       }
       .home-hero__inner p {
         font-size: 1rem;
@@ -266,7 +268,7 @@
   <!-- Hero Section -->
   <div class="home-hero__inner">
     <h1>Sonic Avionics</h1>
-    <p>Empowering students and rocketry enthusiasts with an open-source, modular avionics platform. Winner of the 2025 Stage 1 Esch Awards!</p>
+    <p>Empowering students and rocketry enthusiasts with an open-source, modular avionics platform.<br>Winner of the 2025 Stage 1 Esch Awards!</p>
     <div class="home-hero__cta">
       <a href="join/" class="btn btn-primary btn-lg">Join Us</a>
       {% if config.repo_url %}
