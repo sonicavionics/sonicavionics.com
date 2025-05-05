@@ -6,7 +6,7 @@ site_author: Sonic Avionics
 repo_url: https://github.com/sonicavionics/sonicavionics.com
 edit_uri: edit/main/docs/
 
-copyright:  Copyright © 2024 - 2025 Sonic Avionics
+copyright:  Sonic Avionics © 2025 
 
 theme:
   name: material
@@ -103,7 +103,7 @@ extra:
     # - icon: fontawesome/brands/linkedin
     #   link: https://www.linkedin.com/company/marstmu/?originalSubdomain=ca
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/Wc7pYAxd
+      link: https://discord.gg/HSY7DmDeq7
     # - icon: custom/notion
     #   link: https://marstmu.notion.site/MARS-Notion-1912fcb069e2804d92e6dc49248b4dbb
 

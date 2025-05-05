@@ -8,19 +8,27 @@
       content: "";
       position: fixed;
       inset: 0;
-      background: linear-gradient(135deg, #1e3a8a 0%, #075985 100%);
+      background: linear-gradient(135deg, #172d69 0%, #075985 100%);
       z-index: -1;
     }
 
-    /* Ensure light text color in main content */
+    /* Ensure light text color in main content, excluding links and buttons */
     .md-main .md-typeset,
     .md-main .md-typeset h1,
     .md-main .md-typeset h2,
     .md-main .md-typeset h3,
-    .md-main .md-typeset p,
-    .md-main .md-typeset a,
-    .md-main .btn {
+    .md-main .md-typeset p {
       color: #ffffff !important;
+    }
+
+    /* Make links in main content white */
+    .md-main .md-typeset a {
+      color: #ffffff !important;
+    }
+
+    /* Make links inline light blue */
+    .md-main .md-typeset a.link {
+      color: #4FC3F7 !important;
     }
 
     /* Transparent header and nav bars */
@@ -82,6 +90,13 @@
       border-radius: 0.5rem;
       padding: 1.5rem;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
     .feature img {
@@ -91,7 +106,36 @@
       margin-bottom: 1rem;
     }
 
-    .btn-lg { padding: 1rem 2rem; font-size: 1.25rem; }
+    .feature img.no-stretch {
+      width: auto;
+      max-width: 100%;
+    }
+
+    .feature-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #ffffff !important;
+      background: linear-gradient(45deg, #047d92, #06b6d4);
+      border-radius: 0.3rem;
+      transition: background 0.3s ease;
+    }
+
+    .feature-btn:hover {
+      background: linear-gradient(45deg, #06b6d4, #047d92);
+    }
+
+    .btn-lg {
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+    }
+
+    /* Ensure hero buttons maintain white text on hover */
+    .home-hero__cta .btn {
+      color: #ffffff !important;
+    }
   </style>
 
   <script>
@@ -115,11 +159,11 @@
     <h1>{{ config.site_name }}</h1>
     <p>Sonic Avionics: Empowering students and rocketry enthusiasts with an open-source, modular avionics platform. Winner of the 2025 Stage 1 Esch Awards!</p>
     <div class="home-hero__cta">
-      <a href="{{ 'getting-started/' | url }}" class="btn btn-primary btn-lg">Join Us</a>
+      <a href="join/" class="btn btn-primary btn-lg">Join Us</a>
       {% if config.repo_url %}
-      <a href="{{ config.repo_url }}" class="btn btn-secondary btn-lg">GitHub</a>
+      <a href="https://github.com/sonicavionics" class="btn btn-secondary btn-lg">GitHub</a>
       {% endif %}
-      <a href="https://discord.gg/[YourDiscordInvite]" class="btn btn-secondary btn-lg">Join Discord</a>
+      <a href="https://discord.gg/HSY7DmDeq7" class="btn btn-secondary btn-lg">Discord</a>
     </div>
   </div>
 
@@ -128,7 +172,7 @@
     <div class="md-container md-typeset">
       <h2>About Sonic Avionics</h2>
       <p>Sonic Avionics develops open-source, modular avionics platforms for students and rocketry enthusiasts. Our 4-inch scalable flight computers, compatible with the Mojave Sphinx, bridge the gap between theory and practice, addressing the engineering skills shortage through hands-on learning.</p>
-      <p>All hardware and code are freely available on GitHub, and we actively encourage community feedback and contributions. Join our Discord to discuss development and share ideas!</p>
+      <p>All hardware and code is freely available on GitHub, and we actively encourage community feedback and contributions. Join our Discord to discuss development and share ideas!</p>
     </div>
   </section>
 
@@ -138,41 +182,32 @@
     <div class="feature">
       <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" alt="Flight Computer">
       <h3>Modular Flight Computers</h3>
-      <p>Scalable 4-inch avionics systems with redundant sensors and real-time telemetry, designed for the <a href="https://www.halfcatrocketry.com/mojave-sphinx">Mojave Sphinx</a> and other rockets.</p>
-      <a href="../avionics/PCB-Modules/sensors/" class="btn btn-primary">Explore</a>
+      <p>Scalable 4-inch avionics systems with redundant sensors and real-time telemetry, designed for the <a href="https://www.halfcatrocketry.com/mojave-sphinx" class="link">Mojave Sphinx</a> and other rockets.</p>
+      <a href="avionics/PCB-Modules/sensors/" class="feature-btn">Explore</a>
     </div>
 
-    <!-- Open-Source Software -->
+    <!-- Open-Source Hardware -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/software.png" alt="Open-Source Software">
-      <h3>Open-Source Software</h3>
-      <p>Customizable flight software hosted on GitHub, supporting real-time data acquisition and mission control.</p>
-      <a href="{{ 'software/' | url }}" class="btn btn-primary">View Code</a>
+      <img src="https://raw.githubusercontent.com/sonicavionics/4in-avionics/refs/heads/main/exports/images/avionics_rack.PNG" alt="Open-Source Hardware" class="no-stretch">
+      <h3>Open-Source Hardware</h3>
+      <p>Customizable CAD on GitHub, created in SOLIDWORKS.</p>
+      <a href="https://github.com/sonicavionics/4in-avionics" class="feature-btn">View</a>
     </div>
 
     <!-- Ground Support Equipment -->
     <div class="feature">
-      <img src="{{ base_url }}/assets/images/ground-support.png" alt="Ground Support">
+      <img src="assets/images/ground-support.png" alt="Ground Support">
       <h3>Ground Support Equipment</h3>
       <p>PLC-based test rigs and monitoring systems for reliable avionics testing and validation.</p>
-      <a href="{{ 'ground-support/' | url }}" class="btn btn-primary">Learn More</a>
+      <a href="{{ 'GSE/' | url }}" class="feature-btn">Learn More</a>
     </div>
 
     <!-- Esch Awards -->
     <div class="feature">
       <img src="assets/images/esch.png" alt="Esch Award">
-      <h3>2025 Esch Awards Winner</h3>
+      <h3>2025 Esch Awards</h3>
       <p>Read our Esch application.</p>
-      <a href="assets/pdfs/esch.pdf" class="btn btn-primary">Read</a>
-    </div>
-  </section>
-
-  <!-- Call-to-Action Section -->
-  <section class="cta-section slide-in-bottom">
-    <div class="md-container md-typeset" style="text-align:center;">
-      <h2>Get Involved with Sonic Avionics</h2>
-      <p>Contribute to our open-source platform, test flight computers, or share ideas on Discord. Help shape the future of rocketry!</p>
-      <a href="{{ 'join/' | url }}" class="btn btn-primary btn-lg">Join Now</a>
+      <a href="assets/pdfs/esch.pdf" class="feature-btn">Read</a>
     </div>
   </section>
 {% endblock %}
