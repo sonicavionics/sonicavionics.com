@@ -64,260 +64,348 @@
     
     
     
-  
   <!-- Meta tag to indicate dark color scheme -->
   <meta name="color-scheme" content="dark">
   <style>
-    /* Set color scheme to dark at the root level */
+    /* ===== GLOBAL STYLES ===== */
+    /* Import custom fonts from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Dancing+Script:wght@700&family=Roboto+Mono:wght@400;500&display=swap');
+
+    /* Root dark color scheme */
     :root {
-      color-scheme: dark !important;
+      color-scheme: dark;
     }
 
-    /* Importing custom fonts from Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Mono:wght@400;500&display=swap');
-
-    /* Full-screen gradient behind everything */
+    /* Full-screen gradient background */
     body::before {
       content: "";
       position: fixed;
       inset: 0;
-      background: linear-gradient(135deg, #080e21 0%, #05394e 100%);
+      background: linear-gradient(135deg, #080e21 0%, #0a1f2b 100%);
       z-index: -1;
     }
 
-    /* Ensure light text color in main content, excluding links and buttons */
+    /* ===== TYPOGRAPHY ===== */
+    /* Base font styling for main content */
     .md-main .md-typeset,
     .md-main .md-typeset h1,
     .md-main .md-typeset h2,
     .md-main .md-typeset h3,
     .md-main .md-typeset p {
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+      color: #ffffff;
+      font-family: "andale", monospace;
     }
 
-    /* Make links in main content white */
+    /* Link styling */
     .md-main .md-typeset a {
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+      color: #ffffff;
+      font-family: "andale", monospace;
     }
 
-    /* Make links inline light blue */
     .md-main .md-typeset a.link {
-      color: #4FC3F7 !important;
-      font-family: 'Roboto Mono', monospace !important;
+      color: #00ffcc;
+      text-shadow: 0 0 5px rgba(0, 255, 204, 0.7);
+      transition: all 0.3s ease;
     }
 
-    /* Center the hero section content */
-    .home-hero__inner {
-      text-align: center !important;
+    .md-main .md-typeset a.link:hover {
+      color: #00ffcc;
+      text-shadow: 0 0 8px rgba(0, 255, 204, 0.9), 0 0 12px rgba(0, 255, 204, 0.5);
     }
 
-    /* Styling for Hero Section title with an even wilder, bolder font */
-    .home-hero__inner h1 {
-      font-size: 4rem;
-      font-family: 'Black Ops One', cursive !important;
-      color: #4FC3F7 !important;
-      text-shadow: 
-        0 0 15px rgba(79, 195, 247, 0.9), 
-        0 0 30px rgba(79, 195, 247, 0.7), 
-        0 0 50px rgba(79, 195, 247, 0.5);
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      transform: perspective(500px) rotateX(10deg);
-      transition: none !important; /* Remove hover transition */
-      white-space: nowrap !important; /* Prevent wrapping on larger screens */
-    }
-
-    /* Remove hover effect */
-    .home-hero__inner h1:hover {
-      transform: perspective(500px) rotateX(10deg); /* Keep the same transform as non-hover state */
-    }
-
-    /* Hero section paragraph styling */
-    .home-hero__inner p {
-      font-size: 1.5rem;
-      font-family: 'Roboto Mono', monospace !important;
-      color: #e0e0e0 !important;
-    }
-
-    /* Transparent header and nav bars */
+    /* ===== HEADER & NAVIGATION ===== */
+    /* Transparent header styling */
     .md-header,
     .md-header-nav,
     .md-tabs {
       background: transparent !important;
       box-shadow: none !important;
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+      color: #ffffff;
+      font-family: "andale", monospace;
     }
 
     .md-header {
-      position: static !important;
+      position: static;
     }
+    
     .md-main__inner {
-      margin-top: 0 !important;
+      margin-top: 0;
     }
+    
+    /* Tab navigation styling */
     .md-tabs {
-      width: 100% !important;
-      left: 0 !important;
-      transform: none !important;
+      width: 100%;
+      left: 0;
+      transform: none;
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+      overflow-x: auto;
+      white-space: nowrap;
     }
 
-    /* Ensure md-tabs__list is always visible */
-    .md-tabs {
-      display: flex !important; /* Force display as flex to keep it visible */
-      visibility: visible !important; /* Ensure visibility */
-      opacity: 1 !important; /* Prevent fading out */
-      overflow-x: auto !important; /* Allow horizontal scrolling if tabs overflow */
-      white-space: nowrap !important; /* Prevent wrapping */
-    }
-
-    /* Override any media queries that might hide md-tabs__list */
-    @media (max-width: 768px) {
-      .md-tabs__list {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-      }
-    }
-
-    /* Hide the entire header inner content (logo, search, GitHub link) */
+    /* Hide header inner content */
     .md-header__inner {
       display: none !important;
     }
 
-    /* Hero section transparent and reduced bottom padding */
+    /* ===== HERO SECTION ===== */
     .home-hero {
-      background: transparent !important;
-      padding-bottom: 1rem !important;
+      background: transparent;
+      padding-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
-    .home-hero::before { display: none !important; }
+    
+    .home-hero::before {
+      display: none;
+    }
 
-    /* Video section reduced top padding */
+    /* Center hero content */
+    .home-hero__inner {
+      text-align: center;
+      width: 100%;
+      max-width: 1200px;
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Hero title styling */
+    .home-hero__inner h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-family: 'DM Serif Text', serif !important;
+      color: #00ffcc;
+      text-shadow: 
+        0 0 7.5px rgba(0, 255, 204, 0.9), 
+        0 0 15px rgba(0, 255, 204, 0.7), 
+        0 0 25px rgba(0, 255, 204, 0.5);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      transform: perspective(500px) rotateX(10deg);
+      margin-bottom: 1.5rem;
+      width: 100%;
+      display: block;
+    }
+
+    /* Hero description styling */
+    .home-hero__inner p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+      text-shadow: 0 0 5px rgba(224, 224, 224, 0.5);
+    }
+
+    /* Hero CTA buttons container */
+    .home-hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    /* Button styling */
+    .home-hero__cta .btn {
+      color: #ffffff;
+      font-family: "andale", monospace;
+    }
+
+    /* ===== PROJECTS SECTION ===== */
+    /* Section spacing and layout */
+    section {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Video section */
     .video-section {
       text-align: center;
       margin-bottom: 3rem;
-      padding-top: 1rem !important;
-      margin-top: 0 !important;
+      padding-top: 1rem;
+      margin-top: 0;
     }
+    
     .video-section video {
       width: 100%;
       max-width: 800px;
       border-radius: 0.5rem;
     }
 
-    /* Hide auto-generated title and metadata in main content */
-    .md-main .md-typeset > h1,
-    .md-main .md-typeset > .md-meta { display: none !important; }
-
-    /* Scroll-reveal: slide up from bottom */
-    .slide-in-bottom {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Section styling */
-    section { padding: 4rem 1rem; max-width: 1200px; margin: 0 auto; }
-
-    /* Grid layout for features: two per row, one on narrow screens */
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* Projects grid layout */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 2rem;
+      width: 100%;
     }
 
-    .feature {
-      background: rgba(255, 255, 255, 0.1);
+    /* Project card styling */
+    .project {
+      background: rgba(10, 20, 35, 0.7);
       border-radius: 0.5rem;
       padding: 1.5rem;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 255, 204, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex: 1 1 400px;
+      max-width: 100%;
+      border: 1px solid rgba(0, 255, 204, 0.2);
     }
 
-    .feature:hover {
+    .project:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 20px rgba(0, 255, 204, 0.25);
+      border: 1px solid rgba(0, 255, 204, 0.4);
     }
 
-    .feature img {
+    .project img {
       max-width: 100%;
       height: auto;
       border-radius: 0.5rem;
       margin-bottom: 1rem;
+      /* filter: drop-shadow(0 0 1px rgba(0, 255, 204, 0.3)); */
+      transition: filter 0.3s ease;
     }
 
-    .feature h3 {
+    .project:hover img {
+      filter: drop-shadow(0 0 5px rgba(0, 255, 204, 0.5));
+    }
+
+    .project h3 {
       font-family: 'Black Ops One', cursive !important;
-      color: #ffffff !important;
+      color: #00ffcc;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
     }
 
-    .feature p {
-      font-family: 'Roboto Mono', monospace !important;
-    }
-
-    .feature-btn {
+    /* ===== BUTTONS ===== */
+    .project-btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
       font-weight: 500;
       text-decoration: none;
-      color: #ffffff !important;
-      background: linear-gradient(45deg, #047d92, #06b6d4);
+      color: #ffffff;
+      background: linear-gradient(90deg, #034e5c, #0a765a);
       border-radius: 0.3rem;
-      transition: background 0.3s ease;
-      font-family: 'Roboto Mono', monospace !important;
+      transition: all 0.3s ease;
+      font-family: "andale", monospace;
+      border: 1px solid rgba(0, 255, 204, 0.3);
+      box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
     }
 
-    .feature-btn:hover {
-      background: linear-gradient(45deg, #06b6d4, #047d92);
+    .project-btn:hover {
+      background: linear-gradient(90deg, #0a765a, #034e5c);
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+      border: 1px solid rgba(0, 255, 204, 0.5);
     }
 
-    .btn-lg {
-      padding: 1rem 2rem;
-      font-size: 1.25rem;
-      font-family: 'Roboto Mono', monospace !important;
+    /* Add neon horizontal rule */
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #00ffcc, transparent);
+      box-shadow: 0 0 8px rgba(0, 255, 204, 0.8);
+      width: 100%;
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: laser-in 1.5s ease-out forwards;
     }
 
-    /* Ensure hero buttons maintain white text on hover */
-    .home-hero__cta .btn {
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+    /* Laser animation keyframes */
+    @keyframes laser-in {
+      0% {
+        width: 0;
+        opacity: 0;
+        background: linear-gradient(90deg, #00ffcc, #00ffcc);
+        box-shadow: 0 0 20px rgba(0, 255, 204, 1);
+      }
+      50% {
+        width: 100%;
+        opacity: 1;
+        background: linear-gradient(90deg, #00ffcc, #00ffcc);
+        box-shadow: 0 0 20px rgba(0, 255, 204, 1), 0 0 40px rgba(0, 255, 204, 0.8);
+      }
+      100% {
+        width: 100%;
+        background: linear-gradient(90deg, transparent, #00ffcc, transparent);
+        box-shadow: 0 0 8px rgba(0, 255, 204, 0.8);
+      }
     }
 
-    /* Flexbox for hero CTA buttons */
-    .home-hero__cta {
+    /* Footer action buttons */
+    .footer-actions {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      justify-content: center !important; /* Center the buttons */
-      gap: 1rem;
+      gap: 1.5rem;
+      margin: 2rem auto 3rem;
+      padding: 0 1rem;
+      max-width: 1200px;
     }
 
-    /* Media queries for mobile */
+    /* ===== ANIMATIONS ===== */
+    /* Scroll reveal animation */
+    .slide-in-bottom {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hide auto-generated elements */
+    .md-main .md-typeset > h1,
+    .md-main .md-typeset > .md-meta {
+      display: none !important;
+    }
+
+    /* ===== RESPONSIVE STYLES ===== */
+    /* Ensure tab navigation is visible on mobile */
     @media (max-width: 768px) {
+      .md-tabs__list {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+      }
+      
       .home-hero__inner h1 {
-        font-size: 2.8rem;
-        white-space: normal !important; /* Allow wrapping on small screens */
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        letter-spacing: 1px;
+        word-wrap: break-word;
       }
+      
       .home-hero__inner p {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
+      
       section {
         padding: 2rem 1rem;
       }
+      
       .home-hero__cta {
         gap: 0.5rem;
       }
+      
       .btn-lg {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
       }
-      .features {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important; /* Reduce min width for mobile */
+      
+      .projects {
+        flex-wrap: wrap;
+      }
+
+      .project {
+        flex-basis: 100%;
       }
     }
   </style>
@@ -331,7 +419,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.2 });
+      }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
       document.querySelectorAll('.slide-in-bottom').forEach(el => observer.observe(el));
     });
   </script>
@@ -527,20 +615,17 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="GSE/" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="GSE/" class="md-tabs__link">
+        
   
   
     
   
   GSE
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -698,32 +783,9 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="GSE/" class="md-nav__link">
         
-          
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="GSE/" class="md-nav__link ">
-              
   
   
   <span class="md-ellipsis">
@@ -732,22 +794,7 @@
   </span>
   
 
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            GSE
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
+      </a>
     </li>
   
 
@@ -2107,52 +2154,49 @@
   <!-- Hero Section -->
   <div class="home-hero__inner">
     <h1>Sonic Avionics</h1>
-    <p>Empowering students and rocketry enthusiasts with an open-source, modular avionics platform.<br>Winner of the 2025 Stage 1 <a href="https://www.torontomu.ca/ceie/eschawards/" class="link">Esch Awards</a>!</p>
-    <div class="home-hero__cta">
-      <a href="join/" class="btn btn-primary btn-lg">Join Us</a>
-      
-      <a href="https://github.com/sonicavionics" class="btn btn-secondary btn-lg">GitHub</a>
-      
-      <a href="https://discord.gg/HSY7DmDeq7" class="btn btn-secondary btn-lg">Discord</a>
-    </div>
+    <p>Open-source, modular avionics systems.<br>Winner of the 2025 Stage 1 <a href="https://www.torontomu.ca/ceie/eschawards/" class="link">Esch Awards</a>!</p>
   </div>
   <hr>
-  <!-- About Section -->
-  <section class="about slide-in-bottom">
-    <div class="md-container md-typeset">
-      <h2>About Sonic Avionics</h2>
-      <p>Sonic Avionics develops open-source, modular avionics platforms for students and rocketry enthusiasts. Our 4-inch scalable flight computers, compatible with the Mojave Sphinx, bridge the gap between theory and practice, addressing the engineering skills shortage through hands-on learning.</p>
-      <p>All hardware and code is freely available on GitHub, and we actively encourage community feedback and contributions. Join our Discord to discuss development and share ideas!</p>
-    </div>
-  </section>
 
   <!-- Projects Grid -->
-  <section class="features slide-in-bottom">
+  <section class="projects slide-in-bottom">
     <!-- Modular Flight Computers -->
-    <div class="feature">
+    <div class="project">
       <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" alt="Flight Computer">
       <h3>Modular Flight Computers</h3>
       <p>Scalable 4-inch avionics systems with redundant sensors and real-time telemetry, designed for the <a href="https://www.halfcatrocketry.com/mojave-sphinx" class="link">Mojave Sphinx</a> and other rockets.</p>
-      <a href="avionics/PCB-Modules/sensors/" class="feature-btn">Explore</a>
+      <a href="avionics/PCB-Modules/sensors/" class="project-btn">Explore</a>
     </div>
 
     <!-- Open-Source Hardware -->
-    <div class="feature">
+    <div class="project">
       <img src="https://raw.githubusercontent.com/sonicavionics/4in-avionics/refs/heads/main/exports/images/avionics_rack.PNG" alt="Open-Source Hardware">
       <h3>Open-Source Hardware</h3>
       <p>Customizable CAD on GitHub, created in SOLIDWORKS.</p>
-      <a href="https://github.com/sonicavionics/4in-avionics" class="feature-btn">View</a>
+      <a href="https://github.com/sonicavionics/4in-avionics" class="project-btn">View</a>
     </div>
 
     <!-- Ground Support Equipment -->
-    <div class="feature">
-      <!-- <img src="assets/images/ground-support.png" alt="Ground Support"> -->
+    <div class="project">
       <h3>Ground Support Equipment</h3>
       <p>PLC-based test rigs and monitoring systems for reliable avionics testing and validation.</p>
-      <a href="GSE/" class="feature-btn">Learn More</a>
+      <a href="GSE/" class="project-btn">Learn More</a>
     </div>
+
+    <!-- About Section -->
+    <div class="md-container md-typeset">
+      <h2>About Sonic Avionics</h2>
+      <p>Sonic Avionics develops open-source, modular avionics platforms for students and rocketry enthusiasts. Our 4-inch scalable flight computers, compatible with the <a href="https://www.halfcatrocketry.com/mojave-sphinx" class="link">Mojave Sphinx</a>, bridge the gap between theory and practice, addressing the engineering skills shortage through hands-on learning.</p>
+      <p>All hardware and code is freely available on GitHub, and we actively encourage community feedback and contributions. Join our Discord to discuss development and share ideas!</p>
+    </div>   
+
+    <!-- Footer Action Buttons -->
+    <a href="join/" class="project-btn">Join Us</a>
+    <a href="https://github.com/sonicavionics" class="project-btn">GitHub</a>
+    <a href="https://discord.gg/HSY7DmDeq7" class="project-btn">Discord</a>
     
   </section>
+  
 
               </article>
             </div>
@@ -2188,6 +2232,17 @@
 </div>
       
         <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/sonicavionics/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
   
     
     
