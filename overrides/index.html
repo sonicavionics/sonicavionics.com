@@ -6,7 +6,7 @@
   <style>
     /* ===== GLOBAL STYLES ===== */
     /* Import custom fonts from Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Roboto+Mono:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Dancing+Script:wght@700&family=Roboto+Mono:wght@400;500&display=swap');
 
     /* Root dark color scheme */
     :root {
@@ -83,6 +83,9 @@
     .home-hero {
       background: transparent;
       padding-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
     
     .home-hero::before {
@@ -92,32 +95,33 @@
     /* Center hero content */
     .home-hero__inner {
       text-align: center;
+      width: 100%;
+      max-width: 1200px;
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
     }
 
     /* Hero title styling */
     .home-hero__inner h1 {
-      font-size: 4rem;
-      font-family: 'Dancing Script', cursive !important;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-family: 'DM Serif Text', serif !important;
       color: #4FC3F7;
       text-shadow: 
-        0 0 15px rgba(79, 195, 247, 0.9), 
-        0 0 30px rgba(79, 195, 247, 0.7), 
-        0 0 50px rgba(79, 195, 247, 0.5);
+        0 0 7.5px rgba(79, 195, 247, 0.9), 
+        0 0 15px rgba(79, 195, 247, 0.7), 
+        0 0 25px rgba(79, 195, 247, 0.5);
       letter-spacing: 3px;
       text-transform: uppercase;
       transform: perspective(500px) rotateX(10deg);
-      transition: none;
-      white-space: nowrap;
-    }
-
-    /* Remove hover transform change */
-    .home-hero__inner h1:hover {
-      transform: perspective(500px) rotateX(10deg);
+      margin-bottom: 1.5rem;
+      width: 100%;
+      display: block;
     }
 
     /* Hero description styling */
     .home-hero__inner p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #e0e0e0;
     }
 
@@ -135,7 +139,7 @@
       font-family: 'Roboto Mono', monospace;
     }
 
-    /* ===== FEATURE SECTIONS ===== */
+    /* ===== PROJECTS SECTION ===== */
     /* Section spacing and layout */
     section {
       padding: 4rem 1rem;
@@ -157,61 +161,62 @@
       border-radius: 0.5rem;
     }
 
-    /* Features grid layout */
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* Projects grid layout */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 2rem;
+      width: 100%;
     }
 
-    /* Feature card styling */
-    .feature {
+    /* Project card styling */
+    .project {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 0.5rem;
       padding: 1.5rem;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex: 1 1 400px;
+      max-width: 100%;
     }
 
-    .feature:hover {
+    .project:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
-    .feature img {
+    .project img {
       max-width: 100%;
       height: auto;
       border-radius: 0.5rem;
       margin-bottom: 1rem;
     }
 
-    .feature h3 {
+    .project h3 {
       font-family: 'Black Ops One', cursive !important;
       color: #ffffff;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
 
     /* ===== BUTTONS ===== */
-    .feature-btn {
+    .project-btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
       font-weight: 500;
       text-decoration: none;
       color: #ffffff;
-      background: linear-gradient(45deg, #047d92, #06b6d4);
+      background: linear-gradient(0deg, #034e5c, #045e6e);
       border-radius: 0.3rem;
       transition: background 0.3s ease;
       font-family: 'Roboto Mono', monospace;
     }
 
-    .feature-btn:hover {
-      background: linear-gradient(45deg, #06b6d4, #047d92);
-    }
-
-    .btn-lg {
-      padding: 1rem 2rem;
-      font-size: 1.25rem;
+    .project-btn:hover {
+      background: linear-gradient(45deg, #045e6e, #034e5c);
     }
 
     /* ===== ANIMATIONS ===== */
@@ -243,12 +248,13 @@
       }
       
       .home-hero__inner h1 {
-        font-size: 2.8rem;
-        white-space: normal;
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        letter-spacing: 1px;
+        word-wrap: break-word;
       }
       
       .home-hero__inner p {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
       
       section {
@@ -264,8 +270,12 @@
         font-size: 1rem;
       }
       
-      .features {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      .projects {
+        flex-wrap: wrap;
+      }
+
+      .project {
+        flex-basis: 100%;
       }
     }
   </style>
@@ -289,50 +299,50 @@
   <!-- Hero Section -->
   <div class="home-hero__inner">
     <h1>Sonic Avionics</h1>
-    <p>Empowering students and rocketry enthusiasts with an open-source, modular avionics platform.<br>Winner of the 2025 Stage 1 <a href="https://www.torontomu.ca/ceie/eschawards/" class="link">Esch Awards</a>!</p>
-    <div class="home-hero__cta">
-      <a href="join/" class="btn btn-primary btn-lg">Join Us</a>
-      {% if config.repo_url %}
-      <a href="https://github.com/sonicavionics" class="btn btn-secondary btn-lg">GitHub</a>
-      {% endif %}
-      <a href="https://discord.gg/HSY7DmDeq7" class="btn btn-secondary btn-lg">Discord</a>
-    </div>
+    <p>Open-source, modular avionics system.<br>Winner of the 2025 Stage 1 <a href="https://www.torontomu.ca/ceie/eschawards/" class="link">Esch Awards</a>!</p>
   </div>
   <hr>
-  <!-- About Section -->
-  <section class="about slide-in-bottom">
-    <div class="md-container md-typeset">
-      <h2>About Sonic Avionics</h2>
-      <p>Sonic Avionics develops open-source, modular avionics platforms for students and rocketry enthusiasts. Our 4-inch scalable flight computers, compatible with the Mojave Sphinx, bridge the gap between theory and practice, addressing the engineering skills shortage through hands-on learning.</p>
-      <p>All hardware and code is freely available on GitHub, and we actively encourage community feedback and contributions. Join our Discord to discuss development and share ideas!</p>
-    </div>
-  </section>
 
   <!-- Projects Grid -->
-  <section class="features slide-in-bottom">
+  <section class="projects slide-in-bottom">
     <!-- Modular Flight Computers -->
-    <div class="feature">
+    <div class="project">
       <img src="https://raw.githubusercontent.com/sonicavionics/4in-sensors/refs/heads/main/images/board.front.png" alt="Flight Computer">
       <h3>Modular Flight Computers</h3>
       <p>Scalable 4-inch avionics systems with redundant sensors and real-time telemetry, designed for the <a href="https://www.halfcatrocketry.com/mojave-sphinx" class="link">Mojave Sphinx</a> and other rockets.</p>
-      <a href="avionics/PCB-Modules/sensors/" class="feature-btn">Explore</a>
+      <a href="avionics/PCB-Modules/sensors/" class="project-btn">Explore</a>
     </div>
 
     <!-- Open-Source Hardware -->
-    <div class="feature">
+    <div class="project">
       <img src="https://raw.githubusercontent.com/sonicavionics/4in-avionics/refs/heads/main/exports/images/avionics_rack.PNG" alt="Open-Source Hardware">
       <h3>Open-Source Hardware</h3>
       <p>Customizable CAD on GitHub, created in SOLIDWORKS.</p>
-      <a href="https://github.com/sonicavionics/4in-avionics" class="feature-btn">View</a>
+      <a href="https://github.com/sonicavionics/4in-avionics" class="project-btn">View</a>
     </div>
 
     <!-- Ground Support Equipment -->
-    <div class="feature">
+    <div class="project">
       <!-- <img src="assets/images/ground-support.png" alt="Ground Support"> -->
       <h3>Ground Support Equipment</h3>
       <p>PLC-based test rigs and monitoring systems for reliable avionics testing and validation.</p>
-      <a href="{{ 'GSE/' | url }}" class="feature-btn">Learn More</a>
+      <a href="{{ 'GSE/' | url }}" class="project-btn">Learn More</a>
     </div>
-    
+
+      <!-- About Section -->
+    <div class="md-container md-typeset">
+      <h2>About Sonic Avionics</h2>
+      <p>Sonic Avionics develops open-source, modular avionics platforms for students and rocketry enthusiasts. Our 4-inch scalable flight computers, compatible with the <a href="https://www.halfcatrocketry.com/mojave-sphinx" class="link">Mojave Sphinx</a>, bridge the gap between theory and practice, addressing the engineering skills shortage through hands-on learning.</p>
+      <p>All hardware and code is freely available on GitHub, and we actively encourage community feedback and contributions. Join our Discord to discuss development and share ideas!</p>
+    </div>   
   </section>
+
+  <div class="home-hero__cta">
+    <a href="join/" class="btn btn-primary btn-lg">Join Us</a>
+    {% if config.repo_url %}
+    <a href="https://github.com/sonicavionics" class="btn btn-secondary btn-lg">GitHub</a>
+    {% endif %}
+    <a href="https://discord.gg/HSY7DmDeq7" class="btn btn-secondary btn-lg">Discord</a>
+  </div>
+
 {% endblock %}

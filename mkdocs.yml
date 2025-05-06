@@ -96,8 +96,8 @@ markdown_extensions:
 extra:
   generator: true
   social:
-    # - icon: fontawesome/brands/github
-    #   link: https://github.com/marstmu/
+    - icon: fontawesome/brands/github
+      link: https://github.com/sonicavionics/
     # - icon: fontawesome/brands/instagram
     #   link: https://www.instagram.com/mars.tmu/
     # - icon: fontawesome/brands/linkedin
