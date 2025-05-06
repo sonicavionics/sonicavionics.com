@@ -240,13 +240,33 @@
       height: 1px;
       background: linear-gradient(90deg, transparent, #00ffcc, transparent);
       box-shadow: 0 0 8px rgba(0, 255, 204, 0.8);
-      /* margin: 2rem auto; */
       width: 100%;
-      /* max-width: 800px; */
       display: block;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
+      animation: laser-in 1.5s ease-out forwards;
+    }
+
+    /* Laser animation keyframes */
+    @keyframes laser-in {
+      0% {
+        width: 0;
+        opacity: 0;
+        background: linear-gradient(90deg, #00ffcc, #00ffcc);
+        box-shadow: 0 0 20px rgba(0, 255, 204, 1);
+      }
+      50% {
+        width: 100%;
+        opacity: 1;
+        background: linear-gradient(90deg, #00ffcc, #00ffcc);
+        box-shadow: 0 0 20px rgba(0, 255, 204, 1), 0 0 40px rgba(0, 255, 204, 0.8);
+      }
+      100% {
+        width: 100%;
+        background: linear-gradient(90deg, transparent, #00ffcc, transparent);
+        box-shadow: 0 0 8px rgba(0, 255, 204, 0.8);
+      }
     }
 
     /* Footer action buttons */
