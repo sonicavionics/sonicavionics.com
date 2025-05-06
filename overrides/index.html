@@ -202,6 +202,12 @@
       height: auto;
       border-radius: 0.5rem;
       margin-bottom: 1rem;
+      /* filter: drop-shadow(0 0 1px rgba(0, 255, 204, 0.3)); */
+      transition: filter 0.3s ease;
+    }
+
+    .project:hover img {
+      filter: drop-shadow(0 0 5px rgba(0, 255, 204, 0.5));
     }
 
     .project h3 {
@@ -384,27 +390,23 @@
 
     <!-- Ground Support Equipment -->
     <div class="project">
-      <!-- <img src="assets/images/ground-support.png" alt="Ground Support"> -->
       <h3>Ground Support Equipment</h3>
       <p>PLC-based test rigs and monitoring systems for reliable avionics testing and validation.</p>
       <a href="{{ 'GSE/' | url }}" class="project-btn">Learn More</a>
     </div>
 
-      <!-- About Section -->
+    <!-- About Section -->
     <div class="md-container md-typeset">
       <h2>About Sonic Avionics</h2>
       <p>Sonic Avionics develops open-source, modular avionics platforms for students and rocketry enthusiasts. Our 4-inch scalable flight computers, compatible with the <a href="https://www.halfcatrocketry.com/mojave-sphinx" class="link">Mojave Sphinx</a>, bridge the gap between theory and practice, addressing the engineering skills shortage through hands-on learning.</p>
       <p>All hardware and code is freely available on GitHub, and we actively encourage community feedback and contributions. Join our Discord to discuss development and share ideas!</p>
     </div>   
-  </section>
 
-  <!-- Footer Action Buttons -->
-  <div class="footer-actions">
+    <!-- Footer Action Buttons -->
     <a href="join/" class="project-btn">Join Us</a>
-    {% if config.repo_url %}
     <a href="https://github.com/sonicavionics" class="project-btn">GitHub</a>
-    {% endif %}
     <a href="https://discord.gg/HSY7DmDeq7" class="project-btn">Discord</a>
-  </div>
-
+    
+  </section>
+  
 {% endblock %}
