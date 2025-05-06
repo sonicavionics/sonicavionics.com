@@ -18,7 +18,7 @@
       content: "";
       position: fixed;
       inset: 0;
-      background: linear-gradient(135deg, #080e21 0%, #05394e 100%);
+      background: linear-gradient(135deg, #080e21 0%, #0a1f2b 100%);
       z-index: -1;
     }
 
@@ -40,7 +40,14 @@
     }
 
     .md-main .md-typeset a.link {
-      color: #4FC3F7;
+      color: #00ffcc;
+      text-shadow: 0 0 5px rgba(0, 255, 204, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    .md-main .md-typeset a.link:hover {
+      color: #00ffcc;
+      text-shadow: 0 0 8px rgba(0, 255, 204, 0.9), 0 0 12px rgba(0, 255, 204, 0.5);
     }
 
     /* ===== HEADER & NAVIGATION ===== */
@@ -106,11 +113,11 @@
     .home-hero__inner h1 {
       font-size: clamp(3rem, 8vw, 6rem);
       font-family: 'DM Serif Text', serif !important;
-      color: #4FC3F7;
+      color: #00ffcc;
       text-shadow: 
-        0 0 7.5px rgba(79, 195, 247, 0.9), 
-        0 0 15px rgba(79, 195, 247, 0.7), 
-        0 0 25px rgba(79, 195, 247, 0.5);
+        0 0 7.5px rgba(0, 255, 204, 0.9), 
+        0 0 15px rgba(0, 255, 204, 0.7), 
+        0 0 25px rgba(0, 255, 204, 0.5);
       letter-spacing: 3px;
       text-transform: uppercase;
       transform: perspective(500px) rotateX(10deg);
@@ -123,6 +130,7 @@
     .home-hero__inner p {
       font-size: 1.2rem;
       color: #e0e0e0;
+      text-shadow: 0 0 5px rgba(224, 224, 224, 0.5);
     }
 
     /* Hero CTA buttons container */
@@ -172,19 +180,21 @@
 
     /* Project card styling */
     .project {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(10, 20, 35, 0.7);
       border-radius: 0.5rem;
       padding: 1.5rem;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 255, 204, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       flex: 1 1 400px;
       max-width: 100%;
+      border: 1px solid rgba(0, 255, 204, 0.2);
     }
 
     .project:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 20px rgba(0, 255, 204, 0.25);
+      border: 1px solid rgba(0, 255, 204, 0.4);
     }
 
     .project img {
@@ -196,9 +206,10 @@
 
     .project h3 {
       font-family: 'Black Ops One', cursive !important;
-      color: #ffffff;
+      color: #00ffcc;
       font-size: 1.8rem;
       margin-bottom: 1rem;
+      text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
     }
 
     /* ===== BUTTONS ===== */
@@ -209,14 +220,44 @@
       font-weight: 500;
       text-decoration: none;
       color: #ffffff;
-      background: linear-gradient(0deg, #034e5c, #045e6e);
+      background: linear-gradient(90deg, #034e5c, #0a765a);
       border-radius: 0.3rem;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
       font-family: 'Roboto Mono', monospace;
+      border: 1px solid rgba(0, 255, 204, 0.3);
+      box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
     }
 
     .project-btn:hover {
-      background: linear-gradient(45deg, #045e6e, #034e5c);
+      background: linear-gradient(90deg, #0a765a, #034e5c);
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+      border: 1px solid rgba(0, 255, 204, 0.5);
+    }
+
+    /* Add neon horizontal rule */
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #00ffcc, transparent);
+      box-shadow: 0 0 8px rgba(0, 255, 204, 0.8);
+      /* margin: 2rem auto; */
+      width: 100%;
+      /* max-width: 800px; */
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Footer action buttons */
+    .footer-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 2rem auto 3rem;
+      padding: 0 1rem;
+      max-width: 1200px;
     }
 
     /* ===== ANIMATIONS ===== */
@@ -289,7 +330,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.2 });
+      }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
       document.querySelectorAll('.slide-in-bottom').forEach(el => observer.observe(el));
     });
   </script>
@@ -337,12 +378,13 @@
     </div>   
   </section>
 
-  <div class="home-hero__cta">
-    <a href="join/" class="btn btn-primary btn-lg">Join Us</a>
+  <!-- Footer Action Buttons -->
+  <div class="footer-actions">
+    <a href="join/" class="project-btn">Join Us</a>
     {% if config.repo_url %}
-    <a href="https://github.com/sonicavionics" class="btn btn-secondary btn-lg">GitHub</a>
+    <a href="https://github.com/sonicavionics" class="project-btn">GitHub</a>
     {% endif %}
-    <a href="https://discord.gg/HSY7DmDeq7" class="btn btn-secondary btn-lg">Discord</a>
+    <a href="https://discord.gg/HSY7DmDeq7" class="project-btn">Discord</a>
   </div>
 
 {% endblock %}
