@@ -10,7 +10,7 @@
 
     /* Root dark color scheme */
     :root {
-      color-scheme: dark !important;
+      color-scheme: dark;
     }
 
     /* Full-screen gradient background */
@@ -29,18 +29,18 @@
     .md-main .md-typeset h2,
     .md-main .md-typeset h3,
     .md-main .md-typeset p {
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+      color: #ffffff;
+      font-family: 'Roboto Mono', monospace;
     }
 
     /* Link styling */
     .md-main .md-typeset a {
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+      color: #ffffff;
+      font-family: 'Roboto Mono', monospace;
     }
 
     .md-main .md-typeset a.link {
-      color: #4FC3F7 !important;
+      color: #4FC3F7;
     }
 
     /* ===== HEADER & NAVIGATION ===== */
@@ -50,28 +50,28 @@
     .md-tabs {
       background: transparent !important;
       box-shadow: none !important;
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+      color: #ffffff;
+      font-family: 'Roboto Mono', monospace;
     }
 
     .md-header {
-      position: static !important;
+      position: static;
     }
     
     .md-main__inner {
-      margin-top: 0 !important;
+      margin-top: 0;
     }
     
     /* Tab navigation styling */
     .md-tabs {
-      width: 100% !important;
-      left: 0 !important;
-      transform: none !important;
-      display: flex !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      overflow-x: auto !important;
-      white-space: nowrap !important;
+      width: 100%;
+      left: 0;
+      transform: none;
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+      overflow-x: auto;
+      white-space: nowrap;
     }
 
     /* Hide header inner content */
@@ -81,24 +81,24 @@
 
     /* ===== HERO SECTION ===== */
     .home-hero {
-      background: transparent !important;
-      padding-bottom: 1rem !important;
+      background: transparent;
+      padding-bottom: 1rem;
     }
     
     .home-hero::before {
-      display: none !important;
+      display: none;
     }
 
     /* Center hero content */
     .home-hero__inner {
-      text-align: center !important;
+      text-align: center;
     }
 
     /* Hero title styling */
     .home-hero__inner h1 {
       font-size: 4rem;
       font-family: 'Dancing Script', cursive !important;
-      color: #4FC3F7 !important;
+      color: #4FC3F7;
       text-shadow: 
         0 0 15px rgba(79, 195, 247, 0.9), 
         0 0 30px rgba(79, 195, 247, 0.7), 
@@ -106,8 +106,8 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       transform: perspective(500px) rotateX(10deg);
-      transition: none !important;
-      white-space: nowrap !important;
+      transition: none;
+      white-space: nowrap;
     }
 
     /* Remove hover transform change */
@@ -118,21 +118,21 @@
     /* Hero description styling */
     .home-hero__inner p {
       font-size: 1.5rem;
-      color: #e0e0e0 !important;
+      color: #e0e0e0;
     }
 
     /* Hero CTA buttons container */
     .home-hero__cta {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center !important;
+      justify-content: center;
       gap: 1rem;
     }
 
     /* Button styling */
     .home-hero__cta .btn {
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+      color: #ffffff;
+      font-family: 'Roboto Mono', monospace;
     }
 
     /* ===== FEATURE SECTIONS ===== */
@@ -147,8 +147,8 @@
     .video-section {
       text-align: center;
       margin-bottom: 3rem;
-      padding-top: 1rem !important;
-      margin-top: 0 !important;
+      padding-top: 1rem;
+      margin-top: 0;
     }
     
     .video-section video {
@@ -188,7 +188,7 @@
 
     .feature h3 {
       font-family: 'Black Ops One', cursive !important;
-      color: #ffffff !important;
+      color: #ffffff;
     }
 
     /* ===== BUTTONS ===== */
@@ -198,11 +198,11 @@
       font-size: 1rem;
       font-weight: 500;
       text-decoration: none;
-      color: #ffffff !important;
+      color: #ffffff;
       background: linear-gradient(45deg, #047d92, #06b6d4);
       border-radius: 0.3rem;
       transition: background 0.3s ease;
-      font-family: 'Roboto Mono', monospace !important;
+      font-family: 'Roboto Mono', monospace;
     }
 
     .feature-btn:hover {
@@ -237,14 +237,14 @@
     /* Ensure tab navigation is visible on mobile */
     @media (max-width: 768px) {
       .md-tabs__list {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
+        display: flex;
+        visibility: visible;
+        opacity: 1;
       }
       
       .home-hero__inner h1 {
         font-size: 2.8rem;
-        white-space: normal !important;
+        white-space: normal;
       }
       
       .home-hero__inner p {
@@ -265,7 +265,7 @@
       }
       
       .features {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       }
     }
   </style>
