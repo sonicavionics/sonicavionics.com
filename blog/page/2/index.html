@@ -1,0 +1,2449 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Sonic Avionics is an aerospace engineering team at TMU, specializing in the design and development of avionics systems for rockets.">
+      
+      
+        <meta name="author" content="Sonic Avionics">
+      
+      
+        <link rel="canonical" href="https://sonicavionics.com/blog/page/2/">
+      
+      
+        <link rel="prev" href="../../../avionics/resources/dfmguide/">
+      
+      
+        <link rel="next" href="../../category/4-avionics/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Latest Posts - Sonic Avionics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/home.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#latest-posts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Sonic Avionics" class="md-header__button md-logo" aria-label="Sonic Avionics" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sonic Avionics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Latest Posts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sonicavionics/sonicavionics.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../GSE/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  GSE
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../avionics/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Avionics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../join/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Join
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Sonic Avionics" class="md-nav__button md-logo" aria-label="Sonic Avionics" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    Sonic Avionics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sonicavionics/sonicavionics.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../GSE/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    GSE
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            GSE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../avionics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Avionics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Avionics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/cad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CAD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PCB Modules
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            PCB Modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/PCB-Modules/antenna/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Antenna
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/PCB-Modules/backplate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backplate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/PCB-Modules/gps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GPS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/PCB-Modules/power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/PCB-Modules/powersim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PowerSim
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/PCB-Modules/recovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Recovery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/PCB-Modules/sensors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sensors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/PCB-Modules/status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_1" id="__nav_3_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Old
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Old
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/archive/old/cad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CAD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_1_2" id="__nav_3_4_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PCB Modules
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_4_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            PCB Modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_1_2_1" id="__nav_3_4_1_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PowerSim
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_4_1_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_1_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            PowerSim
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/archive/old/PCB-Modules/PowerSim/0.1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0.1.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_1_2_2" id="__nav_3_4_1_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Power
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_4_1_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_1_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Power
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/archive/old/PCB-Modules/power/0.0.2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0.0.2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_1_2_3" id="__nav_3_4_1_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sensors
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_4_1_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_1_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sensors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/archive/old/PCB-Modules/sensors/0.1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    0.1.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../avionics/resources/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avionics/resources/dfmguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DFM Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2024
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Categories
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/4-avionics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4" Avionics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/agenda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agenda
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Info
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/purchases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Purchases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/complaints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    complaints
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../join/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Join
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Join
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../join/hardware_challenge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hardware Challenge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="latest-posts">Latest Posts</h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-20 00:00:00+00:00">December 20, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="one-month-of-pcbs"><a class="toclink" href="../../2024/12/20/one-month-of-pcbs/">One Month of PCBs</a></h2>
+<p>The power module 0.0.2 works perfectly.</p>
+<p>Here's some photos of me testing it. I got heat shrink that's too big.</p>
+<p><img alt="alt text" src="../../2024/december/20/IMG_0784.JPG" /> </p>
+<p><img alt="alt text" src="../../2024/december/20/IMG_0787.JPG" /></p>
+<p>I even got the fuel gauge chip working.</p>
+<p><img alt="alt text" src="../../2024/december/20/image.png" /></p>
+<p>A month into this project, and I got a working PCB! I'm happy about that. Not often it works on the first try either. It took 15 days for the PCBs to arrive and it cost $116.28 CAD for assembly for 5 boards including shipping and tax and everything.</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-12 00:00:00+00:00">December 12, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="chip-selection"><a class="toclink" href="../../2024/12/12/chip-selection/">Chip Selection</a></h2>
+<p>Here is the post outlining the reasons for picking the chips. This post will be updated in the future with reasons why or why not to pick these chips. Requirement for all chips was being available on JLC. </p>
+<h4 id="mcu"><a class="toclink" href="../../2024/12/12/chip-selection/#mcu">MCU</a></h4>
+<p><a href="https://www.raspberrypi.com/products/rp2040/">RP 2040</a></p>
+<p>I went with the RP2040 because the alternatives are usually more complex or more expensive. The documentation on the rp2040 is great and there's a great online community around it. It's more than fast enough to accomplish what we need to do. </p>
+<p>ESP chips get kind of expensive, although they have some kind of CAN and ethernet capability on board. When we do go ethernet it'll probably be an addition to the CAN bus though.</p>
+<h5 id="flash"><a class="toclink" href="../../2024/12/12/chip-selection/#flash">Flash</a></h5>
+<p><a href="https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&amp;partNo=W25Q128JV">W25Q128JVP</a> Didn't even read the data sheet. It's the one they use in the rp2040 hardware design guide, it's the most flash the rp2040 can use.</p>
+<h5 id="crystal"><a class="toclink" href="../../2024/12/12/chip-selection/#crystal">Crystal</a></h5>
+<p><a href="https://www.digikey.ca/en/products/detail/abracon-llc/ABM8-272-T3/22472366">ABM8-272-T3</a> In the rp2040 design guide. </p>
+<h4 id="usb-c"><a class="toclink" href="../../2024/12/12/chip-selection/#usb-c">USB-C</a></h4>
+<p><a href="https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M04/C129018">USB-C port</a> Easy choice; pretty much only one on JLCPCB at the time</p>
+<h4 id="power"><a class="toclink" href="../../2024/12/12/chip-selection/#power">Power</a></h4>
+<h5 id="33v-regulator"><a class="toclink" href="../../2024/12/12/chip-selection/#33v-regulator">3.3v Regulator</a></h5>
+<p><a href="https://jlcpcb.com/partdetail/TexasInstruments-LMR51430YFDDCR/C5219261">LMR51430YFDDCR</a> Constant, 1kHz switching reg, wide voltage input range, goes to 3.3v, cheap</p>
+<h5 id="5v-buck-boost"><a class="toclink" href="../../2024/12/12/chip-selection/#5v-buck-boost">5v buck-boost</a></h5>
+<p><a href="https://www.ti.com/lit/ds/symlink/tps63070.pdf?ts=1734177677058">TPS630701</a></p>
+<h4 id="power-mux"><a class="toclink" href="../../2024/12/12/chip-selection/#power-mux">Power MUX</a></h4>
+<p><a href="https://jlcpcb.com/partdetail/TexasInstruments-TPS2121RUXR/C485916">TPS2121RUXR</a> Two inputs, one output cheap, on JLC. done.
+Using this in Highest Voltage Operation (VCOMP) mode with the battery as the main and USB as secondary  </p>
+<h4 id="sensors"><a class="toclink" href="../../2024/12/12/chip-selection/#sensors">Sensors</a></h4>
+<h5 id="imu"><a class="toclink" href="../../2024/12/12/chip-selection/#imu">IMU</a></h5>
+<p>Need IMU with accelerometer, gyroscope and magnetometer, high sample rate, some vibration resistance, onboard sensor fusion and on JLC.</p>
+<p>BNO055, BNO055, BMX055, MPU-9250 are off the table because they need standard assembly. The options are:
+- MPU-6050 (only 6-axis)
+- ICM-20948 (9-axis with fusion)</p>
+<p>So there's only the ICM-20948 if I wan't to do 9 axis.</p>
+<h5 id="pressure"><a class="toclink" href="../../2024/12/12/chip-selection/#pressure">Pressure</a></h5>
+<p>Need temperature and pressure and high sample rate.</p>
+<p>Some JLC options for pressure sensors:
+- MS563702BA03-50
+- GZP6816D
+- GZP131-701A
+- MS560702BA03-50
+- HP203B
+- WF100SPZ 0.4BG S6 AT
+- MPXHZ6115AC6T1
+- GZP170-701A
+- LWLP5001DD
+- MPS-3117-006GC-A3
+- NSPAS1N115RR01</p>
+<p>MS560702BA03-50 was chosen for high speed capabilities.</p>
+<h5 id="payload-module"><a class="toclink" href="../../2024/12/12/chip-selection/#payload-module">Payload Module</a></h5>
+<p>We might add a payload module with a bunch of different sensors and the "experiment" will be to see the discrepancies in their readings.</p>
+<h4 id="0201-0402-or-0603"><a class="toclink" href="../../2024/12/12/chip-selection/#0201-0402-or-0603">0201, 0402 or 0603?</a></h4>
+<p>Should I use 0603, 0402 or 0201?
+If I go with 0603 we can solder it pretty easily. 0201 its not happening, and 0402 is harder. Those components aren't even the expensive ones to have JLCPCB assemble for you. Actually 0201 is more expensive I think. Okay 0402 it is then. </p>
+<p>Okay there's not that many JLC basic resistors so I'll use 0603 and hand solder those ones.</p>
+<h4 id="conclusion"><a class="toclink" href="../../2024/12/12/chip-selection/#conclusion">Conclusion</a></h4>
+<p>It's not a good idea to spend too long on chip selection, better to just start making shit and find out along the way. I'll probably regret some of these choices, but that is part of learning.
+Some chips I really didn't think that much about, if it does the job and is cheap enough I'll use it I don't need to compare it with every single alternative out there. Some chips like the sensors I compared a bunch of chips in the same range, and took inspiration from other teams and such. ChatGPT is great for suggesting chips, it currently gets the numbers wrong very often so you can't trust anything and have to read the data sheet yourself to confirm but it still makes it much much easier.
+Vibration wasn't too much a concern, most chips can withstand the vibration we'd put them through.</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-09 00:00:00+00:00">December 9, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="december-9th"><a class="toclink" href="../../2024/12/09/december-9th/">December 9th</a></h2>
+<p>Things I bought today:</p>
+<ul>
+<li>Test PCBs from JLC, module and backplate for the 4" Avionics</li>
+<li>12 18650s</li>
+<li>spot welder and threaded heat inserts</li>
+<li>PCIe and UCB-C receptacles</li>
+</ul>
+<p>Should I use 0603, 0402 or 0201?
+If I go with 0603 we can solder it pretty easily. 0201 its not happening, and 0402 it's harder. Those components aren't even the expensive ones to have JLCPCB assemble for you. Actually 0201 is more expensive I think. Okay 0402 it is then. </p>
+<p>For the next board, we'll have a way to upload new code over the air. The CAN network will have its bootselect pins on the PCIe bus, the raspberry pi 5 or something will be able to put any of them into mass storage mode, and upload new code on the USB lines... maybe I should just do this now. okay fine i'll do it now</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-08 00:00:00+00:00">December 8, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="kicad-vs-altium-and-solidworks-vs-onshape"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/">KiCAD vs Altium and Solidworks vs OnShape</a></h2>
+<p>Gotta pick which software to use. Most teams use KiCAD and Solidworks.</p>
+<h3 id="kicad-vs-altium"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/#kicad-vs-altium">KiCad vs Altium</a></h3>
+<p>5 minutes into KiCAD. Here's the pros and cons of KiCAD. One downside already is no dark mode support on windows</p>
+<h4 id="pros"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/#pros">Pros</a></h4>
+<ul>
+<li>There seems to be a much better built in library. Well it has PCIe footprints.</li>
+<li>I don't have to sign in and click roam on the licenses all the time. </li>
+<li>There's a plentiful plugs ins repo. </li>
+<li>It's way way faster</li>
+<li>Dark mode for schematic editor.</li>
+<li>FOSS</li>
+<li>Altium's manufacturer part search is really not that fast, and for whatever reason the BOM is the slowest thing in the world. There's few companies that would use the build in supply chain shit, it just slow things down and I didn't see a way to disable it without disabling the manufacturer part search.</li>
+<li>Many different repos for all the manufactures design rules. </li>
+<li>Exporting is way faster with the JLCPCB plug in</li>
+<li>The measurement tool is slightly better</li>
+</ul>
+<h4 id="cons"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/#cons">Cons</a></h4>
+<ul>
+<li>The UI is somewhat less professional looking. (who cares)</li>
+<li>KiCAD doesn't have dark mode on windows. Altium's UI is dark by default, but I don't think you can add themes for the actual schematic editor. So that's </li>
+<li>Altium actually has better git integration surprisingly.</li>
+<li>You can only have one project open per instance. <code>open -n /Applications/KiCad/kicad.app</code></li>
+<li>I've experienced more crashes than Altium. Running tally of crashes: 10</li>
+<li>Sometimes the footprints don't show up in the previewer windows when selecting a chip</li>
+</ul>
+<h4 id="routing"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/#routing">Routing</a></h4>
+<p>Altium has much better routing. Dragging chips that already have traces around in Altium works much better than in KiCad. </p>
+<h4 id="design-rules"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/#design-rules">Design Rules</a></h4>
+<p>The design rules manger is much better in Altium.</p>
+<h3 id="solidworks-vs-onshape"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/#solidworks-vs-onshape">Solidworks vs OnShape</a></h3>
+<p>I'll do pros and cons of Solidworks</p>
+<h4 id="pros_1"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/#pros_1">Pros</a></h4>
+<ul>
+<li>Faster </li>
+<li>Realview graphics</li>
+<li>Can handle assembly as large as your computer will allow. OnShape is run in AWS. I didn't think this would be an issue, because they dynamically allocate compute based on your needs. Even still, it is really slow loading things, and I did notice that after a while it gets faster the more you use it, but still its much slower than Solidworks.</li>
+</ul>
+<h4 id="cons_1"><a class="toclink" href="../../2024/12/08/kicad-vs-altium-and-solidworks-vs-onshape/#cons_1">Cons</a></h4>
+<ul>
+<li>Very old looking interface </li>
+<li>Have to update variable file reference manually every time you add a variable. </li>
+<li>No version control, although OnShape has it but doesn't use git.</li>
+<li>Mating in OnShape is faster, the same thing that takes one mate in OnShape takes 2 or 3 in Solidworks.</li>
+<li>Only runs on windows, OnShape is really great for how it runs in the browser. I would do almost anything to never have to use windows again, but onshape is just too slow.</li>
+<li>Very expensive for companies, onshape has a free tier for open source people.</li>
+<li>The workflow with Solidworks involves using sharepoint or something similar. The files will get too large for regular git so LFS will be needed.</li>
+</ul>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-07 00:00:00+00:00">December 7, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="avionics-bay-cad"><a class="toclink" href="../../2024/12/07/avionics-bay-cad/">Avionics Bay CAD</a></h2>
+<p>Wow, the CAD for the avionics bay took a little longer than I expected. I had to make everything easily modifiable, so I used variables for almost every dimension. With the change of a couple numbers in a text file I can go from this:</p>
+<p><img alt="alt text" src="../../2024/december/7/1.png" width="300" /></p>
+<p>to this</p>
+<p><img alt="alt text" src="../../2024/december/7/2.png" width="300" /></p>
+<p>This is a fun avionics layout. I think it's kinda fun how they all slot into a PCIe CAN bus. 3D printing this is gonna be weird. I could also go with this design, but I think the first one is more fun.</p>
+<p><img alt="alt text" src="../../2024/december/7/3.png" width="300" /></p>
+<p>The thing about this avionics system, is that once the board dimensions are made, there's no going back. </p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-04 00:00:00+00:00">December 4, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a>, 
+              <a href="../../category/complaints/" class="md-meta__link">complaints</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="solidworks-is-fucked"><a class="toclink" href="../../2024/12/04/solidworks-is-fucked/">Solidworks is fucked</a></h2>
+<p>Why is Solidworks so fucked. It keeps flickering between these views:</p>
+<p><img alt="alt text" src="../../2024/december/solidworks_complaints/1.png" /></p>
+<p><img alt="alt text" src="../../2024/december/solidworks_complaints/2.png" /></p>
+<p>I've had so many glitches. I've ran the import diagnostics on the PCIe step it says its fine. I did... do <a href="https://www.youtube.com/watch?app=desktop&amp;v=vmbjWkmItBQ">the workaround</a> to get my 3070ti working. Although this happens with realview on or off. </p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-02 00:00:00+00:00">December 2, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="december-2"><a class="toclink" href="../../2024/12/02/december-2/">December 2</a></h2>
+<p>Gonna start work on the avionics bay . I think I'm stuck to using Altium and Solidworks now.</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-01 00:00:00+00:00">December 1, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="two-weeks-update"><a class="toclink" href="../../2024/12/01/two-weeks-update/">Two Weeks Update</a></h2>
+<p>It's been two weeks since I started the 4" Avionics. I just ordered it for assembly with JLCPCB I used USP express saver shipping. Hopefully I don't have to pay any more fees when it arrives. It cost $80.75. I got 5 boards. They don't have USB-C connectors in stock so I'm getting them off digikey.</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-01 00:00:00+00:00">December 1, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="dingboard-is-nextboard"><a class="toclink" href="../../2024/12/01/dingboard-is-nextboard/">dingboard is Nextboard</a></h2>
+<p>Well I named the dingboard the dingboard because I thought I was gonna make a bigger board later on and I was gonna name it the dongboard or some shit. There's no value in making a single board flight computer right now, so the MCU will be CAN enabled from the get go. It doesn't add much complexity. The MCU board will be ran at 3 volts so I will be able to use the V1 power board for it. Later on I'll need to use an antenna which will be ran at <a href="http://files.rfdesign.com.au/Files/documents/RFD900x%20DataSheet%20V1.1.pdf">5v with 3.3v logic.</a> So while power v1 is shipping, I'll work on the MCU with CAN, while that is being shipped I'll upgrade the power to 3s with 3.3v 5v and unregulated 12v. Then I'll work on the antenna module while that is shipping then I'll work on the GPS while that is shipping then blah blah. The specifics will change but this is the idea.</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://avatars.githubusercontent.com/u/55005377" alt="Zeul Mordasiewicz">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-11-29 00:00:00+00:00">November 29, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/4-avionics/" class="md-meta__link">4" Avionics</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="annoyed-at-altium-still"><a class="toclink" href="../../2024/11/29/annoyed-at-altium-still/">Annoyed at Altium Still</a></h2>
+<p>So to use ECAD/MCAD you have to use Altium 365. It makes it's own .git file in the main Altium directory. So you could still have a .git in the directory above it which you could push to github as a primary thing. Then you could just push to the Altium 365 whenever you want to use MCAD. The ECAD/MCAD integration just doesn't seem worth the hassle though. Being able to move around components in MCAD does seem really cool though. I just wish they did it right. Engineering tools are never designed by good software engineers. The software engineers that make it never really use it. The best stuff is made by the people that use the thing. git is so good because the people that maintain it are the people that use it. I love that shit that's like "made by blank for blank." Usually it's shampoo or something, but when it's actually true the product is good.</p>
+<p>When I pushed my project to Altium 365 it copied my project to a new location on my computer. So I've been making all these changes to a separate repo this whole time. So to continue using the old repo, I'd have to delete the old files and add the new files, reinitializing the repo basically. Because the Altium files are all binaries. I hate Altium.</p>
+<p>At some point I switched the buck boost to a linear regulator/boost. Idk how that happened now I gotta switch it back.</p>
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  <a class="md-pagination__link" href="../../">1</a> <span class="md-pagination__current">2</span> <a class="md-pagination__link" href="../3/">3</a> <a class="md-pagination__link" href="../4/">4</a>
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Sonic Avionics © 2025
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/HSY7DmDeq7" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "content.code.copy", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share", "navigation.top", "toc.follow", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

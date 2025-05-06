@@ -1,0 +1,29 @@
+Comment,Designator,Footprint,LCSC Part Number,JLCPCB Basic?
+0.01Ohm,R11,1206,C844910,no
+0.1uF,C1,0402,C1525,yes
+1M,"R2, R4",0402,C26083,yes
+1uF,"C5, C7",0402,C52923,yes
+1uH,L2,1008,C882955,no
+1.5K,"R5, R7",0402,C25867,yes
+1.8K,R8,0603,C4177,yes
+2.2K,R3,0402,C25879,yes
+3K,R16,0603,C4211,yes
+3.3K,R1,0402,C25890,yes
+4.7uF,"C6, C8",0402,C23733,yes
+5.1K,"R12, R13",0402,C25905,yes
+10K,"R6, R14, R15",0402,C25744,yes
+22uF,C9,0603,C59461,yes
+47uF,C10,0805,C16780,yes
+91K,R18,0402,C1161,no
+470nF,C4,0603,C1623,yes
+510K,R17,0603,C23192,yes
+Battery Monitor,U4,SON-12-EP(2.5x4),C473397,no
+Battery Protection IC,U1,WSON (6),C183096,no
+Buck-Boost,U5,SOT-583,C5219190,no
+Charger/Switcher,U2,VQFN (16) ,C140288,no
+FET,"Q1, Q2",VSON-8(3.3x3.3),C2861720,no
+JST Connector,P1,"SMD,P=2mm",C295747,no
+[PCIe Gold Fingers](docs/avionics/power/PCIe_specs.pdf),J2,n/a,n/a,n/a
+Red LED,D1,0603,C2286,yes
+[USB-C](https://www.digikey.ca/en/products/detail/gct/USB4085-GF-A/9859662),J1,n/a,n/a,n/a
+White LED,D2,0603,C2290,yes
