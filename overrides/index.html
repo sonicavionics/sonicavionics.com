@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-  {{ super() }}
   <!-- Meta tag to indicate dark color scheme -->
   <meta name="color-scheme" content="dark">
   <style>
-    /* Set color scheme to dark at the root level */
+    /* ===== GLOBAL STYLES ===== */
+    /* Import custom fonts from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Roboto+Mono:wght@400;500&display=swap');
+
+    /* Root dark color scheme */
     :root {
       color-scheme: dark !important;
     }
 
-    /* Importing custom fonts from Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Mono:wght@400;500&display=swap');
-
-    /* Full-screen gradient behind everything */
+    /* Full-screen gradient background */
     body::before {
       content: "";
       position: fixed;
@@ -22,7 +22,8 @@
       z-index: -1;
     }
 
-    /* Ensure light text color in main content, excluding links and buttons */
+    /* ===== TYPOGRAPHY ===== */
+    /* Base font styling for main content */
     .md-main .md-typeset,
     .md-main .md-typeset h1,
     .md-main .md-typeset h2,
@@ -32,52 +33,18 @@
       font-family: 'Roboto Mono', monospace !important;
     }
 
-    /* Make links in main content white */
+    /* Link styling */
     .md-main .md-typeset a {
       color: #ffffff !important;
       font-family: 'Roboto Mono', monospace !important;
     }
 
-    /* Make links inline light blue */
     .md-main .md-typeset a.link {
       color: #4FC3F7 !important;
-      font-family: 'Roboto Mono', monospace !important;
     }
 
-    /* Center the hero section content */
-    .home-hero__inner {
-      text-align: center !important;
-    }
-
-    /* Styling for Hero Section title with an even wilder, bolder font */
-    .home-hero__inner h1 {
-      font-size: 4rem;
-      font-family: 'Black Ops One', cursive !important;
-      color: #4FC3F7 !important;
-      text-shadow: 
-        0 0 15px rgba(79, 195, 247, 0.9), 
-        0 0 30px rgba(79, 195, 247, 0.7), 
-        0 0 50px rgba(79, 195, 247, 0.5);
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      transform: perspective(500px) rotateX(10deg);
-      transition: none !important; /* Remove hover transition */
-      white-space: nowrap !important; /* Prevent wrapping on larger screens */
-    }
-
-    /* Remove hover effect */
-    .home-hero__inner h1:hover {
-      transform: perspective(500px) rotateX(10deg); /* Keep the same transform as non-hover state */
-    }
-
-    /* Hero section paragraph styling */
-    .home-hero__inner p {
-      font-size: 1.5rem;
-      font-family: 'Roboto Mono', monospace !important;
-      color: #e0e0e0 !important;
-    }
-
-    /* Transparent header and nav bars */
+    /* ===== HEADER & NAVIGATION ===== */
+    /* Transparent header styling */
     .md-header,
     .md-header-nav,
     .md-tabs {
@@ -90,83 +57,114 @@
     .md-header {
       position: static !important;
     }
+    
     .md-main__inner {
       margin-top: 0 !important;
     }
+    
+    /* Tab navigation styling */
     .md-tabs {
       width: 100% !important;
       left: 0 !important;
       transform: none !important;
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      overflow-x: auto !important;
+      white-space: nowrap !important;
     }
 
-    /* Ensure md-tabs__list is always visible */
-    .md-tabs {
-      display: flex !important; /* Force display as flex to keep it visible */
-      visibility: visible !important; /* Ensure visibility */
-      opacity: 1 !important; /* Prevent fading out */
-      overflow-x: auto !important; /* Allow horizontal scrolling if tabs overflow */
-      white-space: nowrap !important; /* Prevent wrapping */
-    }
-
-    /* Override any media queries that might hide md-tabs__list */
-    @media (max-width: 768px) {
-      .md-tabs__list {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-      }
-    }
-
-    /* Hide the entire header inner content (logo, search, GitHub link) */
+    /* Hide header inner content */
     .md-header__inner {
       display: none !important;
     }
 
-    /* Hero section transparent and reduced bottom padding */
+    /* ===== HERO SECTION ===== */
     .home-hero {
       background: transparent !important;
       padding-bottom: 1rem !important;
     }
-    .home-hero::before { display: none !important; }
+    
+    .home-hero::before {
+      display: none !important;
+    }
 
-    /* Video section reduced top padding */
+    /* Center hero content */
+    .home-hero__inner {
+      text-align: center !important;
+    }
+
+    /* Hero title styling */
+    .home-hero__inner h1 {
+      font-size: 4rem;
+      font-family: 'Dancing Script', cursive !important;
+      color: #4FC3F7 !important;
+      text-shadow: 
+        0 0 15px rgba(79, 195, 247, 0.9), 
+        0 0 30px rgba(79, 195, 247, 0.7), 
+        0 0 50px rgba(79, 195, 247, 0.5);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      transform: perspective(500px) rotateX(10deg);
+      transition: none !important;
+      white-space: nowrap !important;
+    }
+
+    /* Remove hover transform change */
+    .home-hero__inner h1:hover {
+      transform: perspective(500px) rotateX(10deg);
+    }
+
+    /* Hero description styling */
+    .home-hero__inner p {
+      font-size: 1.5rem;
+      color: #e0e0e0 !important;
+    }
+
+    /* Hero CTA buttons container */
+    .home-hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center !important;
+      gap: 1rem;
+    }
+
+    /* Button styling */
+    .home-hero__cta .btn {
+      color: #ffffff !important;
+      font-family: 'Roboto Mono', monospace !important;
+    }
+
+    /* ===== FEATURE SECTIONS ===== */
+    /* Section spacing and layout */
+    section {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Video section */
     .video-section {
       text-align: center;
       margin-bottom: 3rem;
       padding-top: 1rem !important;
       margin-top: 0 !important;
     }
+    
     .video-section video {
       width: 100%;
       max-width: 800px;
       border-radius: 0.5rem;
     }
 
-    /* Hide auto-generated title and metadata in main content */
-    .md-main .md-typeset > h1,
-    .md-main .md-typeset > .md-meta { display: none !important; }
-
-    /* Scroll-reveal: slide up from bottom */
-    .slide-in-bottom {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Section styling */
-    section { padding: 4rem 1rem; max-width: 1200px; margin: 0 auto; }
-
-    /* Grid layout for features: two per row, one on narrow screens */
+    /* Features grid layout */
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 2rem;
     }
 
+    /* Feature card styling */
     .feature {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 0.5rem;
@@ -193,10 +191,7 @@
       color: #ffffff !important;
     }
 
-    .feature p {
-      font-family: 'Roboto Mono', monospace !important;
-    }
-
+    /* ===== BUTTONS ===== */
     .feature-btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
@@ -217,44 +212,60 @@
     .btn-lg {
       padding: 1rem 2rem;
       font-size: 1.25rem;
-      font-family: 'Roboto Mono', monospace !important;
     }
 
-    /* Ensure hero buttons maintain white text on hover */
-    .home-hero__cta .btn {
-      color: #ffffff !important;
-      font-family: 'Roboto Mono', monospace !important;
+    /* ===== ANIMATIONS ===== */
+    /* Scroll reveal animation */
+    .slide-in-bottom {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    /* Flexbox for hero CTA buttons */
-    .home-hero__cta {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center !important; /* Center the buttons */
-      gap: 1rem;
+    /* Hide auto-generated elements */
+    .md-main .md-typeset > h1,
+    .md-main .md-typeset > .md-meta {
+      display: none !important;
     }
 
-    /* Media queries for mobile */
+    /* ===== RESPONSIVE STYLES ===== */
+    /* Ensure tab navigation is visible on mobile */
     @media (max-width: 768px) {
+      .md-tabs__list {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      
       .home-hero__inner h1 {
         font-size: 2.8rem;
-        white-space: normal !important; /* Allow wrapping on small screens */
+        white-space: normal !important;
       }
+      
       .home-hero__inner p {
         font-size: 1rem;
       }
+      
       section {
         padding: 2rem 1rem;
       }
+      
       .home-hero__cta {
         gap: 0.5rem;
       }
+      
       .btn-lg {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
       }
+      
       .features {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important; /* Reduce min width for mobile */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
       }
     }
   </style>
