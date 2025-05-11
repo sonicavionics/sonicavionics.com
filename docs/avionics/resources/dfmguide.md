@@ -1,6 +1,6 @@
 # DFM Guide
 
-**Design for manufacturing guide. <br> "Forked" from [QRET](https://qret.ca/)'s [component repository](https://www.notion.so/Component-Repository-2023-2024-160ca211d23080cd8ba2ee3102036125).**
+**Design for manufacturing guide. <br> "Forked" from [QRET](https://qret.ca/)'s component repository.**
 
 
 ## LCSC Part Numbers

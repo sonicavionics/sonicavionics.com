@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Join us
 
 We are a student organization made up of [TMU](https://www.torontomu.ca/) students.
