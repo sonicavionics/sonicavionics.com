@@ -26,3 +26,4 @@ The PowerSim module is a precursor to the Power module. It's meant to be very si
 - [Regulator](https://jlcpcb.com/partdetail/DiodesIncorporated-AP63203WU7/C780769)
 - [Inductor](https://jlcpcb.com/partdetail/Tdk-SLF7055T_6R8N2R83PF/C21218)
 - **USB-C** [JLC USB-C port](https://jlcpcb.com/partdetail/ShouHan-TYPE_C_16PIN_2MD_073/C2765186)
+- [IC](https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf)
