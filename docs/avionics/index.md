@@ -27,9 +27,9 @@ table, table * {
         <a href="PCB-Modules/power/"><i>Power</i></a>
       </td>
       <td align="center" style="vertical-align: middle;">
-        <img src="https://raw.githubusercontent.com/sonicavionics/4in-powersim/refs/heads/main/images/board.front.png" style="height:auto; width:300px;" />
+        <img src="https://raw.githubusercontent.com/sonicavionics/4in-status/refs/heads/main/images/board.front.png" style="height:auto; width:300px;" />
         <br />
-        <a href="PCB-Modules/powersim/"><i>PowerSim</i></a>
+        <a href="PCB-Modules/status/"><i>Status</i></a>
       </td>
       <!-- Extra column cell with rowspan -->
       <td rowspan="2" align="center" style="vertical-align: middle;">
