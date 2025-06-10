@@ -95,3 +95,27 @@ Thermal management: Inner power planes distribute heat from the CAN transceiver 
 The ANT-20087EB56 GPS antenna was purchased from DigiKey to confirm dimensions due to limited documentation. A right-angle SMA connector was used on the pcb to allow a 90-degree bend. Its whip format makes it ideal for the rack-mounted design. Physical measurements will be taken to confirm dimensions.
 
 [ANT-20087EB56 Digikey](https://www.digikey.com/en/products/detail/adam-tech/ANT-20087EB56/16123699)
+
+# GPS Module Development Updates
+
+Since the last website update, several changes and improvements have been implemented in the GPS module design and development process:
+
+### Component Replacements
+Due to supply chain constraints, several components were substituted with similar alternatives, including resistors and the battery holder. The primary GPS module (NEO-M9N) was also preordered due to stock limitations.
+
+### Advanced Antenna Integration
+Significant research was conducted to accommodate more complex antenna features. This resulted in a detailed integration guide, available as an attachment in the project repository:
+
+[LNA Control (PDF)](./gps/LNA-Control.pdf)
+
+### BOM and Symbol Corrections
+The Bill of Materials (BOM) underwent corrections, particularly to address inconsistencies arising from components initially sourced from EasyEDA, which lacked readily available symbols and footprints. Adjustments were made to ensure accuracy in attached properties, facilitating easier procurement and assembly.
+
+### Manual Footprint Completion and Via Stitching
+Footprinting was meticulously completed manually, alongside manual via stitching due to the failure of automatic plugins. This approach ensured precise control over the RF and high-speed signal integrity.
+
+### New Logo and Silk Screen
+The project's new logo was successfully integrated into the silkscreen layer of the PCB, resulting in a visually appealing and professional appearance.
+
+### Ergonomic and Accessibility Improvements
+Minor adjustments included positioning the module name and boot select button prominently at the front edge. This enhances visibility within stack-ups and provides convenient access for board reflashing and maintenance.
