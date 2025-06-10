@@ -2086,6 +2086,21 @@ Rechargeability: Supports 500+ cycles, reducing long-term maintenance.</p>
 <h2 id="antenna-selection">Antenna Selection</h2>
 <p>The ANT-20087EB56 GPS antenna was purchased from DigiKey to confirm dimensions due to limited documentation. A right-angle SMA connector was used on the pcb to allow a 90-degree bend. Its whip format makes it ideal for the rack-mounted design. Physical measurements will be taken to confirm dimensions.</p>
 <p><a href="https://www.digikey.com/en/products/detail/adam-tech/ANT-20087EB56/16123699">ANT-20087EB56 Digikey</a></p>
+<h1 id="gps-module-development-updates">GPS Module Development Updates</h1>
+<p>Since the last website update, several changes and improvements have been implemented in the GPS module design and development process:</p>
+<h3 id="component-replacements">Component Replacements</h3>
+<p>Due to supply chain constraints, several components were substituted with similar alternatives, including resistors and the battery holder. The primary GPS module (NEO-M9N) was also preordered due to stock limitations.</p>
+<h3 id="advanced-antenna-integration">Advanced Antenna Integration</h3>
+<p>Significant research was conducted to accommodate more complex antenna features. This resulted in a detailed integration guide, available as an attachment in the project repository:</p>
+<p><a href="LNA-Control.pdf">LNA Control (PDF)</a></p>
+<h3 id="bom-and-symbol-corrections">BOM and Symbol Corrections</h3>
+<p>The Bill of Materials (BOM) underwent corrections, particularly to address inconsistencies arising from components initially sourced from EasyEDA, which lacked readily available symbols and footprints. Adjustments were made to ensure accuracy in attached properties, facilitating easier procurement and assembly.</p>
+<h3 id="manual-footprint-completion-and-via-stitching">Manual Footprint Completion and Via Stitching</h3>
+<p>Footprinting was meticulously completed manually, alongside manual via stitching due to the failure of automatic plugins. This approach ensured precise control over the RF and high-speed signal integrity.</p>
+<h3 id="new-logo-and-silk-screen">New Logo and Silk Screen</h3>
+<p>The project's new logo was successfully integrated into the silkscreen layer of the PCB, resulting in a visually appealing and professional appearance.</p>
+<h3 id="ergonomic-and-accessibility-improvements">Ergonomic and Accessibility Improvements</h3>
+<p>Minor adjustments included positioning the module name and boot select button prominently at the front edge. This enhances visibility within stack-ups and provides convenient access for board reflashing and maintenance.</p>
 
 
 
@@ -2108,7 +2123,7 @@ Rechargeability: Supports 500+ cycles, reducing long-term maintenance.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 7, 2025 14:31:16 EDT">April 7, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 10, 2025 16:08:00 EDT">June 10, 2025</span>
   </span>
 
     
