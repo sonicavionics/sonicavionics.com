@@ -98,24 +98,24 @@ The ANT-20087EB56 GPS antenna was purchased from DigiKey to confirm dimensions d
 
 # GPS Module Development Updates
 
-Since the last website update, several changes and improvements have been implemented in the GPS module design and development process:
+Since the last update, several changes and improvements have been implemented in the GPS module design and development process:
 
 ### Component Replacements
-Due to supply chain constraints, several components were substituted with similar alternatives, including resistors and the battery holder. The primary GPS module (NEO-M9N) was also preordered due to stock limitations.
+Due to supply chain constraints, some components were changed to similar alternatives, including some resistors and the battery holder. The primary GPS module (NEO-M9N) was also preordered due to lack of stock.
 
 ### Advanced Antenna Integration
-Significant research was conducted to accommodate more complex antenna features. This resulted in a detailed integration guide, available as an attachment in the project repository:
+Research was conducted to allow more complex antenna features. This resulted in a detailed pdf, available as an attachment in the project repository:
 
 [LNA Control (PDF)](./gps/LNA-Control.pdf)
 
 ### BOM and Symbol Corrections
-The Bill of Materials (BOM) underwent corrections, particularly to address inconsistencies arising from components initially sourced from EasyEDA, which lacked readily available symbols and footprints. Adjustments were made to ensure accuracy in attached properties, facilitating easier procurement and assembly.
+The Bill of Materials (BOM) had some corrections, particularly to fix inconsistencies coming from components initially sourced from EasyEDA since those components lacked readily available symbols and footprints. Adjustments were made to keep consistency in the BOM.
 
 ### Manual Footprint Completion and Via Stitching
-Footprinting was meticulously completed manually, alongside manual via stitching due to the failure of automatic plugins. This approach ensured precise control over the RF and high-speed signal integrity.
+Footprinting was completed, alongside manual via stitching. In the future hopefully the plugin works.
 
 ### New Logo and Silk Screen
-The project's new logo was successfully integrated into the silkscreen layer of the PCB, resulting in a visually appealing and professional appearance.
+The new logo for Sonic was added into the silkscreen layer of the PCB, resulting in a visually appealing and professional appearance.
 
 ### Ergonomic and Accessibility Improvements
-Minor adjustments included positioning the module name and boot select button prominently at the front edge. This enhances visibility within stack-ups and provides convenient access for board reflashing and maintenance.
+Minor adjustments included positioning the module name and boot select button at the front edge. This helps identify the module and provides convenient access for board reflashing.
