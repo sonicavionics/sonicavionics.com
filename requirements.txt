@@ -1,5 +1,1 @@
-mkdocs-material
-mkdocs-git-committers-plugin-2
-mkdocs-git-revision-date-localized-plugin
-mkdocs-rss-plugin
-mkdocs-table-reader-plugin
+zensical
