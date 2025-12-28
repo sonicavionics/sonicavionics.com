@@ -6,7 +6,7 @@ site_author: Sonic Avionics
 repo_url: https://github.com/sonicavionics/sonicavionics.com
 edit_uri: edit/main/docs/
 
-copyright:  Sonic Avionics © 2025 
+copyright:  Sonic Avionics © 2025
 
 theme:
   name: material
