@@ -1,0 +1,102 @@
+[project]
+site_name = "Sonic Avionics"
+site_url = "https://sonicavionics.com/"
+site_description = "Sonic Avionics is an aerospace engineering team at TMU, specializing in the design and development of avionics systems for rockets."
+site_author = "Sonic Avionics"
+repo_url = "https://github.com/sonicavionics/sonicavionics.com"
+edit_uri = "edit/main/docs/"
+copyright = "Sonic Avionics © 2025"
+
+[project.theme]
+name = "material"
+custom_dir = "overrides"
+features = [
+  "content.action.edit",
+  "content.code.copy",
+  "navigation.indexes",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "search.suggest",
+  "search.highlight",
+  "search.share",
+  "navigation.top",
+  "toc.follow",
+  "navigation.sections"
+]
+
+[project.theme.logo]
+path = "img/logo.png"
+
+[project.theme.favicon]
+path = "img/favicon.ico"
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+# Palette configuration for dark/light mode toggle
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+
+  [project.theme.palette.toggle]
+  icon = "material/brightness-auto"
+  name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "black"
+
+  [project.theme.palette.toggle]
+  icon = "material/brightness-7"
+  name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "black"
+
+  [project.theme.palette.toggle]
+  icon = "material/brightness-4"
+  name = "Switch to system preference"
+
+# Blog plugin configuration
+[project.blog]
+authors = true
+
+# Markdown extensions
+[project.markdown_extensions]
+"pymdownx.caret" = {}
+"pymdownx.mark" = {}
+"pymdownx.tilde" = {}
+"pymdownx.arithmatex" = { generic = true }
+"attr_list" = {}
+"pymdownx.emoji" = {}
+"pymdownx.tasklist" = { custom_checkbox = true }
+"md_in_html" = {}
+"pymdownx.highlight" = { anchor_linenums = true, line_spans = "__span", pygments_lang_class = true }
+"pymdownx.inlinehilite" = {}
+"pymdownx.snippets" = {}
+"pymdownx.superfences" = {}
+
+# Extra CSS files
+extra_css = [
+  "css/extra.css",
+  "css/home.css"
+]
+
+# Extra JavaScript
+[[project.extra_javascript]]
+path = "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
+
+# Social links
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/sonicavionics/"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/discord"
+link = "https://discord.gg/HSY7DmDeq7"
+
+# Extra options
+[project.extra]
+generator = true
